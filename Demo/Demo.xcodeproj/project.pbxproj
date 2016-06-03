@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D9E37591D012CDA0022D5EF /* UITextField+SwpSetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E37581D012CDA0022D5EF /* UITextField+SwpSetTextField.m */; };
+		2D9FFBA71CFFCAB900D5A5E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBA61CFFCAB900D5A5E0 /* main.m */; };
+		2D9FFBAA1CFFCAB900D5A5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBA91CFFCAB900D5A5E0 /* AppDelegate.m */; };
+		2D9FFBAC1CFFCAB900D5A5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9FFBAB1CFFCAB900D5A5E0 /* Assets.xcassets */; };
+		2D9FFBAF1CFFCAB900D5A5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9FFBAD1CFFCAB900D5A5E0 /* LaunchScreen.storyboard */; };
+		2D9FFBB81CFFCAD600D5A5E0 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBB71CFFCAD600D5A5E0 /* DemoViewController.m */; };
+		2D9FFBC01CFFCCFB00D5A5E0 /* NSString+SwpDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBBF1CFFCCFB00D5A5E0 /* NSString+SwpDate.m */; };
+		2D9FFBC41CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBC31CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.m */; };
+		2D9FFBD11D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBD01D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.m */; };
+		2D9FFBD81D00348800D5A5E0 /* UIButton+SwpSetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFBD71D00348800D5A5E0 /* UIButton+SwpSetButton.m */; };
+		2DC87FE81D01559100F4F275 /* UIColor+SwpColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87FE71D01559100F4F275 /* UIColor+SwpColor.m */; };
+		2DC87FEE1D015F6100F4F275 /* UIView+SwpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87FED1D015F6100F4F275 /* UIView+SwpExtension.m */; };
+		2DC87FF31D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC87FF21D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D9E37571D012CDA0022D5EF /* UITextField+SwpSetTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SwpSetTextField.h"; sourceTree = "<group>"; };
+		2D9E37581D012CDA0022D5EF /* UITextField+SwpSetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SwpSetTextField.m"; sourceTree = "<group>"; };
+		2D9FFBA21CFFCAB900D5A5E0 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9FFBA61CFFCAB900D5A5E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D9FFBA81CFFCAB900D5A5E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D9FFBA91CFFCAB900D5A5E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D9FFBAB1CFFCAB900D5A5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D9FFBAE1CFFCAB900D5A5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D9FFBB01CFFCAB900D5A5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9FFBB61CFFCAD600D5A5E0 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		2D9FFBB71CFFCAD600D5A5E0 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		2D9FFBBE1CFFCCFB00D5A5E0 /* NSString+SwpDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SwpDate.h"; sourceTree = "<group>"; };
+		2D9FFBBF1CFFCCFB00D5A5E0 /* NSString+SwpDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SwpDate.m"; sourceTree = "<group>"; };
+		2D9FFBC21CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SwpUserDefaults.h"; sourceTree = "<group>"; };
+		2D9FFBC31CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SwpUserDefaults.m"; sourceTree = "<group>"; };
+		2D9FFBCF1D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SwpSetNavigationBarItem.h"; sourceTree = "<group>"; };
+		2D9FFBD01D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SwpSetNavigationBarItem.m"; sourceTree = "<group>"; };
+		2D9FFBD61D00348800D5A5E0 /* UIButton+SwpSetButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SwpSetButton.h"; sourceTree = "<group>"; };
+		2D9FFBD71D00348800D5A5E0 /* UIButton+SwpSetButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SwpSetButton.m"; sourceTree = "<group>"; };
+		2DC87FE61D01559100F4F275 /* UIColor+SwpColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SwpColor.h"; sourceTree = "<group>"; };
+		2DC87FE71D01559100F4F275 /* UIColor+SwpColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SwpColor.m"; sourceTree = "<group>"; };
+		2DC87FEC1D015F6100F4F275 /* UIView+SwpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SwpExtension.h"; sourceTree = "<group>"; };
+		2DC87FED1D015F6100F4F275 /* UIView+SwpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SwpExtension.m"; sourceTree = "<group>"; };
+		2DC87FF11D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SwpSetBackgroundColor.h"; sourceTree = "<group>"; };
+		2DC87FF21D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SwpSetBackgroundColor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D9FFB9F1CFFCAB900D5A5E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D9E37531D012C760022D5EF /* UITextFieldCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2D9E37571D012CDA0022D5EF /* UITextField+SwpSetTextField.h */,
+				2D9E37581D012CDA0022D5EF /* UITextField+SwpSetTextField.m */,
+			);
+			path = UITextFieldCateGory;
+			sourceTree = "<group>";
+		};
+		2D9FFB991CFFCAB900D5A5E0 = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBA41CFFCAB900D5A5E0 /* Demo */,
+				2D9FFBA31CFFCAB900D5A5E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D9FFBA31CFFCAB900D5A5E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBA21CFFCAB900D5A5E0 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D9FFBA41CFFCAB900D5A5E0 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBB91CFFCB4900D5A5E0 /* SwpCateGory */,
+				2D9FFBB61CFFCAD600D5A5E0 /* DemoViewController.h */,
+				2D9FFBB71CFFCAD600D5A5E0 /* DemoViewController.m */,
+				2D9FFBA81CFFCAB900D5A5E0 /* AppDelegate.h */,
+				2D9FFBA91CFFCAB900D5A5E0 /* AppDelegate.m */,
+				2D9FFBAB1CFFCAB900D5A5E0 /* Assets.xcassets */,
+				2D9FFBAD1CFFCAB900D5A5E0 /* LaunchScreen.storyboard */,
+				2D9FFBB01CFFCAB900D5A5E0 /* Info.plist */,
+				2D9FFBA51CFFCAB900D5A5E0 /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		2D9FFBA51CFFCAB900D5A5E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBA61CFFCAB900D5A5E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D9FFBB91CFFCB4900D5A5E0 /* SwpCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2DC87FF01D01634900F4F275 /* UINavigationBarCateGory */,
+				2DC87FEB1D015F3C00F4F275 /* UIViewCateGory */,
+				2DC87FE51D01557200F4F275 /* UIColorCateGory */,
+				2D9E37531D012C760022D5EF /* UITextFieldCateGory */,
+				2D9FFBD21D00081D00D5A5E0 /* UIButtonCateGory */,
+				2D9FFBC51CFFDC0100D5A5E0 /* UIBarButtonItemCateGory */,
+				2D9FFBC11CFFCE3900D5A5E0 /* NSUserDefaultsCateGory */,
+				2D9FFBBA1CFFCB4900D5A5E0 /* NSStringCateGory */,
+			);
+			name = SwpCateGory;
+			path = ../../SwpCateGory;
+			sourceTree = "<group>";
+		};
+		2D9FFBBA1CFFCB4900D5A5E0 /* NSStringCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBBE1CFFCCFB00D5A5E0 /* NSString+SwpDate.h */,
+				2D9FFBBF1CFFCCFB00D5A5E0 /* NSString+SwpDate.m */,
+			);
+			path = NSStringCateGory;
+			sourceTree = "<group>";
+		};
+		2D9FFBC11CFFCE3900D5A5E0 /* NSUserDefaultsCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBC21CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.h */,
+				2D9FFBC31CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.m */,
+			);
+			path = NSUserDefaultsCateGory;
+			sourceTree = "<group>";
+		};
+		2D9FFBC51CFFDC0100D5A5E0 /* UIBarButtonItemCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBCF1D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.h */,
+				2D9FFBD01D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.m */,
+			);
+			path = UIBarButtonItemCateGory;
+			sourceTree = "<group>";
+		};
+		2D9FFBD21D00081D00D5A5E0 /* UIButtonCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2D9FFBD61D00348800D5A5E0 /* UIButton+SwpSetButton.h */,
+				2D9FFBD71D00348800D5A5E0 /* UIButton+SwpSetButton.m */,
+			);
+			path = UIButtonCateGory;
+			sourceTree = "<group>";
+		};
+		2DC87FE51D01557200F4F275 /* UIColorCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2DC87FE61D01559100F4F275 /* UIColor+SwpColor.h */,
+				2DC87FE71D01559100F4F275 /* UIColor+SwpColor.m */,
+			);
+			path = UIColorCateGory;
+			sourceTree = "<group>";
+		};
+		2DC87FEB1D015F3C00F4F275 /* UIViewCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2DC87FEC1D015F6100F4F275 /* UIView+SwpExtension.h */,
+				2DC87FED1D015F6100F4F275 /* UIView+SwpExtension.m */,
+			);
+			path = UIViewCateGory;
+			sourceTree = "<group>";
+		};
+		2DC87FF01D01634900F4F275 /* UINavigationBarCateGory */ = {
+			isa = PBXGroup;
+			children = (
+				2DC87FF11D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.h */,
+				2DC87FF21D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.m */,
+			);
+			path = UINavigationBarCateGory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D9FFBA11CFFCAB900D5A5E0 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D9FFBB31CFFCAB900D5A5E0 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				2D9FFB9E1CFFCAB900D5A5E0 /* Sources */,
+				2D9FFB9F1CFFCAB900D5A5E0 /* Frameworks */,
+				2D9FFBA01CFFCAB900D5A5E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 2D9FFBA21CFFCAB900D5A5E0 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D9FFB9A1CFFCAB900D5A5E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = swp_song;
+				TargetAttributes = {
+					2D9FFBA11CFFCAB900D5A5E0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2D9FFB9D1CFFCAB900D5A5E0 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D9FFB991CFFCAB900D5A5E0;
+			productRefGroup = 2D9FFBA31CFFCAB900D5A5E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D9FFBA11CFFCAB900D5A5E0 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D9FFBA01CFFCAB900D5A5E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9FFBAC1CFFCAB900D5A5E0 /* Assets.xcassets in Resources */,
+				2D9FFBAF1CFFCAB900D5A5E0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D9FFB9E1CFFCAB900D5A5E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9FFBC01CFFCCFB00D5A5E0 /* NSString+SwpDate.m in Sources */,
+				2DC87FF31D0163D600F4F275 /* UINavigationBar+SwpSetBackgroundColor.m in Sources */,
+				2D9E37591D012CDA0022D5EF /* UITextField+SwpSetTextField.m in Sources */,
+				2D9FFBB81CFFCAD600D5A5E0 /* DemoViewController.m in Sources */,
+				2D9FFBD81D00348800D5A5E0 /* UIButton+SwpSetButton.m in Sources */,
+				2D9FFBC41CFFCE5400D5A5E0 /* NSUserDefaults+SwpUserDefaults.m in Sources */,
+				2D9FFBD11D00016700D5A5E0 /* UIBarButtonItem+SwpSetNavigationBarItem.m in Sources */,
+				2D9FFBAA1CFFCAB900D5A5E0 /* AppDelegate.m in Sources */,
+				2DC87FEE1D015F6100F4F275 /* UIView+SwpExtension.m in Sources */,
+				2D9FFBA71CFFCAB900D5A5E0 /* main.m in Sources */,
+				2DC87FE81D01559100F4F275 /* UIColor+SwpColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D9FFBAD1CFFCAB900D5A5E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D9FFBAE1CFFCAB900D5A5E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D9FFBB11CFFCAB900D5A5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D9FFBB21CFFCAB900D5A5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D9FFBB41CFFCAB900D5A5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = swp.song.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2D9FFBB51CFFCAB900D5A5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = swp.song.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D9FFB9D1CFFCAB900D5A5E0 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9FFBB11CFFCAB900D5A5E0 /* Debug */,
+				2D9FFBB21CFFCAB900D5A5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D9FFBB31CFFCAB900D5A5E0 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9FFBB41CFFCAB900D5A5E0 /* Debug */,
+				2D9FFBB51CFFCAB900D5A5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D9FFB9A1CFFCAB900D5A5E0 /* Project object */;
+}
