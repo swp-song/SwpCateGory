@@ -75,10 +75,10 @@
 - (void)clickButton:(UIButton *)button  {
     NSLog(@"%ld", button.tag);
     
-    if (button.tag == 4) {
-        
-        button.selected = !button.selected;
-    }
+    
+    if (button.tag == 3) button.backgroundColor = [UIColor swpColorWithRandom];
+    if (button.tag == 4) button.selected        = !button.selected;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,7 +92,7 @@
     if (!_submitButton) {
         _submitButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 30)];
         
-        [UIButton swpSetButtonSubmitStyle:_submitButton setBackgroundColor:[UIColor blueColor] setFontColor:[UIColor whiteColor] setTitle:@"提交按钮" setFontSize:15.0f setCornerRadius:3 setTag:3 setTarget:self setAction:@selector(clickButton:)];
+        [UIButton swpSetButtonSubmitStyle:_submitButton setBackgroundColor:[UIColor blueColor] setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:3 setTag:3 setTarget:self setAction:@selector(clickButton:)];
     }
     return _submitButton;
 }

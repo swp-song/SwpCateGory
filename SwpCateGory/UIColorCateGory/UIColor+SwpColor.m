@@ -79,5 +79,17 @@
 }
 
 
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpColorWithRandom  ( 生成一个 随机色 )
+ *
+ *  @return UIColor
+ */
++ (UIColor *)swpColorWithRandom {
+    return [UIColor swpColorWithRGB:arc4random_uniform(256) green:arc4random_uniform(256) blue:arc4random_uniform(256)];
+}
+
+
 
 @end

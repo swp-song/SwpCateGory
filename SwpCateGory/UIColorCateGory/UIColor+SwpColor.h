@@ -70,6 +70,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIColor *)swpColorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpColorWithRandom  ( 生成一个 随机色 )
+ *
+ *  @return UIColor
+ */
++ (UIColor *)swpColorWithRandom;
+
 
 
 @end
