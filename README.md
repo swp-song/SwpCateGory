@@ -25,6 +25,7 @@ pod 'SwpCateGory'
 #import <SwpCateGory/UIColor+SwpColor.h>
 
 ```
+---
 
 ##### 介绍:
 
@@ -49,6 +50,7 @@ pod 'SwpCateGory'
 #import <SwpCateGory/NSUserDefaults+SwpUserDefaults.h>
 
 ```
+---
 
 ##### 更新:
 ```Objective-C
@@ -60,6 +62,7 @@ pod 'SwpCateGory'
 + (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue alpha:(CGFloat)alpha
 
 ```
+---
 
 
 
