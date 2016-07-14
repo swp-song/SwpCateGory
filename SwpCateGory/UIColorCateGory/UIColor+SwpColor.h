@@ -37,6 +37,31 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIColor *)swpColorWithHexadecimal:(NSInteger)hexadecimalValue alpha:(CGFloat)alpha;
 
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpColorWithHexadecimalString:  ( 字符串 十六进制 颜色 0x or # < null 颜色 clearColor > )
+ *
+ *  @param  hexadecimalValue
+ *
+ *  @return UIColor
+ */
+
++ (UIColor *)swpColorWithHexadecimalString:(nullable NSString *)hexadecimalStringValue;
+
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpColorWithHexadecimalString:alpha:    ( 字符串 十六进制 颜色 0x or # < null 颜色 clearColor > )
+ *
+ *  @param  hexadecimalStringValue
+ *
+ *  @param  alpha
+ *
+ *  @return UIColor
+ */
++ (UIColor *)swpColorWithHexadecimalString:(nullable NSString *)hexadecimalStringValue alpha:(CGFloat)alpha;
+
 
 /*!
  *  @author swp_song

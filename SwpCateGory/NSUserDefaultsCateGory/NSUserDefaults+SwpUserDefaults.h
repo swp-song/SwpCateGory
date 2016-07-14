@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param  key
  */
-+ (void)swpUserDefaultSetObject:(id)object forKey:(NSString *)key;
++ (void)swpUserDefaultSetObject:(nullable id)object forKey:(nullable NSString *)key;
 
 /*!
  *  @author swp_song
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return id
  */
-+ (id)swpUserDefaultGetObject:(NSString *)key;
++ (nullable id)swpUserDefaultGetObject:(NSString *)key;
 
 /*!
  *  @author swp_song

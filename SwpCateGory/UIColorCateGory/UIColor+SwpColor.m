@@ -21,7 +21,7 @@
  *  @return UIColor
  */
 + (UIColor *)swpColorWithHexadecimal:(NSInteger)hexadecimalValue {
-    return [UIColor colorWithRed:((float)((hexadecimalValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexadecimalValue & 0xFF00) >> 8)) / 255.0 blue:((float)(hexadecimalValue & 0xFF)) / 255.0 alpha:1.0];
+    return [UIColor swpColorWithHexadecimal:hexadecimalValue alpha:1.0];
 }
 
 
@@ -40,6 +40,62 @@
     return [UIColor colorWithRed:((float)((hexadecimalValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexadecimalValue & 0xFF00) >> 8)) / 255.0 blue:((float)(hexadecimalValue & 0xFF)) / 255.0 alpha:alpha];
 }
 
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpColorWithHexadecimalString:  ( 字符串 十六进制 颜色 0x or # < null 颜色 clearColor > )
+ *
+ *  @param  hexadecimalValue
+ *
+ *  @return UIColor
+ */
++ (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue {
+    return [UIColor swpColorWithHexadecimalString:hexadecimalStringValue alpha:1.0];
+}
+
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpColorWithHexadecimalString:alpha:    ( 字符串 十六进制 颜色 0x or # < null 颜色 clearColor > )
+ *
+ *  @param  hexadecimalStringValue
+ *
+ *  @param  alpha
+ *
+ *  @return UIColor
+ */
++ (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue alpha:(CGFloat)alpha {
+    
+    NSString *cString = [[hexadecimalStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    
+    // String should be 6 or 8 characters
+    if ([cString length] < 6)  return [UIColor clearColor];
+    
+    // strip "0X" or "#" if it appears
+    if ([cString hasPrefix:@"0X"]) cString = [cString substringFromIndex:2];
+    if ([cString hasPrefix:@"#"])  cString = [cString substringFromIndex:1];
+    if ([cString length] != 6) return [UIColor clearColor];
+    
+    // Separate into r, g, b substrings
+    NSRange range;
+    range.location    = 0;
+    range.length      = 2;
+    //r
+    NSString *rString = [cString substringWithRange:range];
+    //g
+    range.location    = 2;
+    NSString *gString = [cString substringWithRange:range];
+    //b
+    range.location    = 4;
+    NSString *bString = [cString substringWithRange:range];
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];
+}
+
 
 /*!
  *  @author swp_song
@@ -55,7 +111,7 @@
  *  @return UIColor
  */
 + (UIColor *)swpColorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
-    return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:1.0];
+    return [UIColor swpColorWithRGB:red green:green blue:blue alpha:1.0];
 }
 
 
@@ -89,6 +145,8 @@
 + (UIColor *)swpColorWithRandom {
     return [UIColor swpColorWithRGB:arc4random_uniform(256) green:arc4random_uniform(256) blue:arc4random_uniform(256)];
 }
+
+
 
 
 
