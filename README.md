@@ -8,7 +8,7 @@
 
 SwpCateGory 文件夹 导入 项目 中
 
-引入需要用的分类 : 
+引入需要用的分类 :
 
 #import "UIColor+SwpColor.h"
 ```
@@ -52,7 +52,7 @@ pod 'SwpCateGory'
 ```
 ---
 
-##### 更新:
+##### 1.0.3 更新 :
 ```Objective-C
 
 // 字符串 16 进制 颜色 设置 颜色  ( 0XF4B711 or 0xF4B711 or #F4B711 )
@@ -62,9 +62,22 @@ pod 'SwpCateGory'
 + (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue alpha:(CGFloat)alpha
 
 ```
+
+##### 1.0.4 更新:
+
+```Objective-C
+
+  UIButton+SwpSetButton.h 分类中
+
+  方法:
+
+  + (UIButton *)swpSetNavigationButtonWithTitle:(NSString *)title setFontColot:(UIColor *)fontColot setFontSize:(CGFloat)fontSize setTag:(NSInteger)tag setLeftButton:(BOOL)leftBarButton setTarget:(id)target setAction:(SEL)action;
+
+  替换成:
+  
+  + (UIButton *)swpSetNavigationButtonWithTitle:(NSString *)title setFontColot:(UIColor *)fontColot setFontSize:(CGFloat)fontSize setTag:(NSInteger)tag setLeftButton:(BOOL)leftBarButton setTarget:(nullable id)target setAction:(nullable SEL)action;
+
+```
+
+
 ---
-
-
-
-
-

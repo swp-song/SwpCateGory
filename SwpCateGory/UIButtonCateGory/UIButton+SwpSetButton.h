@@ -124,7 +124,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return UIButton
  */
-+ (UIButton *)swpSetNavigationButtonWithTitle:(NSString *)title setFontColot:(UIColor *)fontColot setFontSize:(CGFloat)fontSize setTag:(NSInteger)tag setLeftButton:(BOOL)leftBarButton setTarget:(id)target setAction:(SEL)action;
++ (UIButton *)swpSetNavigationButtonWithTitle:(NSString *)title setFontColot:(UIColor *)fontColot setFontSize:(CGFloat)fontSize setTag:(NSInteger)tag setLeftButton:(BOOL)leftBarButton setTarget:(nullable id)target setAction:(nullable SEL)action;
 
 @end
 NS_ASSUME_NONNULL_END
