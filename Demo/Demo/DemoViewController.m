@@ -15,6 +15,7 @@
 #import "UITextField+SwpSetTextField.h"
 #import "UIColor+SwpColor.h"
 #import "UINavigationBar+SwpSetBackgroundColor.h"
+#import "UIFont+SwpFont.h"
 
 @interface DemoViewController ()
 
@@ -32,6 +33,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
     
     // Date
     NSLog(@"%@", [NSString swpDateGetSystemDateWithDateFormat:@"Y - M - d  hh:mm:ss"]);
@@ -69,6 +74,11 @@
     [self.view addSubview:self.textField2];
     
     [self.navigationController.navigationBar swpSetBackgroundColor:[UIColor swpColorWithHexadecimal:0x4BC2FF]];
+    
+    
+    NSLog(@"%@", [UIFont swpFontGetSystemFontNameList]);
+    
+    NSLog(@"%@", [UIFont swpFontGetSystemFontDictionaryList]);
 }
 
 

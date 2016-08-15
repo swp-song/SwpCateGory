@@ -49,24 +49,33 @@ pod 'SwpCateGory'
 // 简单对 userDefaults 操作
 #import <SwpCateGory/NSUserDefaults+SwpUserDefaults.h>
 
+// 字体常用方法封装
+#import <SwpCateGory/UIFont+SwpFont.h>
+
+
+
 ```
 ---
 
-##### 1.0.3 更新 :
+
+##### 1.0.5 更新:
 ```Objective-C
 
-// 字符串 16 进制 颜色 设置 颜色  ( 0XF4B711 or 0xF4B711 or #F4B711 )
-+ (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue;
+  新增 字体 分类
+  #import "UIFont+SwpFont.h"
 
-// 字符串 16 进制 颜色 设置 颜色 alpha ( 0XF4B711 or 0xF4B711 or #F4B711 )
-+ (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue alpha:(CGFloat)alpha
+
+  加载 系统 字体 AppleSDGothicNeo
+  
+  + (UIFont *)swpFontAppleSDGothicNeoThinWithFontSize:(CGFloat)size;
+
+  .... 详细 请见 代码
 
 ```
+---
 
 ##### 1.0.4 更新:
-
 ```Objective-C
-
   UIButton+SwpSetButton.h 分类中
 
   方法:
@@ -74,10 +83,19 @@ pod 'SwpCateGory'
   + (UIButton *)swpSetNavigationButtonWithTitle:(NSString *)title setFontColot:(UIColor *)fontColot setFontSize:(CGFloat)fontSize setTag:(NSInteger)tag setLeftButton:(BOOL)leftBarButton setTarget:(id)target setAction:(SEL)action;
 
   替换成:
-  
+
   + (UIButton *)swpSetNavigationButtonWithTitle:(NSString *)title setFontColot:(UIColor *)fontColot setFontSize:(CGFloat)fontSize setTag:(NSInteger)tag setLeftButton:(BOOL)leftBarButton setTarget:(nullable id)target setAction:(nullable SEL)action;
 
 ```
+---
 
+##### 1.0.3 更新 :
+```Objective-C
+// 字符串 16 进制 颜色 设置 颜色  ( 0XF4B711 or 0xF4B711 or #F4B711 )
++ (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue;
 
+// 字符串 16 进制 颜色 设置 颜色 alpha ( 0XF4B711 or 0xF4B711 or #F4B711 )
++ (UIColor *)swpColorWithHexadecimalString:(NSString *)hexadecimalStringValue alpha:(CGFloat)alpha
+
+```
 ---
