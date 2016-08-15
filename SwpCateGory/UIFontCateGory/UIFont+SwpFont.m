@@ -104,6 +104,19 @@
     return [self swpFontWithName:@"HelveticaNeue-Bold" size:size];
 }
 
+/*!
+ *  @author swp_song
+ *
+ *  @brief  swpFontGillSansItalicFontSize:  ( 加载 系统 字体 GillSans-Italic )
+ *
+ *  @param  size
+ *
+ *  @return UIFont
+ */
++ (UIFont *)swpFontGillSansItalicFontSize:(CGFloat)size {
+    return [self swpFontWithName:@"GillSans-Italic" size:size];
+}
+
 
 /*!
  *  @author swp_song

@@ -52,12 +52,37 @@ pod 'SwpCateGory'
 // 字体常用方法封装
 #import <SwpCateGory/UIFont+SwpFont.h>
 
+// Attributed 分类 快速 设置 Attributed 字体, 颜色
+#import <SwpCateGory/SwpAttributedHeader.h>
+
 
 
 ```
 ---
+##### 1.0.6 更新:
+```Objective-C
+
+  新增 Attributed 分类
+  #import "SwpAttributedHeader.h"
+  
+  // 设置 字体
+  SwpAttributedFont *swpAttributedFont       = [SwpAttributedFont new];
+  swpAttributedFont.swpAttributedFont        = [UIFont swpFontHeitiSCWithFontSize:16.f];
+  swpAttributedFont.swpAttributedEffectRange = NSMakeRange(0, richString.length);
+  [richString addStringAttribute:swpAttributedFont];
+
+  // 设置 颜色
+  SwpAttributedColor *swpAttributedColor      = [SwpAttributedColor new];
+  swpAttributedColor.swpAttributedColor       = [[UIColor blackColor] colorWithAlphaComponent:0.65f];
+  swpAttributedColor.swpAttributedEffectRange = NSMakeRange(0, richString.length);
+  [richString addStringAttribute:swpAttributedColor];
 
 
+
+  .... 详细 请见 代码
+
+```
+---
 ##### 1.0.5 更新:
 ```Objective-C
 
@@ -65,8 +90,8 @@ pod 'SwpCateGory'
   #import "UIFont+SwpFont.h"
 
 
-  加载 系统 字体 AppleSDGothicNeo
-  
+  加载 系统 字体
+
   + (UIFont *)swpFontAppleSDGothicNeoThinWithFontSize:(CGFloat)size;
 
   .... 详细 请见 代码

@@ -94,6 +94,17 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  *  @author swp_song
  *
+ *  @brief  swpFontGillSansItalicFontSize:  ( 加载 系统 字体 GillSans-Italic )
+ *
+ *  @param  size
+ *
+ *  @return UIFont
+ */
++ (nullable UIFont *)swpFontGillSansItalicFontSize:(CGFloat)size;
+
+/*!
+ *  @author swp_song
+ *
  *  @brief  swpFontGetSystemFontNameList:   ( 获取 系统 字体 数组 列表 )
  *
  *  @return NSArray
