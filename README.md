@@ -54,17 +54,35 @@ pod 'SwpCateGory'
 
 // Attributed 分类 快速 设置 Attributed 字体, 颜色
 #import <SwpCateGory/SwpAttributedHeader.h>
+```
 
+---
 
+##### 1.0.7 更新:
+```Objective-C
+
+  新增 UIImage CateGory 分类, 生成 二维码 Or 条形码
+  
+  1. UIImage+SwpQrCodeImage.h  ---> 生成二维码
+  2. UIImage+SwpBarCodeImage.h ---> 生成条形码
+
+  代码:
+  1. 二维码:
+  UIImage *image = [UIImage swpQrCodeImageWithString:@"http://swp-song.github.io" size:500];
+
+  2. 条形码:
+  UIImage *image = [UIImage swpBarCodeImageCreateWithString:@"66612663612631" size:CGSizeMake(300, 60)];
+  .... 详细 请见 代码
 
 ```
+
 ---
 ##### 1.0.6 更新:
 ```Objective-C
 
   新增 Attributed 分类
   #import "SwpAttributedHeader.h"
-  
+
   // 设置 字体
   SwpAttributedFont *swpAttributedFont       = [SwpAttributedFont new];
   swpAttributedFont.swpAttributedFont        = [UIFont swpFontHeitiSCWithFontSize:16.f];

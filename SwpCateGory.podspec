@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
   s.name                  = "SwpCateGory"
-  s.version               = "1.0.6"
+  s.version               = "1.0.7"
   s.ios.deployment_target = '7.0'
   s.summary               = " 常用的 分组 工具 "
-  s.homepage              = "https://github.com/swp-song/SwpCateGory.git"
+  s.homepage              = "https://github.com/swp-song/SwpCateGory"
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "swp-song" => "396587868@qq.com" }
   s.source                = { :git => "https://github.com/swp-song/SwpCateGory.git", :tag => s.version }
