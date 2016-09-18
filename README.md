@@ -59,10 +59,7 @@ pod 'SwpCateGory'
 ---
 ##### 1.0.8 更新:
 ```Objective-C
-
-修复 一些 BUG
-
-
+  修复一些BUG
 ```
 
 ---
