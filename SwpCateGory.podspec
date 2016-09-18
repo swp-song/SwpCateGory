@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "SwpCateGory"
-  s.version               = "1.0.7"
+  s.version               = "1.0.8"
   s.ios.deployment_target = '7.0'
   s.summary               = " 常用的 分组 工具 "
   s.homepage              = "https://github.com/swp-song/SwpCateGory"

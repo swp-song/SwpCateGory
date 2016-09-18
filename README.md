@@ -57,12 +57,20 @@ pod 'SwpCateGory'
 ```
 
 ---
+##### 1.0.8 更新:
+```Objective-C
 
+修复 一些 BUG
+
+
+```
+
+---
 ##### 1.0.7 更新:
 ```Objective-C
 
   新增 UIImage CateGory 分类, 生成 二维码 Or 条形码
-  
+
   1. UIImage+SwpQrCodeImage.h  ---> 生成二维码
   2. UIImage+SwpBarCodeImage.h ---> 生成条形码
 
