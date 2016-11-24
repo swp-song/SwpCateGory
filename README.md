@@ -54,12 +54,25 @@ pod 'SwpCateGory'
 
 // Attributed 分类 快速 设置 Attributed 字体, 颜色
 #import <SwpCateGory/SwpAttributedHeader.h>
+
+// 新增 字典 分类
+#import <SwpCateGory/NSDictionary+SwpGenerateProperty.h>
 ```
 
 ---
+
+##### 1.2.0 更新:
+```Objective-C
+  1. 2016-11-24
+
+  2. 更新 字典 一个分类, < 根据 后台 json 自动创建 属性打印 >
+
+```
+---
+
 ##### 1.1.2 更新:
 ```Objective-C
-  1. 2016-11-24 14:30:10
+  1. 2016-11-24
 
   2. 修复一些备注 信息
 

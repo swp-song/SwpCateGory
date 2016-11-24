@@ -16,6 +16,7 @@
 #import "UIColor+SwpColor.h"
 #import "UINavigationBar+SwpSetBackgroundColor.h"
 #import "UIFont+SwpFont.h"
+#import "NSDictionary+SwpGenerateProperty.h"
 
 @interface DemoViewController ()
 
