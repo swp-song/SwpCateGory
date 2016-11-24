@@ -11,34 +11,35 @@
 @implementation UIImage (SwpQrCodeImage)
 
 #pragma mark - SwpQrCodeImage Public Methods
-/*!
- *  @author swp_song
+
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageWithString:   ( 生成 二维码 )
+ *  @ brief  swpQrCodeImageWithString:   ( 生成 二维码 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  width
+ *  @ param  width
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width {
     CIImage *ciImage = [self swpQrCodeImageCreateWithString:string];
     return  ciImage ? [self swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:ciImage size:width] : nil;
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageWithString:setSize:setColor:  ( 生成 二维码, 颜色 )
+ *  @ brief  swpQrCodeImageWithString:setSize:setColor:  ( 生成 二维码, 颜色 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  width
+ *  @ param  width
  *
- *  @param  color
+ *  @ param  color
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width color:(UIColor *)color {
     
@@ -105,41 +106,41 @@
     return resultImage;
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageWithString:size:icon:iconWidth  ( 生成 二维码, 默认颜色 < 黑色 >, 中间填充图片 )
+ *  @ brief  swpQrCodeImageWithString:size:icon:iconWidth  ( 生成 二维码, 默认颜色 < 黑色 >, 中间填充图片 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  width
+ *  @ param  width
  *
- *  @param  icon
+ *  @ param  icon
  *
- *  @param  iconWidth
+ *  @ param  iconWidth
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width icon:(UIImage *)icon iconWidth:(CGFloat)iconWidth {
     return [self swpQrCodeImageWithString:string size:width color:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.00] icon:icon iconWidth:iconWidth];
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageWithString:size:color:icon:iconWidth  ( 生成 二维码, 颜色, 中间填充图片 )
+ *  @ brief  swpQrCodeImageWithString:size:color:icon:iconWidth  ( 生成 二维码, 颜色, 中间填充图片 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  width
+ *  @ param  width
  *
- *  @param  color
+ *  @ param  color
  *
- *  @param  icon
+ *  @ param  icon
  *
- *  @param  iconWidth
+ *  @ param  iconWidth
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width color:(UIColor *)color icon:(UIImage *)icon iconWidth:(CGFloat)iconWidth {
     UIImage *bgImage  = [self swpQrCodeImageWithString:string size:width color:color];
@@ -154,14 +155,14 @@
 }
 
 #pragma mark - SwpQrCodeImage Private Methods
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageCreateQRWithString:   ( 生成 二维码  )
+ *  @ brief  swpQrCodeImageCreateQRWithString:   ( 生成 二维码  )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @return CIImage
+ *  @ return CIImage
  */
 + (CIImage *)swpQrCodeImageCreateWithString:(NSString *)string {
     // 1.将字符串转换为UTF8编码的NSData对象
@@ -175,16 +176,16 @@
     return filter.outputImage;
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:  ( 调整 图片 清晰 度 )
+ *  @ brief  swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:  ( 调整 图片 清晰 度 )
  *
- *  @param  image
+ *  @ param  image
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:(CIImage *)image size:(CGFloat)size {
     

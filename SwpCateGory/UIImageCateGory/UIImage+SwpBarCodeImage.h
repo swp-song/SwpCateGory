@@ -12,33 +12,33 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (SwpBarCodeImage)
 
 #pragma mark - SwpBarCode Public Methods
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpBarCodeImageCreateWithString:size:   ( 生成 二维码 条形码, 默认 黑白色 )
+ *  @ brief  swpBarCodeImageCreateWithString:size:   ( 生成 二维码 条形码, 默认 黑白色 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpBarCodeImageCreateWithString:(NSString *)string size:(CGSize)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpBarCodeImageCreateWithString:size:barCodeColor:backGroundColor:  ( 生成 二维码 条形码, 设置 颜色 )
+ *  @ brief  swpBarCodeImageCreateWithString:size:barCodeColor:backGroundColor:  ( 生成 二维码 条形码, 设置 颜色 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  size
+ *  @ param  size
  *
- *  @param  barCodeColor
+ *  @ param  barCodeColor
  *
- *  @param  backGroundColor
+ *  @ param  backGroundColor
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpBarCodeImageCreateWithString:(NSString *)string size:(CGSize)size barCodeColor:(nullable UIColor *)barCodeColor backGroundColor:(nullable UIColor *)backGroundColor;
 

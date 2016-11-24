@@ -14,23 +14,23 @@
 
 
 #pragma mark - SwpAttributed Delegate Methods
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpAttributeName    ( 设置 Attributed Font Key )
+ *  @  brief  swpAttributeName    ( 设置 Attributed Font Key )
  *
- *  @return swpAttributeName
+ *  @ return swpAttributeName
  */
 - (NSString *)swpAttributeName {
     return NSFontAttributeName;
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpAttributeValue   ( 设置 Attributed Font )
+ *  @ brief  swpAttributeValue   ( 设置 Attributed Font )
  *
- *  @return swpAttributeValue
+ *  @ return swpAttributeValue
  */
 - (id)swpAttributeValue {
     return self.swpAttributedFont ? self.swpAttributedFont : [UIFont systemFontOfSize:[UIFont systemFontSize]];

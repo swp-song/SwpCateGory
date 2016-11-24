@@ -36,8 +36,6 @@
     
     
     
-    
-    
     // Date
     NSLog(@"%@", [NSString swpDateGetSystemDateWithDateFormat:@"Y - M - d  hh:mm:ss"]);
     NSLog(@"%@", [NSString swpDateFormatDate:[NSDate date] formatString:@"Y MM dd"]);
@@ -84,10 +82,7 @@
 
 - (void)clickButton:(UIButton *)button  {
     NSLog(@"%ld", button.tag);
-    
-    
-//    if (button.tag == 3) button.backgroundColor = [UIColor swpColorWithRandom];
-    if (button.tag == 3) button.backgroundColor = [UIColor swpColorWithHexadecimalString:@"0XF4B711" alpha:0.5];
+    if (button.tag == 3) button.backgroundColor = [UIColor swpColorWithRandom];
     if (button.tag == 4) button.selected        = !button.selected;
     
 }

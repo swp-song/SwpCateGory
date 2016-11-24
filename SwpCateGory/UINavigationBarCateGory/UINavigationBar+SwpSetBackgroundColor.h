@@ -12,12 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UINavigationBar (SwpSetBackgroundColor)
 
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpSetBackgroundColor:  ( 设置 导航控制器 颜色 )
+ *  @ brief  swpSetBackgroundColor:  ( 设置 导航控制器 颜色 )
  *
- *  @param  backgroundColor
+ *  @ param  backgroundColor
  */
 - (void)swpSetBackgroundColor:(UIColor *)backgroundColor;
 

@@ -12,35 +12,35 @@
 @implementation UIImage (SwpBarCodeImage)
 
 #pragma mark - SwpBarCode Public Methods
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpBarCodeImageCreateWithString:size:   ( 生成 二维码 条形码, 默认 黑白色 )
+ *  @ brief  swpBarCodeImageCreateWithString:size:   ( 生成 二维码 条形码, 默认 黑白色 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpBarCodeImageCreateWithString:(NSString *)string size:(CGSize)size {
     return [self swpBarCodeImageCreateWithString:string size:size barCodeColor:nil backGroundColor:nil];
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpBarCodeImageCreateWithString:size:barCodeColor:backGroundColor:  ( 生成 二维码 条形码, 设置 颜色 )
+ *  @ brief  swpBarCodeImageCreateWithString:size:barCodeColor:backGroundColor:  ( 生成 二维码 条形码, 设置 颜色 )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @param  size
+ *  @ param  size
  *
- *  @param  barCodeColor
+ *  @ param  barCodeColor
  *
- *  @param  backGroundColor
+ *  @ param  backGroundColor
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpBarCodeImageCreateWithString:(NSString *)string size:(CGSize)size barCodeColor:(UIColor *)barCodeColor backGroundColor:(UIColor *)backGroundColor {
     CIImage *ciImage = [self swpBarCodeImageCreateWithString:string barCodeColor:barCodeColor backGroundColor:backGroundColor];
@@ -48,14 +48,14 @@
 }
 
 #pragma mark - SwpBarCode Private Methods
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpQrCodeImageCreateQRWithString:   ( 生成 二维码 条形码  )
+ *  @ brief  swpQrCodeImageCreateQRWithString:   ( 生成 二维码 条形码  )
  *
- *  @param  string
+ *  @ param  string
  *
- *  @return CIImage
+ *  @ return CIImage
  */
 + (CIImage *)swpBarCodeImageCreateWithString:(NSString *)string barCodeColor:(UIColor *)barCodeColor backGroundColor:(UIColor *)backGroundColor {
     
@@ -72,18 +72,18 @@
     return [self swpBarCodeImageSetColorForFilter:filter barCodeColor:barCodeColor backGroundColor:backGroundColor];
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpBarCodeImageSetColorForFilter:barCodeColor:backGroundColor:  ( 设置  条形码 颜色  )
+ *  @ brief  swpBarCodeImageSetColorForFilter:barCodeColor:backGroundColor:  ( 设置  条形码 颜色  )
  *
- *  @param  filter
+ *  @ param  filter
  *
- *  @param  barCodeColor
+ *  @ param  barCodeColor
  *
- *  @param  backGroundColor
+ *  @ param  backGroundColor
  *
- *  @return CIImage
+ *  @ return CIImage
  */
 + (CIImage *)swpBarCodeImageSetColorForFilter:(CIFilter *)filter barCodeColor:(UIColor *)barCodeColor backGroundColor:(UIColor *)backGroundColor {
     
@@ -102,16 +102,16 @@
     return colorFilter.outputImage;
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpBarCodeImageCreateNonInterpolatedUIImageFormCIImage: ( 设置 条形码 清晰度 )
+ *  @ brief  swpBarCodeImageCreateNonInterpolatedUIImageFormCIImage: ( 设置 条形码 清晰度 )
  *
- *  @param  image
+ *  @ param  image
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIImage
+ *  @ return UIImage
  */
 + (UIImage *)swpBarCodeImageCreateNonInterpolatedUIImageFormCIImage:(CIImage *)image size:(CGSize)size {
     

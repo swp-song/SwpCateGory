@@ -11,112 +11,111 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface UIFont (SwpFont)
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontWithName:size    ( 加载 字体 设置 字体 大小 )
+ *  @ brief  swpFontWithName:size    ( 加载 字体 设置 字体 大小 )
  *
- *  @param  fontName
+ *  @ param  fontName
  *
- *  @param  fontSize
+ *  @ param  fontSize
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontWithName:(NSString *)fontName size:(CGFloat)fontSize;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontAppleSDGothicNeoThinWithFontSize:    ( 加载 系统 字体 AppleSDGothicNeo )
+ *  @ brief  swpFontAppleSDGothicNeoThinWithFontSize:    ( 加载 系统 字体 AppleSDGothicNeo )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontAppleSDGothicNeoThinWithFontSize:(CGFloat)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontAvenirWithFontSize:  ( 加载 系统 字体 Avenir )
+ *  @ brief  swpFontAvenirWithFontSize:  ( 加载 系统 字体 Avenir )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontAvenirWithFontSize:(CGFloat)size;
 
-
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontAvenirLightWithFontSize:  ( 加载 系统 字体 Avenir-Light )
+ *  @ brief  swpFontAvenirLightWithFontSize:  ( 加载 系统 字体 Avenir-Light )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontAvenirLightWithFontSize:(CGFloat)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontHeitiSCWithFontSize:  ( 加载 系统 字体 Heiti SC )
+ *  @ brief  swpFontHeitiSCWithFontSize:  ( 加载 系统 字体 Heiti SC )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontHeitiSCWithFontSize:(CGFloat)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontHelveticaNeueFontSize:  ( 加载 系统 字体 HelveticaNeue )
+ *  @ brief  swpFontHelveticaNeueFontSize:  ( 加载 系统 字体 HelveticaNeue )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontHelveticaNeueFontSize:(CGFloat)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontHelveticaNeueBoldFontSize:  ( 加载 系统 字体 HelveticaNeue-Bold )
+ *  @ brief  swpFontHelveticaNeueBoldFontSize:  ( 加载 系统 字体 HelveticaNeue-Bold )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontHelveticaNeueBoldFontSize:(CGFloat)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontGillSansItalicFontSize:  ( 加载 系统 字体 GillSans-Italic )
+ *  @ brief  swpFontGillSansItalicFontSize:  ( 加载 系统 字体 GillSans-Italic )
  *
- *  @param  size
+ *  @ param  size
  *
- *  @return UIFont
+ *  @ return UIFont
  */
 + (nullable UIFont *)swpFontGillSansItalicFontSize:(CGFloat)size;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontGetSystemFontNameList:   ( 获取 系统 字体 数组 列表 )
+ *  @ brief  swpFontGetSystemFontNameList:   ( 获取 系统 字体 数组 列表 )
  *
- *  @return NSArray
+ *  @ return NSArray
  */
 + (NSArray<NSString *> *)swpFontGetSystemFontNameList;
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpFontGetSystemFontDictionary  ( 获取 系统 字体 字典 列表  )
+ *  @ brief  swpFontGetSystemFontDictionary  ( 获取 系统 字体 字典 列表  )
  *
- *  @return NSDictionary<NSString *, NSArray<NSString *> *> *
+ *  @ return NSDictionary<NSString *, NSArray<NSString *> *> *
  */
 + (NSDictionary<NSString *, NSArray<NSString *> *> *)swpFontGetSystemFontDictionaryList;
 

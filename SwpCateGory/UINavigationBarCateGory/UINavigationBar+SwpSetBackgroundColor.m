@@ -14,35 +14,35 @@ static char overlayKey;
 
 @implementation UINavigationBar (SwpSetBackgroundColor)
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  overlay
+ *  @ brief  overlay
  *
- *  @return UIView
+ *  @ return UIView
  */
 - (UIView *)overlay {
     return objc_getAssociatedObject(self, &overlayKey);
 }
 
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  setOverlay:
+ *  @ brief  setOverlay:
  *
- *  @param  overlay
+ *  @ param  overlay
  */
 - (void)setOverlay:(UIView *)overlay {
     objc_setAssociatedObject(self, &overlayKey, overlay, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-/*!
- *  @author swp_song
+/**!
+ *  @ author swp_song
  *
- *  @brief  swpSetBackgroundColor:  ( 设置 导航控制器 颜色 )
+ *  @ brief  swpSetBackgroundColor:  ( 设置 导航控制器 颜色 )
  *
- *  @param  backgroundColor
+ *  @ param  backgroundColor
  */
 - (void)swpSetBackgroundColor:(UIColor *)backgroundColor {
     if (!self.overlay) {
