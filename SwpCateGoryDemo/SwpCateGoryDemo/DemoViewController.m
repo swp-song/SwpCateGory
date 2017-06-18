@@ -1,9 +1,9 @@
 //
 //  DemoViewController.m
-//  Demo
+//  SwpCateGoryDemo
 //
-//  Created by swp_song on 16/6/2.
-//  Copyright © 2016年 swp_song. All rights reserved.
+//  Created by swp_song on 2017/6/18.
+//  Copyright © 2017年 swp-song. All rights reserved.
 //
 
 #import "DemoViewController.h"
@@ -25,7 +25,6 @@
 
 @property (nonatomic, strong) UITextField *textField1;
 @property (nonatomic, strong) UITextField *textField2;
-
 
 @end
 
@@ -49,30 +48,32 @@
     
     
     UIBarButtonItem *leftBarButtonItem     = [UIBarButtonItem swpSetNavigationBarItemImage:@"search_delete" setHighlightedImageName:@"search_delete" seTtag:0 setLeftBarButtonItem:YES setTarget:self setAction:@selector(clickButton:)];
-
-
+    
+    
     UIBarButtonItem *rightBarButtonItem    = [UIBarButtonItem swpSetNavigationBarItemTitle:@"取消" setFontColot:[UIColor blackColor] setFontSize:15.0 setTag:0 setLeftBarButtonItem:NO setAarget:self setAction:@selector(clickButton:)];
-
-
+    
+    
     UIButton        *leftBarButton         = [UIButton swpSetNavigationButtonWithImage:@"search_delete" setHighlightedImageName:@"search_delete" setTag:0 setLeftButton:NO setTarget:self setAction:@selector(clickButton:)];
     UIButton        *rightBarButton        = [UIButton swpSetNavigationButtonWithTitle:@"取消" setFontColot:[UIColor blackColor] setFontSize:15 setTag:1 setLeftButton:NO setTarget:self setAction:@selector(clickButton:)];
     
     UIBarButtonItem *buttonItem1           = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
     UIBarButtonItem *buttonItem2           = [[UIBarButtonItem alloc] initWithCustomView:rightBarButton];
-
-
+    
+    
     self.navigationItem.leftBarButtonItem  = leftBarButtonItem;
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
-
-//    self.navigationItem.leftBarButtonItem  = buttonItem1;
-//    self.navigationItem.rightBarButtonItem = buttonItem1;
+    
+    //    self.navigationItem.leftBarButtonItem  = buttonItem1;
+    //    self.navigationItem.rightBarButtonItem = buttonItem1;
     
     [self.view addSubview:self.submitButton];
     [self.view addSubview:self.checkBoxButton];
     [self.view addSubview:self.textField1];
     [self.view addSubview:self.textField2];
     
-    [self.navigationController.navigationBar swpSetBackgroundColor:[UIColor swpColorWithHexadecimal:0x4BC2FF]];
+//    [self.navigationController.navigationBar swpSetBackgroundColor:[UIColor swpColorWithHexadecimal:0x4BC2FF]];
+    
+    [self.navigationController.navigationBar swpSetBackgroundColor:[UIColor swpColorWithRandom]];
     
     
     NSLog(@"%@", [UIFont swpFontGetSystemFontNameList]);
@@ -133,6 +134,7 @@
     }
     return _textField2;
 }
+
 
 /*
 #pragma mark - Navigation
