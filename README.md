@@ -19,16 +19,15 @@
 
  	* SwpCateGory 文件夹导入项目中
 
-  	* #import "UIColor+SwpColor.h"               //  请自行引入需要使用的类目
+    * #import "UIColor+SwpColor.h"               //  请自行引入需要使用的类目
 
   2. CocoaPods 导入:
 
-  	* pod search SwpCateGory
+    * pod search SwpCateGory
 
-  	* pod 'SwpRequest'
+    * pod 'SwpRequest'
 
-  	* #import <SwpCateGory/UIColor+SwpColor.h>   //  请自行引入需要使用的类目
-
+    * #import <SwpCateGory/UIColor+SwpColor.h>   //  请自行引入需要使用的类目
 
 ```
 
@@ -37,6 +36,19 @@
 -------
 
 #### 版本记录
+
+-------
+```
+  1. 版本版本: 1.3.1
+
+  2. 更新时间: 2017-06-20 22:31:54
+
+  3. 更新内容:
+
+    * 修改文件未上传成功问题
+
+```
+-------
 
 -------
 ```
@@ -49,18 +61,6 @@
     * 新增 NSArray+SwpOrderByCharacter 类目.
 
     * 按字符分组顺序 < 通讯类分组排序 >
-
-```
--------
-
-```
-  1. 版本版本: 1.2.1
-
-  2. 更新时间: 2017-06-18 18:33:26
-
-  3. 更新内容:
-
-    * 整理文件路径
 
 ```
 -------
