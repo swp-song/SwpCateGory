@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 
-#import "DemoViewController.h"
+#import "AppDelegate+SVProgressHUD.h"
+#import "DemoListViewController.h"
+#import "CustomNavigationController.h"
+
 
 @interface AppDelegate ()
 
@@ -20,11 +23,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
+    
+    AppDelegate.setSVProgressHUD();
+    
     self.window                    = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
     self.window.backgroundColor    = [UIColor whiteColor];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[DemoViewController new]];
+    self.window.rootViewController = [CustomNavigationController customNavigationControllerWithRootViewController:[DemoListViewController  new]];
     
     [self.window makeKeyAndVisible];
     
