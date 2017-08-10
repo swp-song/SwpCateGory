@@ -241,9 +241,9 @@
 
 + (NSString*)toStrByUIColor1:(NSInteger)hexadecimalValue {
     
-    NSLog(@"%ld", (hexadecimalValue & 0xFF0000) >> 16);
-    NSLog(@"%ld", (hexadecimalValue & 0xFF00) >> 8);
-    NSLog(@"%ld", (hexadecimalValue & 0xFF));
+    NSLog(@"%ld", (long)(hexadecimalValue & 0xFF0000) >> 16);
+    NSLog(@"%ld", (long)(hexadecimalValue & 0xFF00) >> 8);
+    NSLog(@"%ld", (long)(hexadecimalValue & 0xFF));
     return nil;
 }
 
