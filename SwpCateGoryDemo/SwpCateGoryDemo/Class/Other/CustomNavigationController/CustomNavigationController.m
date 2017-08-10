@@ -10,7 +10,7 @@
 
 /*! ---------------------- Tool       ---------------------- !*/
 #import "UIColor+SwpColor.h"                        //  Color  分类
-#import "UINavigationBar+SwpSetBackgroundColor.h"   //  UINavigationBar 分类
+#import "UINavigationBar+SwpNavigationBar.h"        //  UINavigationBar 分类
 /*! ---------------------- Tool       ---------------------- !*/
 
 /*! ---------------------- Model      ---------------------- !*/
@@ -51,9 +51,9 @@
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     
     // 导航 控制器 颜色
-    [self.navigationBar swpSetBackgroundColor:[UIColor whiteColor]];
+    self.navigationBar.swpNavigationBarSetBackgroundColorChain([UIColor whiteColor]);
     
-    self.navigationBarlineImageView = [self findLineImageViewUnder:self.navigationBar];
+    self.navigationBar.swpNavigationBarSetBottomLineViewHiddenChain(YES);
 }
 
 /**!
@@ -65,7 +65,6 @@
  */
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationBarlineImageView.hidden = YES;
 }
 
 /**!

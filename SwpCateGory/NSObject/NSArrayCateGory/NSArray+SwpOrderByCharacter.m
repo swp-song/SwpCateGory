@@ -19,7 +19,6 @@
  *  @brief  swpOrderByCharacter ( 按字符分组顺序 < 一组字典 | 一组字符串 > )
  */
 + (NSArray * _Nonnull (^)(NSArray * _Nonnull, NSString * _Nullable))swpOrderByCharacter {
-    
     return ^(NSArray *aDatas, NSString *key) {
         return [self.class swpOrderByCharacter_:aDatas key_:key];
     };

@@ -14,6 +14,7 @@
 #import "UIColor+SwpColor.h"                        //  UIColor
 #import "UIButton+SwpSetButton.h"                   //  UIButton
 #import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
+#import "UINavigationBar+SwpNavigationBar.h"
 /*! ---------------------- Tool       ---------------------- !*/
 
 /*! ---------------------- Model      ---------------------- !*/
@@ -57,6 +58,9 @@
     // Do any additional setup after loading the view.
     
     [self setUI];
+    
+    NSLog(@"%@", [UIColor toStrByUIColor:[UIColor redColor]]);
+    NSLog(@"%@", [UIColor toStrByUIColor1:0xFFFFFF]);
 }
 
 
@@ -149,7 +153,7 @@
  *  @param  button  button
  */
 - (void)clickButtonEvent:(UIButton *)button  {
-    if (button.tag == 3) button.backgroundColor = [UIColor swpColorWithRandom];
+    if (button.tag == 3) button.backgroundColor = UIColor.swpColorWithRandom();
     if (button.tag == 4) button.selected        = !button.selected;
 }
 
@@ -160,7 +164,7 @@
     
     return !_submitButton1 ? _submitButton1 = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:[UIColor swpColorWithRandom] setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:5 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
+        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:UIColor.swpColorWithRandom() setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:5 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
         button;
     }) : _submitButton1;
 }
@@ -178,7 +182,7 @@
     
     return !_submitButton2 ? _submitButton2 = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:[UIColor swpColorWithRandom] setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:0 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
+        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:UIColor.swpColorWithRandom() setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:0 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
         button;
     }) : _submitButton2;
 }

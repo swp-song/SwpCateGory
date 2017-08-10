@@ -36,9 +36,9 @@
 		2D32E26E1EF96852008ED670 /* UIFont+SwpFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2541EF96852008ED670 /* UIFont+SwpFont.m */; };
 		2D32E26F1EF96852008ED670 /* UIImage+SwpBarCodeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2571EF96852008ED670 /* UIImage+SwpBarCodeImage.m */; };
 		2D32E2701EF96852008ED670 /* UIImage+SwpQrCodeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2591EF96852008ED670 /* UIImage+SwpQrCodeImage.m */; };
-		2D32E2711EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E25C1EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.m */; };
 		2D32E2721EF96852008ED670 /* UITextField+SwpSetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E25F1EF96852008ED670 /* UITextField+SwpSetTextField.m */; };
 		2D32E2731EF96852008ED670 /* UIView+SwpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2621EF96852008ED670 /* UIView+SwpExtension.m */; };
+		2D80A8F91F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D80A8F81F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.m */; };
 		2D99D7A01EF64D22006E043F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99D79F1EF64D22006E043F /* main.m */; };
 		2D99D7A31EF64D22006E043F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99D7A21EF64D22006E043F /* AppDelegate.m */; };
 		2D99D7AB1EF64D22006E043F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D99D7AA1EF64D22006E043F /* Assets.xcassets */; };
@@ -106,12 +106,12 @@
 		2D32E2571EF96852008ED670 /* UIImage+SwpBarCodeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SwpBarCodeImage.m"; sourceTree = "<group>"; };
 		2D32E2581EF96852008ED670 /* UIImage+SwpQrCodeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SwpQrCodeImage.h"; sourceTree = "<group>"; };
 		2D32E2591EF96852008ED670 /* UIImage+SwpQrCodeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SwpQrCodeImage.m"; sourceTree = "<group>"; };
-		2D32E25B1EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SwpSetBackgroundColor.h"; sourceTree = "<group>"; };
-		2D32E25C1EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SwpSetBackgroundColor.m"; sourceTree = "<group>"; };
 		2D32E25E1EF96852008ED670 /* UITextField+SwpSetTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SwpSetTextField.h"; sourceTree = "<group>"; };
 		2D32E25F1EF96852008ED670 /* UITextField+SwpSetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SwpSetTextField.m"; sourceTree = "<group>"; };
 		2D32E2611EF96852008ED670 /* UIView+SwpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SwpExtension.h"; sourceTree = "<group>"; };
 		2D32E2621EF96852008ED670 /* UIView+SwpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SwpExtension.m"; sourceTree = "<group>"; };
+		2D80A8F71F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SwpNavigationBar.h"; sourceTree = "<group>"; };
+		2D80A8F81F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SwpNavigationBar.m"; sourceTree = "<group>"; };
 		2D99D79B1EF64D22006E043F /* SwpCateGoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpCateGoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D99D79F1EF64D22006E043F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D99D7A11EF64D22006E043F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -455,8 +455,8 @@
 		2D32E25A1EF96852008ED670 /* UINavigationBarCateGory */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E25B1EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.h */,
-				2D32E25C1EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.m */,
+				2D80A8F71F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.h */,
+				2D80A8F81F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.m */,
 			);
 			path = UINavigationBarCateGory;
 			sourceTree = "<group>";
@@ -684,7 +684,7 @@
 				2D32E2221EF9682E008ED670 /* OtherViewController.m in Sources */,
 				2D32E2641EF96852008ED670 /* NSDictionary+SwpGenerateProperty.m in Sources */,
 				2D32E22A1EF9682E008ED670 /* CityTableView.m in Sources */,
-				2D32E2711EF96852008ED670 /* UINavigationBar+SwpSetBackgroundColor.m in Sources */,
+				2D80A8F91F3AAF9700F6CF22 /* UINavigationBar+SwpNavigationBar.m in Sources */,
 				2D32E2651EF96852008ED670 /* NSString+SwpDate.m in Sources */,
 				2D32E2721EF96852008ED670 /* UITextField+SwpSetTextField.m in Sources */,
 				2D32E2231EF9682E008ED670 /* TextFieldDemoViewController.m in Sources */,

@@ -12,11 +12,11 @@
 
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpGenerateProperty:   ( 创建 所有 属性  )
+ *  @brief  swpGenerateProperty ( 创建所有属性 )
  *
- *  @ return NSString
+ *  @return NSString
  */
 - (NSString *)swpGenerateProperty {
     return [self swpStitchingString];
@@ -25,11 +25,11 @@
 
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpStitchingString:    ( 拼接属性 字符串 )
+ *  @brief  swpStitchingString: ( 拼接属性字符串 )
  *
- *  @ return NSString
+ *  @return NSString
  */
 - (NSString *)swpStitchingString {
     
@@ -50,11 +50,11 @@
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpVerificationPropertyType:   ( 验证 属性 类型 )
+ *  @brief  swpVerificationPropertyType:    ( 验证属性类型 )
  *
- *  @ return NSString
+ *  @return NSString
  */
 - (NSString *)swpVerificationPropertyType:(id)key value:(id)value {
     

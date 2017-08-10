@@ -13,38 +13,41 @@
 #pragma mark - SwpQrCodeImage Public Methods
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpQrCodeImageWithString:   ( 生成 二维码 )
+ *  @brief  swpQrCodeImageWithString:clarity:   ( 生成二维码， 设置清晰度 )
  *
- *  @ param  string
+ *  @param  string  string
  *
- *  @ param  width
+ *  @param  clarity clarity
  *
- *  @ return UIImage
+ *  @return UIImage
  */
-+ (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width {
++ (UIImage *)swpQrCodeImageWithString:(NSString *)string clarity:(CGFloat)clarity {
+    //  swpQrCodeImageCreateWithString 生成二维码
     CIImage *ciImage = [self swpQrCodeImageCreateWithString:string];
-    return  ciImage ? [self swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:ciImage size:width] : nil;
+    
+    //  swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage 调整图片清晰度
+    return  ciImage ? [self swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:ciImage clarity:clarity] : nil;
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpQrCodeImageWithString:setSize:setColor:  ( 生成 二维码, 颜色 )
+ *  @brief  swpQrCodeImageWithString:setSize:color: ( 生成二维码, 设置清晰度，二维码颜色 )
  *
- *  @ param  string
+ *  @param  string  string
  *
- *  @ param  width
+ *  @param  clarity clarity
  *
- *  @ param  color
+ *  @param  color   color
  *
- *  @ return UIImage
+ *  @return UIImage
  */
-+ (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width color:(UIColor *)color {
++ (UIImage *)swpQrCodeImageWithString:(NSString *)string clarity:(CGFloat)clarity color:(UIColor *)color {
     
     
-    UIImage *image = [self swpQrCodeImageWithString:string size:width];
+    UIImage *image = [self swpQrCodeImageWithString:string clarity:clarity];
     
     const CGFloat *components  = CGColorGetComponents(color.CGColor);
     CGFloat       red          = components[0] * 255;
@@ -107,43 +110,43 @@
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpQrCodeImageWithString:size:icon:iconWidth  ( 生成 二维码, 默认颜色 < 黑色 >, 中间填充图片 )
+ *  @brief  swpQrCodeImageWithString:clarity:icon:iconWidth:    ( 生成二维码, 设置清晰度, 默认黑色, 中间填充图片 )
  *
- *  @ param  string
+ *  @param  string      string
  *
- *  @ param  width
+ *  @param  clarity     clarity
  *
- *  @ param  icon
+ *  @param  icon        icon
  *
- *  @ param  iconWidth
+ *  @param  iconWidth   iconWidth
  *
- *  @ return UIImage
+ *  @return UIImage
  */
-+ (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width icon:(UIImage *)icon iconWidth:(CGFloat)iconWidth {
-    return [self swpQrCodeImageWithString:string size:width color:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.00] icon:icon iconWidth:iconWidth];
++ (UIImage *)swpQrCodeImageWithString:(NSString *)string clarity:(CGFloat)clarity icon:(UIImage *)icon iconWidth:(CGFloat)iconWidth {
+    return [self swpQrCodeImageWithString:string clarity:clarity color:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.00] icon:icon iconWidth:iconWidth];
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpQrCodeImageWithString:size:color:icon:iconWidth  ( 生成 二维码, 颜色, 中间填充图片 )
+ *  @brief  swpQrCodeImageWithString:clarity:color:icon:iconWidth:  ( 生成二维码, 设置清晰度, 二维码颜色, 中间填充图片 )
  *
- *  @ param  string
+ *  @param  string      string
  *
- *  @ param  width
+ *  @param  clarity     clarity
  *
- *  @ param  color
+ *  @param  color       color
  *
- *  @ param  icon
+ *  @param  icon        icon
  *
- *  @ param  iconWidth
+ *  @param  iconWidth   iconWidth
  *
- *  @ return UIImage
+ *  @return UIImage
  */
-+ (UIImage *)swpQrCodeImageWithString:(NSString *)string size:(CGFloat)width color:(UIColor *)color icon:(UIImage *)icon iconWidth:(CGFloat)iconWidth {
-    UIImage *bgImage  = [self swpQrCodeImageWithString:string size:width color:color];
++ (UIImage *)swpQrCodeImageWithString:(NSString *)string clarity:(CGFloat)clarity color:(UIColor *)color icon:(UIImage *)icon iconWidth:(CGFloat)iconWidth {
+    UIImage *bgImage  = [self swpQrCodeImageWithString:string clarity:clarity color:color];
     UIGraphicsBeginImageContext(bgImage.size);
     [bgImage drawInRect:CGRectMake(0, 0, bgImage.size.width, bgImage.size.height)];
     CGFloat x         = (bgImage.size.width - iconWidth) * 0.5;
@@ -154,15 +157,15 @@
     return newImage;
 }
 
-#pragma mark - SwpQrCodeImage Private Methods
+#pragma mark - Swp QrCode Image Private Methods
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpQrCodeImageCreateQRWithString:   ( 生成 二维码  )
+ *  @brief  swpQrCodeImageCreateQRWithString:   ( 生成二维码  )
  *
- *  @ param  string
+ *  @param  string  string
  *
- *  @ return CIImage
+ *  @return CIImage CIImage
  */
 + (CIImage *)swpQrCodeImageCreateWithString:(NSString *)string {
     // 1.将字符串转换为UTF8编码的NSData对象
@@ -177,20 +180,20 @@
 }
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:  ( 调整 图片 清晰 度 )
+ *  @brief  swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:  ( 调整图片清晰度 )
  *
- *  @ param  image
+ *  @param  image   image
  *
- *  @ param  size
+ *  @param  clarity clarity
  *
- *  @ return UIImage
+ *  @return UIImage
  */
-+ (UIImage *)swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:(CIImage *)image size:(CGFloat)size {
++ (UIImage *)swpQrCodeImageCreateNonInterpolatedUIImageFormCIImage:(CIImage *)image clarity:(CGFloat)clarity {
     
     CGRect          extent      = CGRectIntegral(image.extent);
-    CGFloat         scale       = MIN(size / CGRectGetWidth(extent), size / CGRectGetHeight(extent));
+    CGFloat         scale       = MIN(clarity / CGRectGetWidth(extent), clarity / CGRectGetHeight(extent));
     
     // 1.创建一个位图图像，绘制到其大小的位图上下文
     size_t          width       = CGRectGetWidth(extent) * scale;

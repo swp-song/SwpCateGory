@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSDictionary (SwpGenerateProperty)
 
 /**!
- *  @ author swp_song
+ *  @author swp_song
  *
- *  @ brief  swpGenerateProperty:   ( 创建 所有 属性  )
+ *  @brief  swpGenerateProperty ( 创建所有属性  )
  *
- *  @ return NSString
+ *  @return NSString
  */
 - (NSString *)swpGenerateProperty;
 
