@@ -228,13 +228,13 @@
 
 
 
-// 注意转换出来的字符串不带＃号
+// 注意转换出来的字符串不带＃号, 测试方法
 + (NSString*)toStrByUIColor:(UIColor *)color {
     CGFloat r, g, b, a;
     [color getRed:&r green:&g blue:&b alpha:&a];
-    NSLog(@"%i", (int)(r * 255.0f));
-    NSLog(@"%i", (int)(g * 255.0f));
-    NSLog(@"%i", (int)(b * 255.0f));
+    NSLog(@"%ld", (long)(r * 255.0f));
+    NSLog(@"%ld", (long)(g * 255.0f));
+    NSLog(@"%ld", (long)(b * 255.0f));
     int rgb = (int) (r * 255.0f) << 16 | (int)(g * 255.0f) << 8 | (int)(b * 255.0f) << 0;
     return [NSString stringWithFormat:@"%06x", rgb].uppercaseString;
 }
