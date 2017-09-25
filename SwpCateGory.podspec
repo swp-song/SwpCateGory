@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name                  = "SwpCateGory"
-  s.version               = "1.5.3"
-  s.ios.deployment_target = '7.0'
+  s.version               = "2.0.0"
+  s.ios.deployment_target = '8.0'
   s.summary               = " 常用的 分组 工具 "
   s.homepage              = "https://github.com/swp-song/SwpCateGory"
   s.license               = { :type => "MIT", :file => "LICENSE" }

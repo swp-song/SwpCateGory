@@ -209,7 +209,7 @@
  *
  *  @brief  swpColorWithRandom  ( 生成一个随机色 )
  */
-+ (UIColor * _Nonnull (^)())swpColorWithRandom {
++ (UIColor * _Nonnull (^)(void))swpColorWithRandom {
     return ^() {
         return [self.class swpColorWithRandom_];
     };

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @brief  setSVProgressHUD  ( 设置 SVProgressHUD 样式 )
  */
-+ (AppDelegate * _Nonnull (^)())setSVProgressHUD;
++ (AppDelegate * _Nonnull (^)(void))setSVProgressHUD;
 
 @end
 NS_ASSUME_NONNULL_END

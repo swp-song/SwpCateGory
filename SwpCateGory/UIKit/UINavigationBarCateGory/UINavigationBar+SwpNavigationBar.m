@@ -171,7 +171,7 @@ static char coverViewKey;
  *
  *  @brief  swpNavigationBarResetChain  ( Reset )
  */
-- (__kindof UINavigationBar * _Nonnull (^)())swpNavigationBarResetChain {
+- (__kindof UINavigationBar * _Nonnull (^)(void))swpNavigationBarResetChain {
     return ^() {
         return [self swpNavigationBarReset];
     };

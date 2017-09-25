@@ -30,7 +30,7 @@
  *
  *  @brief  setSVProgressHUD  ( 设置 SVProgressHUD 样式 )
  */
-+ (AppDelegate * _Nonnull (^)())setSVProgressHUD {
++ (AppDelegate * _Nonnull (^)(void))setSVProgressHUD {
     
     return ^() {
         [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];

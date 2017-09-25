@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @brief  swpColorWithRandom  ( 生成一个随机色 )
  */
-+ (UIColor * _Nonnull (^)())swpColorWithRandom;
++ (UIColor * _Nonnull (^)(void))swpColorWithRandom;
 
 /**!
  *  @author swp_song

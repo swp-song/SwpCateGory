@@ -90,7 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @brief  swpNavigationBarResetChain  ( Reset )
  */
-- (__kindof UINavigationBar * _Nonnull (^)())swpNavigationBarResetChain;
+- (__kindof UINavigationBar * _Nonnull (^)(void))swpNavigationBarResetChain;
 
 /**!
  *  @author swp_song
