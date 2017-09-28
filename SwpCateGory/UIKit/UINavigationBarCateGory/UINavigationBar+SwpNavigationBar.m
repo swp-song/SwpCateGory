@@ -54,7 +54,14 @@ static char coverViewKey;
     if (!self.coverView) {
         
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-        self.coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + 20)];
+        
+        if (@available(iOS 11.0, *)) {
+            CGFloat height = [UIApplication sharedApplication].statusBarFrame.size.height;
+            self.coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + height)];
+        } else {
+            self.coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + 20)];
+        }
+        
         self.coverView.userInteractionEnabled = NO;
         // Should not set `UIViewAutoresizingFlexibleHeight`
         self.coverView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -116,25 +123,43 @@ static char coverViewKey;
  *  @return UINavigationBar
  */
 - (instancetype)swpNavigationBarSetAlpha:(CGFloat)alpha {
-    [[self valueForKey:@"_leftViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {
-        view.alpha = alpha;
-    }];
     
-    [[self valueForKey:@"_rightViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {
-        view.alpha = alpha;
-    }];
-    
-    UIView *titleView = [self valueForKey:@"_titleView"];
-    titleView.alpha   = alpha;
-    //    when viewController first load, the titleView maybe nil
-    [[self subviews] enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        if ([obj isKindOfClass:NSClassFromString(@"UINavigationItemView")]) {
-            obj.alpha = alpha;
-        }
-        if ([obj isKindOfClass:NSClassFromString(@"_UINavigationBarBackIndicatorView")]) {
-            obj.alpha = alpha;
-        }
-    }];
+    if (@available(iOS 11, *)) {
+        
+        [[self subviews] enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+            
+            if ([obj isKindOfClass:NSClassFromString(@"_UINavigationBarContentView")]) {
+                
+                for (UIView *view in [obj subviews])
+                {
+                    view.alpha = alpha;
+                }
+            }
+        }];
+        
+    } else {
+        
+        [[self valueForKey:@"_leftViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {
+            view.alpha = alpha;
+        }];
+        
+        [[self valueForKey:@"_rightViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {
+            view.alpha = alpha;
+        }];
+        
+        UIView *titleView = [self valueForKey:@"_titleView"];
+        titleView.alpha = alpha;
+        //    when viewController first load, the titleView maybe nil
+        [[self subviews] enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
+            if ([obj isKindOfClass:NSClassFromString(@"UINavigationItemView")]) {
+                obj.alpha = alpha;
+            }
+            if ([obj isKindOfClass:NSClassFromString(@"_UINavigationBarBackIndicatorView")]) {
+                obj.alpha = alpha;
+            }
+        }];
+        
+    }
     return self;
 }
 
