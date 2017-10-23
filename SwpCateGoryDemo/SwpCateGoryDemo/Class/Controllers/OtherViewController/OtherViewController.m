@@ -11,8 +11,10 @@
 
 
 /*! ---------------------- Tool       ---------------------- !*/
-#import "NSString+SwpDate.h"                    //  SwpDate
-#import "NSUserDefaults+SwpUserDefaults.h"      //  NSUserDefaults
+#import <SwpCateGory/NSString+SwpDate.h>                    //  SwpDate
+#import <SwpCateGory/NSString+SwpBase64.h>                  //  SwpBase64
+#import <SwpCateGory/NSString+SwpMD5Encryption.h>           //  SwpMD5Encryption
+#import <SwpCateGory/NSUserDefaults+SwpUserDefaults.h>      //  NSUserDefaults
 /*! ---------------------- Tool       ---------------------- !*/
 
 /*! ---------------------- Model      ---------------------- !*/
@@ -58,6 +60,42 @@
     NSLog(@"%@", [NSUserDefaults swpUserDefaultGetObject:@"number"]);
     [NSUserDefaults swpUserDefaultRemoveObjectForKey:@"number"];
     NSLog(@"%@", [NSUserDefaults swpUserDefaultGetObject:@"number"]);
+    
+    // MD5
+    NSLog(@"swpMD5Encryption = %@", [NSString swpMD5Encryption:@"123"]);
+    NSLog(@"swpMD5EncryptionChain = %@", NSString.swpMD5EncryptionChain(@"123"));
+    
+    NSLog(@"swpMD5Encryption32Bit = %@", [NSString swpMD5Encryption32Bit:@"123"]);
+    NSLog(@"swpMD5Encryption32BitChain = %@", NSString.swpMD5Encryption32BitChain(@"123"));
+    
+    NSLog(@"swpMD5Encryption32BitForLowerCase = %@", [NSString swpMD5Encryption32BitForLowerCase:@"123"]);
+    NSLog(@"swpMD5Encryption32BitForLowerCaseChain = %@", NSString.swpMD5Encryption32BitForLowerCaseChain(@"123"));
+    
+    NSLog(@"swpMD5Encryption32BitForUpperCase = %@", [NSString swpMD5Encryption32BitForUpperCase:@"123"]);
+    NSLog(@"swpMD5Encryption32BitForUpperCaseChain = %@", NSString.swpMD5Encryption32BitForUpperCaseChain(@"123"));
+    
+    NSLog(@"swpMD5Encryption16Bit = %@", [NSString swpMD5Encryption16Bit:@"123"]);
+    NSLog(@"swpMD5Encryption16BitChain = %@", NSString.swpMD5Encryption16BitChain(@"123"));
+    
+    NSLog(@"swpMD5Encryption16BitForLowerCase = %@", [NSString swpMD5Encryption16BitForLowerCase:@"123"]);
+    NSLog(@"swpMD5Encryption16BitForLowerCaseChain = %@", NSString.swpMD5Encryption16BitForLowerCaseChain(@"123"));
+    
+    NSLog(@"swpMD5Encryption16BitForUpperCase = %@", [NSString swpMD5Encryption16BitForUpperCase:@"123"]);
+    NSLog(@"swpMD5Encryption16BitForUpperCaseChain = %@", NSString.swpMD5Encryption16BitForUpperCaseChain(@"123"));
+    
+    //  Base64
+    NSString *base64EncodedString = [NSString swpBase64EncodedString:@"a"];
+    NSString *base64DecodedString = [NSString swpBase64DecodedString:base64EncodedString];
+    NSLog(@"base64EncodedString = %@", base64EncodedString);
+    NSLog(@"base64DecodedString = %@", base64DecodedString);
+    
+    NSString *base64EncodedStringC = NSString.swpBase64EncodedStringChain(@"A");
+    NSString *base64DecodedStringC = NSString.swpBase64DecodedStringChain(base64EncodedStringC);
+    
+    NSLog(@"base64EncodedStringC = %@", base64EncodedStringC);
+    NSLog(@"base64DecodedStringC = %@", base64DecodedStringC);
+    
+    
 }
 
 

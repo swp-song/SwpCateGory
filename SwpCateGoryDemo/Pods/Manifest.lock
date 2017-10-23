@@ -1,15 +1,22 @@
 PODS:
-  - Masonry (1.0.2)
-  - SVProgressHUD (2.1.2)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.2)
+  - SwpCateGory (2.1.0)
 
 DEPENDENCIES:
   - Masonry
   - SVProgressHUD
+  - SwpCateGory (from `../`)
+
+EXTERNAL SOURCES:
+  SwpCateGory:
+    :path: ../
 
 SPEC CHECKSUMS:
-  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwpCateGory: 92bac89e2ac731cdbd2a569417c0fa3968144604
 
-PODFILE CHECKSUM: 3f0c56adbad0b056d2edaab4815f0e61f85c19b0
+PODFILE CHECKSUM: 387534db98dc1c096a7f0ff7ef6955d89434d82c
 
-COCOAPODS: 1.3.0.beta.1
+COCOAPODS: 1.4.0.beta.1
