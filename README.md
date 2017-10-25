@@ -1,7 +1,8 @@
 # SwpCateGory
 
-[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)[![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)[![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) &nbsp; [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) &nbsp; [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
 
+-------
 
 ### SwpCateGory
 
@@ -33,10 +34,10 @@
 
 ### 版本记录
 
-> * 版本版本：2.2.0
-> * 更新时间：2017-10-25 10:44:05
+> * 版本版本：2.2.2
+> * 更新时间：2017-10-25 14:40:18
 > * 更新内容：
-    * 新增 view 生成图片分类
+    * 新增截取全屏方法
 
 -------
 

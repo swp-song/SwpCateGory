@@ -28,5 +28,23 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return UIImage
  */
 + (UIImage *)swpImageToolsSnapshotImage:(UIView *)view;
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpImageToolsSnapshotFullScreenImageChain   ( 截取整个屏幕，转换成 image )
+ */
++ (UIImage * _Nonnull (^)(void))swpImageToolsSnapshotFullScreenImageChain;
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpImageToolsSnapshotFullScreenImage    ( 截取整个屏幕，转换成 image )
+ *
+ *  @return UIImage
+ */
++ (UIImage *)swpImageToolsSnapshotFullScreenImage;
+
+
 @end
 NS_ASSUME_NONNULL_END

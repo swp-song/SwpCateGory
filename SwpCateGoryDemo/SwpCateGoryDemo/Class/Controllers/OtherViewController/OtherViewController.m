@@ -109,10 +109,15 @@
     UIImage *image2 = self.view.swpViewToolsSnapshotImageChain();
     UIImage *image3 = [UIImage swpImageToolsSnapshotImage:self.view];
     UIImage *image4 = UIImage.swpImageToolsSnapshotImageChain(self.view);
+    UIImage *image5 = [UIImage swpImageToolsSnapshotFullScreenImage];
+    UIImage *image6 = UIImage.swpImageToolsSnapshotFullScreenImageChain();
+    
     NSLog(@"%@", image1);
     NSLog(@"%@", image2);
     NSLog(@"%@", image3);
     NSLog(@"%@", image4);
+    NSLog(@"%@", image5);
+    NSLog(@"%@", image6);
 }
 
 
