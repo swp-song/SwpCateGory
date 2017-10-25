@@ -1,10 +1,8 @@
 {
   "name": "SwpCateGory",
-  "version": "2.1.0",
-  "platforms": {
-    "ios": "8.0"
-  },
-  "summary": "常用的 分组 工具",
+  "version": "2.2.0",
+  "summary": "常用工具分类",
+  "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
   "license": {
     "type": "MIT",
@@ -15,7 +13,10 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.1.0"
+    "tag": "2.2.0"
+  },
+  "platforms": {
+    "ios": "8.0"
   },
   "source_files": "SwpCateGory/**/*.{h,m}",
   "requires_arc": true,

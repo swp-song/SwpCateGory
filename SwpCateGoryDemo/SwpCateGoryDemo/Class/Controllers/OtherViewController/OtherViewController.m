@@ -11,10 +11,14 @@
 
 
 /*! ---------------------- Tool       ---------------------- !*/
+#import <SwpCateGory/UIBarButtonItem+SwpSetNavigationBarItem.h>
 #import <SwpCateGory/NSString+SwpDate.h>                    //  SwpDate
 #import <SwpCateGory/NSString+SwpBase64.h>                  //  SwpBase64
 #import <SwpCateGory/NSString+SwpMD5Encryption.h>           //  SwpMD5Encryption
 #import <SwpCateGory/NSUserDefaults+SwpUserDefaults.h>      //  NSUserDefaults
+#import <SwpCateGory/UIView+SwpViewTools.h>
+#import <SwpCateGory/UIImage+SwpImageTools.h>
+
 /*! ---------------------- Tool       ---------------------- !*/
 
 /*! ---------------------- Model      ---------------------- !*/
@@ -95,7 +99,20 @@
     NSLog(@"base64EncodedStringC = %@", base64EncodedStringC);
     NSLog(@"base64DecodedStringC = %@", base64DecodedStringC);
     
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem swpSetNavigationBarItemTitle:@"截屏" setFontColot:[UIColor blackColor] setFontSize:15.0 setTag:0 setLeftBarButtonItem:NO setAarget:self setAction:@selector(clickButtonEvent:)];
     
+}
+
+- (void)clickButtonEvent:(UIBarButtonItem *)button {
+    
+    UIImage *image1 = [self.view swpViewToolsSnapshotImage];
+    UIImage *image2 = self.view.swpViewToolsSnapshotImageChain();
+    UIImage *image3 = [UIImage swpImageToolsSnapshotImage:self.view];
+    UIImage *image4 = UIImage.swpImageToolsSnapshotImageChain(self.view);
+    NSLog(@"%@", image1);
+    NSLog(@"%@", image2);
+    NSLog(@"%@", image3);
+    NSLog(@"%@", image4);
 }
 
 
