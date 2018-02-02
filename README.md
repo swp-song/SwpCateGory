@@ -1,6 +1,6 @@
 # SwpCateGory
 
-[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) &nbsp; [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) &nbsp; [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![Version](https://img.shields.io/cocoapods/v/SwpShareView.svg?style=flat)](http://cocoapods.org/pods/SwpShareView) &nbsp; [![License](https://img.shields.io/cocoapods/l/SwpShareView.svg?style=flat)](http://cocoapods.org/pods/SwpShareView) &nbsp; [![Platform](https://img.shields.io/cocoapods/p/SwpShareView.svg?style=flat)](http://cocoapods.org/pods/SwpShareView)
 
 -------
 
@@ -34,10 +34,10 @@
 
 ### 版本记录
 
-> * 版本版本：2.2.2
+> * 版本版本：2.3.2
 > * 更新时间：2017-10-25 14:40:18
 > * 更新内容：
-    * 新增截取全屏方法
+    * 新增 Pod Subspec，模块化可以单独 pod 某组分类工具。
 
 -------
 

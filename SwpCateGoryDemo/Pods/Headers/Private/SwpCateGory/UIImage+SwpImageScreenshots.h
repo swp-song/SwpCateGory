@@ -1,0 +1,1 @@
+../../../../../SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/UIImage+SwpImageScreenshots.h

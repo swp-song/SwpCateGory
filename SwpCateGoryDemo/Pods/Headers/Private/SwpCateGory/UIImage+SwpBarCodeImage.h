@@ -1,1 +1,1 @@
-../../../../../SwpCateGory/UIKit/UIImageCateGory/UIImage+SwpBarCodeImage.h
+../../../../../SwpCateGory/UIKit/UIImageCateGory/SwpBarCodeImage/UIImage+SwpBarCodeImage.h

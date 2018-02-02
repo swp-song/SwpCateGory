@@ -16,9 +16,8 @@
 #import <SwpCateGory/NSString+SwpBase64.h>                  //  SwpBase64
 #import <SwpCateGory/NSString+SwpMD5Encryption.h>           //  SwpMD5Encryption
 #import <SwpCateGory/NSUserDefaults+SwpUserDefaults.h>      //  NSUserDefaults
-#import <SwpCateGory/UIView+SwpViewTools.h>
-#import <SwpCateGory/UIImage+SwpImageTools.h>
-
+#import <SwpCateGory/UIView+SwpViewScreenshots.h>
+#import <SwpCateGory/UIImage+SwpImageScreenshots.h>
 /*! ---------------------- Tool       ---------------------- !*/
 
 /*! ---------------------- Model      ---------------------- !*/
@@ -105,12 +104,12 @@
 
 - (void)clickButtonEvent:(UIBarButtonItem *)button {
     
-    UIImage *image1 = [self.view swpViewToolsSnapshotImage];
-    UIImage *image2 = self.view.swpViewToolsSnapshotImageChain();
-    UIImage *image3 = [UIImage swpImageToolsSnapshotImage:self.view];
-    UIImage *image4 = UIImage.swpImageToolsSnapshotImageChain(self.view);
-    UIImage *image5 = [UIImage swpImageToolsSnapshotFullScreenImage];
-    UIImage *image6 = UIImage.swpImageToolsSnapshotFullScreenImageChain();
+    UIImage *image1 = [self.view swpViewScreenshots];
+    UIImage *image2 = self.view.swpViewScreenshotsChain();
+    UIImage *image3 = [UIImage swpImageScreenshots:self.view];
+    UIImage *image4 = UIImage.swpImageScreenshotsChain(self.view);
+    UIImage *image5 = [UIImage swpImageScreenshotsFullScreen];
+    UIImage *image6 = UIImage.swpImageScreenshotsFullScreenChain();
     
     NSLog(@"%@", image1);
     NSLog(@"%@", image2);

@@ -10,10 +10,30 @@ target 'SwpCateGoryDemo' do
 
   # Pods for SwpCateGoryDemo
   
-  inhibit_all_warnings!
-  
+#  inhibit_all_warnings!
+
   pod 'Masonry'         #   Masonry 自动布局框架
   pod 'SVProgressHUD'   #   提示信息库
   pod 'SwpCateGory', :path => '../'
+
+#  pod 'SwpCateGory/SwpOrderByCharacter', :path => '../'
+#  pod 'SwpCateGory/SwpGenerateProperty', :path => '../'
+#  pod 'SwpCateGory/SwpMD5', :path => '../'
+#  pod 'SwpCateGory/SwpBase64', :path => '../'
+#  pod 'SwpCateGory/SwpDateString', :path => '../'
+#  pod 'SwpCateGory/SwpUserDefaults', :path => '../'
+#  pod 'SwpCateGory/SwpAttributed', :path => '../'
+#  pod 'SwpCateGory/SwpSetNavigationBarItem', :path => '../'
+#  pod 'SwpCateGory/SwpSetButton', :path => '../'
+#  pod 'SwpCateGory/SwpColor', :path => '../'
+#  pod 'SwpCateGory/SwpFont', :path => '../'
+#  pod 'SwpCateGory/SwpQrCodeImage', :path => '../'
+#  pod 'SwpCateGory/SwpBarCodeImage', :path => '../'
+#  pod 'SwpCateGory/SwpImageScreenshots', :path => '../'
+#  pod 'SwpCateGory/SwpNavigationBar', :path => '../'
+#  pod 'SwpCateGory/SwpSetTextField', :path => '../'
+#  pod 'SwpCateGory/SwpExtension', :path => '../'
+#  pod 'SwpCateGory/SwpViewScreenshots', :path => '../'
+
 
 end
