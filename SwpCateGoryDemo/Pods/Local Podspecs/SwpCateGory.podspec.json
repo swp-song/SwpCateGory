@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.3.0"
+    "tag": "2.4.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -29,93 +29,93 @@
     },
     {
       "name": "SwpOrderByCharacter",
-      "source_files": "SwpCateGory/NSObject/NSArrayCateGory/SwpOrderByCharacter/*.{h,m}",
-      "public_header_files": "SwpCateGory/NSObject/NSArrayCateGory/SwpOrderByCharacter/*.h"
+      "public_header_files": "SwpCateGory/NSObject/NSArrayCateGory/SwpOrderByCharacter/*.h",
+      "source_files": "SwpCateGory/NSObject/NSArrayCateGory/SwpOrderByCharacter/*.{h,m}"
     },
     {
       "name": "SwpGenerateProperty",
-      "source_files": "SwpCateGory/NSObject/NSDictionaryCateGory/SwpGenerateProperty/*.{h,m}",
-      "public_header_files": "SwpCateGory/NSObject/NSDictionaryCateGory/SwpGenerateProperty/*.h"
+      "public_header_files": "SwpCateGory/NSObject/NSDictionaryCateGory/SwpGenerateProperty/*.h",
+      "source_files": "SwpCateGory/NSObject/NSDictionaryCateGory/SwpGenerateProperty/*.{h,m}"
     },
     {
       "name": "SwpMD5",
-      "source_files": "SwpCateGory/NSObject/NSStringCateGory/swpMD5/*.{h,m}",
-      "public_header_files": "SwpCateGory/NSObject/NSStringCateGory/swpMD5/*.h"
+      "public_header_files": "SwpCateGory/NSObject/NSStringCateGory/SwpMD5/*.h",
+      "source_files": "SwpCateGory/NSObject/NSStringCateGory/SwpMD5/*.{h,m}"
     },
     {
       "name": "SwpBase64",
-      "source_files": "SwpCateGory/NSObject/NSStringCateGory/SwpBase64/*.{h,m}",
-      "public_header_files": "SwpCateGory/NSObject/NSStringCateGory/SwpBase64/*.h"
+      "public_header_files": "SwpCateGory/NSObject/NSStringCateGory/SwpBase64/*.h",
+      "source_files": "SwpCateGory/NSObject/NSStringCateGory/SwpBase64/*.{h,m}"
     },
     {
       "name": "SwpDateString",
-      "source_files": "SwpCateGory/NSObject/NSStringCateGory/SwpDateString/*.{h,m}",
-      "public_header_files": "SwpCateGory/NSObject/NSStringCateGory/SwpDateString/*.h"
+      "public_header_files": "SwpCateGory/NSObject/NSStringCateGory/SwpDateString/*.h",
+      "source_files": "SwpCateGory/NSObject/NSStringCateGory/SwpDateString/*.{h,m}"
     },
     {
       "name": "SwpUserDefaults",
-      "source_files": "SwpCateGory/NSObject/NSUserDefaultsCateGory/SwpUserDefaults/*.{h,m}",
-      "public_header_files": "SwpCateGory/NSObject/NSUserDefaultsCateGory/SwpUserDefaults/*.h"
+      "public_header_files": "SwpCateGory/NSObject/NSUserDefaultsCateGory/SwpUserDefaults/*.h",
+      "source_files": "SwpCateGory/NSObject/NSUserDefaultsCateGory/SwpUserDefaults/*.{h,m}"
     },
     {
       "name": "SwpAttributed",
-      "source_files": "SwpCateGory/Other/SwpAttributeCateGory/*.{h,m}",
-      "public_header_files": "SwpCateGory/Other/SwpAttributeCateGory/*.h"
+      "public_header_files": "SwpCateGory/Other/SwpAttributeCateGory/*.h",
+      "source_files": "SwpCateGory/Other/SwpAttributeCateGory/*.{h,m}"
     },
     {
       "name": "SwpSetNavigationBarItem",
-      "source_files": "SwpCateGory/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.h",
+      "source_files": "SwpCateGory/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.{h,m}"
     },
     {
       "name": "SwpSetButton",
-      "source_files": "SwpCateGory/UIKit/UIButtonCateGory/SwpSetButton/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIButtonCateGory/SwpSetButton/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIButtonCateGory/SwpSetButton/*.h",
+      "source_files": "SwpCateGory/UIKit/UIButtonCateGory/SwpSetButton/*.{h,m}"
     },
     {
       "name": "SwpColor",
-      "source_files": "SwpCateGory/UIKit/UIColorCateGory/SwpColor/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIColorCateGory/SwpColor/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIColorCateGory/SwpColor/*.h",
+      "source_files": "SwpCateGory/UIKit/UIColorCateGory/SwpColor/*.{h,m}"
     },
     {
       "name": "SwpFont",
-      "source_files": "SwpCateGory/UIKit/UIFontCateGory/SwpFont/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIFontCateGory/SwpFont/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIFontCateGory/SwpFont/*.h",
+      "source_files": "SwpCateGory/UIKit/UIFontCateGory/SwpFont/*.{h,m}"
     },
     {
       "name": "SwpQrCodeImage",
-      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpQrCodeImage/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpQrCodeImage/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpQrCodeImage/*.h",
+      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpQrCodeImage/*.{h,m}"
     },
     {
       "name": "SwpBarCodeImage",
-      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpBarCodeImage/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpBarCodeImage/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpBarCodeImage/*.h",
+      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpBarCodeImage/*.{h,m}"
     },
     {
       "name": "SwpImageScreenshots",
-      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.h",
+      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.{h,m}"
     },
     {
       "name": "SwpNavigationBar",
-      "source_files": "SwpCateGory/UIKit/UINavigationBarCateGory/SwpNavigationBar/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UINavigationBarCateGory/SwpNavigationBar/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UINavigationBarCateGory/SwpNavigationBar/*.h",
+      "source_files": "SwpCateGory/UIKit/UINavigationBarCateGory/SwpNavigationBar/*.{h,m}"
     },
     {
       "name": "SwpSetTextField",
-      "source_files": "SwpCateGory/UIKit/UITextFieldCateGory/SwpSetTextField/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UITextFieldCateGory/SwpSetTextField/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UITextFieldCateGory/SwpSetTextField/*.h",
+      "source_files": "SwpCateGory/UIKit/UITextFieldCateGory/SwpSetTextField/*.{h,m}"
     },
     {
       "name": "SwpExtension",
-      "source_files": "SwpCateGory/UIKit/UIViewCateGory/SwpExtension/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIViewCateGory/SwpExtension/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIViewCateGory/SwpExtension/*.h",
+      "source_files": "SwpCateGory/UIKit/UIViewCateGory/SwpExtension/*.{h,m}"
     },
     {
       "name": "SwpViewScreenshots",
-      "source_files": "SwpCateGory/UIKit/UIViewCateGory/SwpViewScreenshots/*.{h,m}",
-      "public_header_files": "SwpCateGory/UIKit/UIViewCateGory/SwpViewScreenshots/*.h"
+      "public_header_files": "SwpCateGory/UIKit/UIViewCateGory/SwpViewScreenshots/*.h",
+      "source_files": "SwpCateGory/UIKit/UIViewCateGory/SwpViewScreenshots/*.{h,m}"
     }
   ]
 }

@@ -1,14 +1,46 @@
 PODS:
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.2)
-  - SwpCateGory (2.3.0):
-    - SwpCateGory/SwpCateGory (= 2.3.0)
-  - SwpCateGory/SwpCateGory (2.3.0)
+  - SwpCateGory/SwpAttributed (2.4.0)
+  - SwpCateGory/SwpBarCodeImage (2.4.0)
+  - SwpCateGory/SwpBase64 (2.4.0)
+  - SwpCateGory/SwpColor (2.4.0)
+  - SwpCateGory/SwpDateString (2.4.0)
+  - SwpCateGory/SwpExtension (2.4.0)
+  - SwpCateGory/SwpFont (2.4.0)
+  - SwpCateGory/SwpGenerateProperty (2.4.0)
+  - SwpCateGory/SwpImageScreenshots (2.4.0)
+  - SwpCateGory/SwpMD5 (2.4.0)
+  - SwpCateGory/SwpNavigationBar (2.4.0)
+  - SwpCateGory/SwpOrderByCharacter (2.4.0)
+  - SwpCateGory/SwpQrCodeImage (2.4.0)
+  - SwpCateGory/SwpSetButton (2.4.0)
+  - SwpCateGory/SwpSetNavigationBarItem (2.4.0)
+  - SwpCateGory/SwpSetTextField (2.4.0)
+  - SwpCateGory/SwpUserDefaults (2.4.0)
+  - SwpCateGory/SwpViewScreenshots (2.4.0)
 
 DEPENDENCIES:
   - Masonry
   - SVProgressHUD
-  - SwpCateGory (from `../`)
+  - SwpCateGory/SwpAttributed (from `../`)
+  - SwpCateGory/SwpBarCodeImage (from `../`)
+  - SwpCateGory/SwpBase64 (from `../`)
+  - SwpCateGory/SwpColor (from `../`)
+  - SwpCateGory/SwpDateString (from `../`)
+  - SwpCateGory/SwpExtension (from `../`)
+  - SwpCateGory/SwpFont (from `../`)
+  - SwpCateGory/SwpGenerateProperty (from `../`)
+  - SwpCateGory/SwpImageScreenshots (from `../`)
+  - SwpCateGory/SwpMD5 (from `../`)
+  - SwpCateGory/SwpNavigationBar (from `../`)
+  - SwpCateGory/SwpOrderByCharacter (from `../`)
+  - SwpCateGory/SwpQrCodeImage (from `../`)
+  - SwpCateGory/SwpSetButton (from `../`)
+  - SwpCateGory/SwpSetNavigationBarItem (from `../`)
+  - SwpCateGory/SwpSetTextField (from `../`)
+  - SwpCateGory/SwpUserDefaults (from `../`)
+  - SwpCateGory/SwpViewScreenshots (from `../`)
 
 EXTERNAL SOURCES:
   SwpCateGory:
@@ -17,8 +49,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
-  SwpCateGory: 26e8a35eb537d3859e3106c626ac0f3f70c5d1be
+  SwpCateGory: 95cef7f0ff1aad555b19c31d3a97a96897ecd729
 
-PODFILE CHECKSUM: 96d95aa5796484f6127819a28f08e846a213aee4
+PODFILE CHECKSUM: a3c2fecd8b62ce3cc00c772d783fa17777e44500
 
 COCOAPODS: 1.4.0
