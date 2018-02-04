@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.4.0'
+  s.version = '2.4.1'
   s.summary = " 常用工具分类 "
 
   # This description is used to generate tags and improve search results.
@@ -27,13 +27,31 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.frameworks            = 'UIKit'
 
-  s.default_subspec       = 'SwpCateGory'
+  # s.default_subspec       = 'SwpCateGory'
+  s.default_subspec       = 'SwpOrderByCharacter',
+                            'SwpGenerateProperty',
+                            'SwpMD5',
+                            'SwpBase64',
+                            'SwpDateString',
+                            'SwpUserDefaults',
+                            'SwpAttributed',
+                            'SwpSetNavigationBarItem',
+                            'SwpSetButton',
+                            'SwpColor',
+                            'SwpFont',
+                            'SwpQrCodeImage',
+                            'SwpBarCodeImage',
+                            'SwpImageScreenshots',
+                            'SwpNavigationBar',
+                            'SwpSetTextField',
+                            'SwpExtension',
+                            'SwpViewScreenshots'
 
   # SwpCateGory 全部
-  s.subspec 'SwpCateGory' do |swpCateGory|
-    swpCateGory.source_files        = 'SwpCateGory/**/*.{h,m}'
-    swpCateGory.public_header_files = 'SwpCateGory/**/*.h'
-  end
+  # s.subspec 'SwpCateGory' do |swpCateGory|
+  #   swpCateGory.source_files        = 'SwpCateGory/**/*.{h,m}'
+  #   swpCateGory.public_header_files = 'SwpCateGory/**/*.h'
+  # end
 
   # NSArray 分类，按 A~Z 数组中数据排序。
   s.subspec 'SwpOrderByCharacter' do |swpOrderByCharacter|

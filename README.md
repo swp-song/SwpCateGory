@@ -23,11 +23,9 @@
 >
 ```run
 pod search SwpCateGory
->
-pod 全部：
+全部：
 pod 'SwpCateGory'
->
-pod 单体：
+单体：
 pod 'SwpCateGory/SwpOrderByCharacter'
 pod 'SwpCateGory/SwpGenerateProperty'
 pod 'SwpCateGory/SwpMD5'
@@ -47,7 +45,8 @@ pod 'SwpCateGory/SwpSetTextField'
 pod 'SwpCateGory/SwpExtension'
 pod 'SwpCateGory/SwpViewScreenshots'
 
-> #import <SwpCateGory/UIColor+SwpColor.h>
+#import <SwpCateGory/UIColor+SwpColor.h>
+
 ```
 
 > -------
@@ -59,10 +58,11 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 ### 版本记录
 
-> * 版本版本：2.4.0
-> * 更新时间：2018-02-02 10:29:24
+> * 版本版本：2.4.1
+> * 更新时间：2018-02-04 13:10:20
 > * 更新内容：
-    * 修改Demo，修改 .md 文件
+> 
+    > * 修改 pod 配置文件 
 
 -------
 

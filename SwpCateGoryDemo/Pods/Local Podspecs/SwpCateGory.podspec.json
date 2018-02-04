@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,20 +13,34 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.4.0"
+    "tag": "2.4.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
   "frameworks": "UIKit",
-  "default_subspecs": "SwpCateGory",
+  "default_subspecs": [
+    "SwpOrderByCharacter",
+    "SwpGenerateProperty",
+    "SwpMD5",
+    "SwpBase64",
+    "SwpDateString",
+    "SwpUserDefaults",
+    "SwpAttributed",
+    "SwpSetNavigationBarItem",
+    "SwpSetButton",
+    "SwpColor",
+    "SwpFont",
+    "SwpQrCodeImage",
+    "SwpBarCodeImage",
+    "SwpImageScreenshots",
+    "SwpNavigationBar",
+    "SwpSetTextField",
+    "SwpExtension",
+    "SwpViewScreenshots"
+  ],
   "subspecs": [
-    {
-      "name": "SwpCateGory",
-      "source_files": "SwpCateGory/**/*.{h,m}",
-      "public_header_files": "SwpCateGory/**/*.h"
-    },
     {
       "name": "SwpOrderByCharacter",
       "public_header_files": "SwpCateGory/NSObject/NSArrayCateGory/SwpOrderByCharacter/*.h",
