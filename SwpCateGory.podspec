@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.4.1'
+  s.version = '2.5.0'
   s.summary = " 常用工具分类 "
 
   # This description is used to generate tags and improve search results.
@@ -42,6 +42,7 @@ Pod::Spec.new do |s|
                             'SwpQrCodeImage',
                             'SwpBarCodeImage',
                             'SwpImageScreenshots',
+                            'SwpCreateImage',
                             'SwpNavigationBar',
                             'SwpSetTextField',
                             'SwpExtension',
@@ -142,6 +143,12 @@ Pod::Spec.new do |s|
   s.subspec 'SwpImageScreenshots' do |swpImageScreenshots|
     swpImageScreenshots.public_header_files = 'SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.h'
     swpImageScreenshots.source_files        = 'SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.{h,m}'
+  end
+
+  # UIImage 分类，创建 image
+  s.subspec 'SwpCreateImage' do |swpCreateImage|
+      swpCreateImage.public_header_files = 'SwpCateGory/UIKit/UIImageCateGory/SwpCreateImage/*.h'
+      swpCreateImage.source_files        = 'SwpCateGory/UIKit/UIImageCateGory/SwpCreateImage/*.{h,m}'
   end
 
 

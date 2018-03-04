@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.4.1"
+    "tag": "2.5.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -35,6 +35,7 @@
     "SwpQrCodeImage",
     "SwpBarCodeImage",
     "SwpImageScreenshots",
+    "SwpCreateImage",
     "SwpNavigationBar",
     "SwpSetTextField",
     "SwpExtension",
@@ -110,6 +111,11 @@
       "name": "SwpImageScreenshots",
       "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.h",
       "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpImageScreenshots/*.{h,m}"
+    },
+    {
+      "name": "SwpCreateImage",
+      "public_header_files": "SwpCateGory/UIKit/UIImageCateGory/SwpCreateImage/*.h",
+      "source_files": "SwpCateGory/UIKit/UIImageCateGory/SwpCreateImage/*.{h,m}"
     },
     {
       "name": "SwpNavigationBar",

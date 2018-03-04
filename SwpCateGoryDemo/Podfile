@@ -30,6 +30,7 @@ target 'SwpCateGoryDemo' do
 #   pod 'SwpCateGory/SwpQrCodeImage', :path => '../'
 #   pod 'SwpCateGory/SwpBarCodeImage', :path => '../'
 #   pod 'SwpCateGory/SwpImageScreenshots', :path => '../'
+#   pod 'SwpCateGory/SwpCreateImage', :path => '../'
 #   pod 'SwpCateGory/SwpNavigationBar', :path => '../'
 #   pod 'SwpCateGory/SwpSetTextField', :path => '../'
 #   pod 'SwpCateGory/SwpExtension', :path => '../'

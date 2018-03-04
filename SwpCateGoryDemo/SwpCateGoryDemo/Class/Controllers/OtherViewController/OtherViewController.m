@@ -18,6 +18,7 @@
 #import <SwpCateGory/NSUserDefaults+SwpUserDefaults.h>      //  NSUserDefaults
 #import <SwpCateGory/UIView+SwpViewScreenshots.h>
 #import <SwpCateGory/UIImage+SwpImageScreenshots.h>
+#import <SwpCateGory/UIImage+SwpCreateImage.h>
 /*! ---------------------- Tool       ---------------------- !*/
 
 /*! ---------------------- Model      ---------------------- !*/
@@ -43,6 +44,7 @@
 @end
 
 @implementation OtherViewController
+
 
 #pragma mark - Lifecycle Methods
 /**!
@@ -100,6 +102,19 @@
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem swpSetNavigationBarItemTitle:@"截屏" setFontColot:[UIColor blackColor] setFontSize:15.0 setTag:0 setLeftBarButtonItem:NO setAarget:self setAction:@selector(clickButtonEvent:)];
     
+    
+    UIImage *image1 = [UIImage swpCreateImageWithColor:[UIColor orangeColor]];
+    UIImage *image2 = [UIImage swpCreateImageWithColor:[UIColor blueColor] frame:CGRectMake(100, 0, 300, 300)];
+    UIImage *image3 = [UIImage swpCreateImageWithColor:nil frame:CGRectZero];
+    UIImage *image4 = UIImage.swpCreateImageWithColor([UIColor greenColor]);
+    UIImage *image5 = UIImage.swpCreateImageWithColorAndFrame([UIColor darkGrayColor], CGRectMake(0, 0, 200, 200));
+    UIImage *image6 = UIImage.swpCreateImageWithColorAndFrame(nil, CGRectZero);
+    NSLog(@"%@", image1);
+    NSLog(@"%@", image2);
+    NSLog(@"%@", image3);
+    NSLog(@"%@", image4);
+    NSLog(@"%@", image5);
+    NSLog(@"%@", image6);
 }
 
 - (void)clickButtonEvent:(UIBarButtonItem *)button {
