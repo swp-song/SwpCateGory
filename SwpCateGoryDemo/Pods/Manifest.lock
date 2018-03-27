@@ -1,60 +1,86 @@
 PODS:
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
-  - SwpCateGory (2.5.0):
-    - SwpCateGory/SwpAttributed (= 2.5.0)
-    - SwpCateGory/SwpBarCodeImage (= 2.5.0)
-    - SwpCateGory/SwpBase64 (= 2.5.0)
-    - SwpCateGory/SwpColor (= 2.5.0)
-    - SwpCateGory/SwpCreateImage (= 2.5.0)
-    - SwpCateGory/SwpDateString (= 2.5.0)
-    - SwpCateGory/SwpExtension (= 2.5.0)
-    - SwpCateGory/SwpFont (= 2.5.0)
-    - SwpCateGory/SwpGenerateProperty (= 2.5.0)
-    - SwpCateGory/SwpImageScreenshots (= 2.5.0)
-    - SwpCateGory/SwpMD5 (= 2.5.0)
-    - SwpCateGory/SwpNavigationBar (= 2.5.0)
-    - SwpCateGory/SwpOrderByCharacter (= 2.5.0)
-    - SwpCateGory/SwpQrCodeImage (= 2.5.0)
-    - SwpCateGory/SwpSetButton (= 2.5.0)
-    - SwpCateGory/SwpSetNavigationBarItem (= 2.5.0)
-    - SwpCateGory/SwpSetTextField (= 2.5.0)
-    - SwpCateGory/SwpUserDefaults (= 2.5.0)
-    - SwpCateGory/SwpViewScreenshots (= 2.5.0)
-  - SwpCateGory/SwpAttributed (2.5.0)
-  - SwpCateGory/SwpBarCodeImage (2.5.0)
-  - SwpCateGory/SwpBase64 (2.5.0)
-  - SwpCateGory/SwpColor (2.5.0)
-  - SwpCateGory/SwpCreateImage (2.5.0)
-  - SwpCateGory/SwpDateString (2.5.0)
-  - SwpCateGory/SwpExtension (2.5.0)
-  - SwpCateGory/SwpFont (2.5.0)
-  - SwpCateGory/SwpGenerateProperty (2.5.0)
-  - SwpCateGory/SwpImageScreenshots (2.5.0)
-  - SwpCateGory/SwpMD5 (2.5.0)
-  - SwpCateGory/SwpNavigationBar (2.5.0)
-  - SwpCateGory/SwpOrderByCharacter (2.5.0)
-  - SwpCateGory/SwpQrCodeImage (2.5.0)
-  - SwpCateGory/SwpSetButton (2.5.0)
-  - SwpCateGory/SwpSetNavigationBarItem (2.5.0)
-  - SwpCateGory/SwpSetTextField (2.5.0)
-  - SwpCateGory/SwpUserDefaults (2.5.0)
-  - SwpCateGory/SwpViewScreenshots (2.5.0)
+  - SwpCateGory (2.6.0):
+    - SwpCateGory/SwpAttributed (= 2.6.0)
+    - SwpCateGory/SwpBarCodeImage (= 2.6.0)
+    - SwpCateGory/SwpBase64 (= 2.6.0)
+    - SwpCateGory/SwpCateGory (= 2.6.0)
+    - SwpCateGory/SwpColor (= 2.6.0)
+    - SwpCateGory/SwpCreateImage (= 2.6.0)
+    - SwpCateGory/SwpDateString (= 2.6.0)
+    - SwpCateGory/SwpExtension (= 2.6.0)
+    - SwpCateGory/SwpFont (= 2.6.0)
+    - SwpCateGory/SwpGenerateProperty (= 2.6.0)
+    - SwpCateGory/SwpImageScreenshots (= 2.6.0)
+    - SwpCateGory/SwpMD5 (= 2.6.0)
+    - SwpCateGory/SwpNavigationBar (= 2.6.0)
+    - SwpCateGory/SwpOrderByCharacter (= 2.6.0)
+    - SwpCateGory/SwpQrCodeImage (= 2.6.0)
+    - SwpCateGory/SwpSetButton (= 2.6.0)
+    - SwpCateGory/SwpSetNavigationBarItem (= 2.6.0)
+    - SwpCateGory/SwpSetTextField (= 2.6.0)
+    - SwpCateGory/SwpUserDefaults (= 2.6.0)
+    - SwpCateGory/SwpViewScreenshots (= 2.6.0)
+  - SwpCateGory/SwpAttributed (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpBarCodeImage (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpBase64 (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpCateGory (2.6.0)
+  - SwpCateGory/SwpColor (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpCreateImage (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpDateString (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpExtension (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpFont (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpGenerateProperty (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpImageScreenshots (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpMD5 (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpNavigationBar (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpOrderByCharacter (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpQrCodeImage (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpSetButton (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpSetNavigationBarItem (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpSetTextField (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpUserDefaults (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpViewScreenshots (2.6.0):
+    - SwpCateGory/SwpCateGory
 
 DEPENDENCIES:
   - Masonry
   - SVProgressHUD
   - SwpCateGory (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - SVProgressHUD
+
 EXTERNAL SOURCES:
   SwpCateGory:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwpCateGory: ceb276c26789d8ff2497e2ff55445ffe73ab258c
+  SwpCateGory: 108c2f367a967e79753194748c4ceda99cea81ce
 
-PODFILE CHECKSUM: f678421fd2660e723cd71807ea0cfa8a24d6a2f6
+PODFILE CHECKSUM: 8ed9b907e55ff125e160915f4f303c7086f8079e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0.beta.1

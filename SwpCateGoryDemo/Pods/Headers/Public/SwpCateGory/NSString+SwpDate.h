@@ -1,1 +1,1 @@
-../../../../../SwpCateGory/NSObject/NSStringCateGory/SwpDateString/NSString+SwpDate.h
+../../../../../SwpCateGory/Class/NSObject/NSStringCateGory/SwpDateString/NSString+SwpDate.h

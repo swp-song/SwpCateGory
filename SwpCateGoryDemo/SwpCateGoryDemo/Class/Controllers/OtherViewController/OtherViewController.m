@@ -9,8 +9,8 @@
 
 #import "OtherViewController.h"
 
-
-/*! ---------------------- Tool       ---------------------- !*/
+/* ---------------------- Tool       ---------------------- */
+#import <SwpCateGory/SwpCateGory.h>
 #import <SwpCateGory/UIBarButtonItem+SwpSetNavigationBarItem.h>
 #import <SwpCateGory/NSString+SwpDate.h>                    //  SwpDate
 #import <SwpCateGory/NSString+SwpBase64.h>                  //  SwpBase64
@@ -19,35 +19,36 @@
 #import <SwpCateGory/UIView+SwpViewScreenshots.h>
 #import <SwpCateGory/UIImage+SwpImageScreenshots.h>
 #import <SwpCateGory/UIImage+SwpCreateImage.h>
-/*! ---------------------- Tool       ---------------------- !*/
+/* ---------------------- Tool       ---------------------- */
 
-/*! ---------------------- Model      ---------------------- !*/
-/*! ---------------------- Model      ---------------------- !*/
+/* ---------------------- Model      ---------------------- */
+/* ---------------------- Model      ---------------------- */
 
-/*! ---------------------- View       ---------------------- !*/
-/*! ---------------------- View       ---------------------- !*/
+/* ---------------------- View       ---------------------- */
+/* ---------------------- View       ---------------------- */
 
-/*! ---------------------- Controller ---------------------- !*/
-/*! ---------------------- Controller ---------------------- !*/
+
+/* ---------------------- Controller ---------------------- */
+/* ---------------------- Controller ---------------------- */
 
 
 @interface OtherViewController ()
 
-
 #pragma mark - UI   Propertys
-/*! ---------------------- UI   Property  ---------------------- !*/
-/*! ---------------------- UI   Property  ---------------------- !*/
+/* ---------------------- UI   Property  ---------------------- */
+/* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
-/*! ---------------------- Data Property  ---------------------- !*/
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
+/* ---------------------- Data Property  ---------------------- */
+
 @end
 
 @implementation OtherViewController
 
 
 #pragma mark - Lifecycle Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  viewDidLoad ( 视图载入完成调用 )
@@ -55,6 +56,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // SwpCateGory 信息
+    NSLog(@"%@", SwpCateGory.swpCateGoryInfo);
+    NSLog(@"%@", SwpCateGory.swpCateGoryVersion);
     
     // Date
     NSLog(@"%@", [NSString swpDateGetSystemDateWithDateFormat:@"Y - M - d  hh:mm:ss"]);
@@ -135,7 +140,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  didReceiveMemoryWarning ( 内存不足时调用 )

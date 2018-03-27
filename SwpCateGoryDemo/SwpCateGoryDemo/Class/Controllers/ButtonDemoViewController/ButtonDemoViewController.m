@@ -9,39 +9,38 @@
 
 #import "ButtonDemoViewController.h"
 
-/*! ---------------------- Tool       ---------------------- !*/
+
+/* ---------------------- Tool       ---------------------- */
 #import <Masonry/Masonry.h>                         //  Masonry
 #import "UIColor+SwpColor.h"                        //  UIColor
 #import "UIButton+SwpSetButton.h"                   //  UIButton
 #import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
 #import "UINavigationBar+SwpNavigationBar.h"
-/*! ---------------------- Tool       ---------------------- !*/
+/* ---------------------- Tool       ---------------------- */
 
-/*! ---------------------- Model      ---------------------- !*/
-/*! ---------------------- Model      ---------------------- !*/
+/* ---------------------- Model      ---------------------- */
+/* ---------------------- Model      ---------------------- */
 
-/*! ---------------------- View       ---------------------- !*/
-/*! ---------------------- View       ---------------------- !*/
+/* ---------------------- View       ---------------------- */
 
-/*! ---------------------- Controller ---------------------- !*/
-/*! ---------------------- Controller ---------------------- !*/
+/* ---------------------- View       ---------------------- */
+
+/* ---------------------- Controller ---------------------- */
+/* ---------------------- Controller ---------------------- */
 
 @interface ButtonDemoViewController ()
 
 
 #pragma mark - UI   Propertys
-/*! ---------------------- UI   Property  ---------------------- !*/
-/*! 提交按钮 !*/
+/* ---------------------- UI   Property  ---------------------- */
 @property (nonatomic, strong) UIButton *submitButton1;
-/*! 单选按钮 !*/
 @property (nonatomic, strong) UIButton *checkBoxButton;
-
 @property (nonatomic, strong) UIButton *submitButton2;
-/*! ---------------------- UI   Property  ---------------------- !*/
+/* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
-/*! ---------------------- Data Property  ---------------------- !*/
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
+/* ---------------------- Data Property  ---------------------- */
 
 @end
 

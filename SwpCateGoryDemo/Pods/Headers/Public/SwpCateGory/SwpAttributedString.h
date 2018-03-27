@@ -1,1 +1,1 @@
-../../../../../SwpCateGory/Other/SwpAttributeCateGory/SwpAttributedString.h
+../../../../../SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedString.h

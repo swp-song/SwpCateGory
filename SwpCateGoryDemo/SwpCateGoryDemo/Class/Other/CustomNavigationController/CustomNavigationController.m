@@ -8,40 +8,43 @@
 
 #import "CustomNavigationController.h"
 
-/*! ---------------------- Tool       ---------------------- !*/
+
+/* ---------------------- Tool       ---------------------- */
 #import "UIColor+SwpColor.h"                        //  Color  分类
 #import "UINavigationBar+SwpNavigationBar.h"        //  UINavigationBar 分类
-/*! ---------------------- Tool       ---------------------- !*/
+/* ---------------------- Tool       ---------------------- */
 
-/*! ---------------------- Model      ---------------------- !*/
-/*! ---------------------- Model      ---------------------- !*/
+/* ---------------------- Model      ---------------------- */
+/* ---------------------- Model      ---------------------- */
 
-/*! ---------------------- View       ---------------------- !*/
-/*! ---------------------- View       ---------------------- !*/
+/* ---------------------- View       ---------------------- */
+/* ---------------------- View       ---------------------- */
 
-/*! ---------------------- Controller ---------------------- !*/
-/*! ---------------------- Controller ---------------------- !*/
+/* ---------------------- Controller ---------------------- */
+/* ---------------------- Controller ---------------------- */
+
 
 @interface CustomNavigationController ()
 
+
 #pragma mark - UI   Propertys
-/*! ---------------------- UI   Property  ---------------------- !*/
-/*! ---------------------- UI   Property  ---------------------- !*/
+/* ---------------------- UI   Property  ---------------------- */
+/* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
 @property (nonatomic, strong) UIImageView *navigationBarlineImageView;
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
 
 @end
 
 @implementation CustomNavigationController
 
 #pragma mark - Lifecycle Methods
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  viewDidLoad ( 视图载入完成 调用 )
+ *  @brief  viewDidLoad ( 视图载入完成 调用 )
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,10 +59,10 @@
     self.navigationBar.swpNavigationBarSetBottomLineViewHiddenChain(YES);
 }
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  viewWillAppear: ( 将要加载出视图 调用)
+ *  @brief  viewWillAppear: ( 将要加载出视图 调用)
  *
  *  @ param  animated
  */
@@ -67,10 +70,10 @@
     [super viewWillAppear:animated];
 }
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  viewDidAppear: ( 视图 显示 窗口时 调用 )
+ *  @brief  viewDidAppear: ( 视图 显示 窗口时 调用 )
  *
  *  @ param  animated
  */
@@ -78,10 +81,10 @@
     [super viewDidAppear:animated];
 }
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  viewWillDisappear: ( 视图  即将消失、被覆盖或是隐藏时调用 )
+ *  @brief  viewWillDisappear: ( 视图  即将消失、被覆盖或是隐藏时调用 )
  *
  *  @ param  animated
  */
@@ -90,10 +93,10 @@
     // Do any additional setup after loading the view.
 }
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  viewDidDisappear: ( 视图已经消失、被覆盖或是隐藏时调用 )
+ *  @brief  viewDidDisappear: ( 视图已经消失、被覆盖或是隐藏时调用 )
  *
  *  @ param  animated
  */
@@ -101,10 +104,10 @@
     [super viewDidDisappear:animated];
 }
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  didReceiveMemoryWarning ( 内存不足时 调用 )
+ *  @brief  didReceiveMemoryWarning ( 内存不足时 调用 )
  */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -112,10 +115,10 @@
 }
 
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  dealloc ( 当前 控制器 被销毁时 调用 )
+ *  @brief  dealloc ( 当前 控制器 被销毁时 调用 )
  */
 - (void)dealloc {
     NSLog(@"%s", __FUNCTION__);
@@ -125,18 +128,18 @@
     return self.topViewController;
 }
 
-/**!
- *  @ author swp_song
+/**
+ *  @author swp_song
  *
- *  @ brief  preferredStatusBarStyle:    ( 设置 状态栏 字体样式 )
+ *  @brief  preferredStatusBarStyle:    ( 设置 状态栏 字体样式 )
  *
- *  @ return UIStatusBarStyle
+ *  @return UIStatusBarStyle
  */
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleDefault;
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  findLineImageViewUnder: ( 设置 状态栏 字体样式 )
@@ -159,7 +162,7 @@
 }
 
 #pragma mark -
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  customNavigationControllerWithRootViewController:  ( 快速初始化 )

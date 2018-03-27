@@ -9,50 +9,53 @@
 
 #import "TextFieldDemoViewController.h"
 
-/*! ---------------------- Tool       ---------------------- !*/
+
+/* ---------------------- Tool       ---------------------- */
 #import <Masonry/Masonry.h>                         //  Masonry
 #import "UIColor+SwpColor.h"                        //  UIColor
 #import "UIButton+SwpSetButton.h"                   //  UIButton
 #import "UITextField+SwpSetTextField.h"             //  UITextField
 #import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
-/*! ---------------------- Tool       ---------------------- !*/
+/* ---------------------- Tool       ---------------------- */
 
-/*! ---------------------- Model      ---------------------- !*/
-/*! ---------------------- Model      ---------------------- !*/
+/* ---------------------- Model      ---------------------- */
+/* ---------------------- Model      ---------------------- */
 
-/*! ---------------------- View       ---------------------- !*/
-/*! ---------------------- View       ---------------------- !*/
+/* ---------------------- View       ---------------------- */
+/* ---------------------- View       ---------------------- */
 
-/*! ---------------------- Controller ---------------------- !*/
-/*! ---------------------- Controller ---------------------- !*/
+
+/* ---------------------- Controller ---------------------- */
+/* ---------------------- Controller ---------------------- */
+
 
 @interface TextFieldDemoViewController ()
 
 #pragma mark - UI   Propertys
-/*! ---------------------- UI   Property  ---------------------- !*/
-/*! 背景 !*/
+/* ---------------------- UI   Property  ---------------------- */
+/* 背景 */
 @property (nonatomic, strong) UIView      *backgroundView;
-/*! 输入文本 !*/
+/* 输入文本 */
 @property (nonatomic, strong) UITextField *textField1;
-/*! 账号 !*/
+/* 账号 */
 @property (nonatomic, strong) UITextField *accountView;
-/*! 密码 !*/
+/* 密码 */
 @property (nonatomic, strong) UITextField *passwordView;
-/*! 验证码 !*/
+/* 验证码 */
 @property (nonatomic, strong) UITextField *codeView;
-/*! ---------------------- UI   Property  ---------------------- !*/
+/* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
 @property (nonatomic, copy) NSArray<UIView *> *views_;
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
 
 @end
 
 @implementation TextFieldDemoViewController
 
 #pragma mark - Lifecycle Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  viewDidLoad ( 视图载入完成调用 )
@@ -65,7 +68,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  didReceiveMemoryWarning ( 内存不足时调用 )
@@ -75,7 +78,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  dealloc ( 当前 控制器 被销毁时 调用 )
@@ -87,7 +90,7 @@
 
 
 #pragma mark - Set UI Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setUI   ( 设置 UI 控件 )
@@ -99,7 +102,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setNavigationBar    ( 设置导航栏 )
@@ -110,7 +113,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setUpUI ( 添加控件 )
@@ -125,7 +128,7 @@
     
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setUIAutoLayout ( 设置控件的自动布局 )

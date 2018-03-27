@@ -10,34 +10,35 @@
 
 #import "CityListViewController.h"
 
-/*! ---------------------- Tool       ---------------------- !*/
+
+/* ---------------------- Tool       ---------------------- */
 #import <Masonry/Masonry.h>             //  Masonry
 #import "NSArray+SwpOrderByCharacter.h"
 #import <SVProgressHUD/SVProgressHUD.h>
-/*! ---------------------- Tool       ---------------------- !*/
+/* ---------------------- Tool       ---------------------- */
 
-/*! ---------------------- Model      ---------------------- !*/
+/* ---------------------- Model      ---------------------- */
 #import "CityModel.h"
-/*! ---------------------- Model      ---------------------- !*/
+/* ---------------------- Model      ---------------------- */
 
-/*! ---------------------- View       ---------------------- !*/
+/* ---------------------- View       ---------------------- */
 #import "CityTableView.h"
-/*! ---------------------- View       ---------------------- !*/
+/* ---------------------- View       ---------------------- */
 
-/*! ---------------------- Controller ---------------------- !*/
-/*! ---------------------- Controller ---------------------- !*/
+/* ---------------------- Controller ---------------------- */
+/* ---------------------- Controller ---------------------- */
 
 @interface CityListViewController ()
 
 #pragma mark - UI   Propertys
-/*! ---------------------- UI   Property  ---------------------- !*/
-/*! tableView !*/
+/* ---------------------- UI   Property  ---------------------- */
+/* tableView */
 @property (nonatomic, copy) CityTableView *cityTableView;
-/*! ---------------------- UI   Property  ---------------------- !*/
+/* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
-/*! ---------------------- Data Property  ---------------------- !*/
-/*! ---------------------- Data Property  ---------------------- !*/
+/* ---------------------- Data Property  ---------------------- */
+/* ---------------------- Data Property  ---------------------- */
 
 
 @end
@@ -45,7 +46,7 @@
 @implementation CityListViewController
 
 #pragma mark - Lifecycle Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  viewDidLoad ( 视图载入完成调用 )
@@ -62,7 +63,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  didReceiveMemoryWarning ( 内存不足时调用 )
@@ -72,7 +73,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  dealloc ( 当前 控制器 被销毁时 调用 )
@@ -82,7 +83,7 @@
 }
 
 #pragma mark - Set Data Method
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setData ( 设置 初始化 数据 )
@@ -96,7 +97,7 @@
 
 
 #pragma mark - Set UI Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setUI   ( 设置 UI 控件 )
@@ -108,7 +109,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setNavigationBar    ( 设置导航栏 )
@@ -118,7 +119,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setUpUI ( 添加控件 )
@@ -128,7 +129,7 @@
     [self.view addSubview:self.cityTableView];
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setUIAutoLayout ( 设置控件的自动布局 )
@@ -142,7 +143,7 @@
 
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  cityListViewControllerBlock ( CityListViewController Block )
@@ -152,7 +153,7 @@
     [self cityTableViewBlock];
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  cityTableViewBlock ( CityTableView Block )

@@ -1,1 +1,1 @@
-../../../../../SwpCateGory/Other/SwpAttributeCateGory/SwpAttributedColor.h
+../../../../../SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedColor.h

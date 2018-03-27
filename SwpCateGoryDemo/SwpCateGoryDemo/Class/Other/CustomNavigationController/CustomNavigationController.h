@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @interface CustomNavigationController : UINavigationController
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  customNavigationControllerWithRootViewController:  ( 快速初始化 )

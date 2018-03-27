@@ -16,7 +16,7 @@
 @implementation BaseViewController
 
 #pragma mark - Lifecycle Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  viewDidLoad ( 视图载入完成调用 )
@@ -29,7 +29,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  didReceiveMemoryWarning ( 内存不足时调用 )
@@ -40,7 +40,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setBaseViewControllerProperty   ( 设置属性 )

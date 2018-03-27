@@ -25,7 +25,7 @@
 
 @implementation AppDelegate (SVProgressHUD)
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  setSVProgressHUD  ( 设置 SVProgressHUD 样式 )
