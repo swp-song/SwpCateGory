@@ -22,8 +22,6 @@
     return [self swpStitchingString];
 }
 
-
-
 /**
  *  @author swp_song
  *
@@ -58,7 +56,7 @@
  *
  *  @param  value   value
  *
- *  @return
+ *  @return NSString
  */
 - (NSString *)swpVerificationPropertyType:(id)key value:(id)value {
     
