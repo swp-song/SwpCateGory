@@ -1,6 +1,12 @@
 # SwpCateGory
 
-[![Build Status](https://travis-ci.org/swp-song/SwpCateGory.svg?branch=master)](https://travis-ci.org/swp-song/SwpCateGory) [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![Xcode](https://img.shields.io/badge/Xcode-9.3-25B1F6.svg)](https://developer.apple.com/xcode)
+[![iOS](https://img.shields.io/badge/iOS-8.0+-1C75AF.svg)](https://developer.apple.com/xcode)
+[![BuildStatus](https://travis-ci.org/swp-song/SwpCateGory.svg?branch=master)](https://travis-ci.org/swp-song/SwpCateGory) 
+[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
+[![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
+[![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.6.1-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
 
 -------
 
@@ -55,22 +61,31 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 -------
 
+### SwpCateGory 文档
+
+> * [SwpCateGory 文档](https://swp-song.com/docs/SwpCateGory/)
+
+-------
 
 ### 版本记录
+
+> * 版本版本：2.6.1
+> * 更新时间：2018-04-10 14:29:11
+> * 更新内容：
+>
+>> * 更新文档，更新部分备注问题。
+
+>> -------
 
 > * 版本版本：2.6.0
 > * 更新时间：2018-03-27 10:58:12
 > * 更新内容：
-> 
+>
 >> *  新增版本信息。
 
--------
+>> -------
 
-> * 版本版本：2.5.0
-> * 更新时间：2018-03-04 19:22:52
-> * 更新内容：
-> 
->> * 新增 SwpCreateImage 分类。
+
 
 -------
 

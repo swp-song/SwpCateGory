@@ -168,7 +168,7 @@ static NSString * const kDemoCellID = @" Demo Cell ID ";
  */
 - (DemoTableView * _Nonnull (^)(void (^ _Nullable)(DemoTableView * _Nonnull, NSIndexPath * _Nonnull, DemoModel * _Nonnull)))demoTableViewClickCellEvent {
     return ^(void(^demoTableViewClickCellEvent)(DemoTableView *, NSIndexPath *, DemoModel *)) {
-        _clickCellEvent = demoTableViewClickCellEvent;
+        self.clickCellEvent = demoTableViewClickCellEvent;
         return self;
     };
 }

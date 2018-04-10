@@ -52,9 +52,13 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpVerificationPropertyType:    ( 验证属性类型 )
+ *  @brief  swpVerificationPropertyType:value:  ( 验证属性类型 )
  *
- *  @return NSString
+ *  @param  key     key
+ *
+ *  @param  value   value
+ *
+ *  @return
  */
 - (NSString *)swpVerificationPropertyType:(id)key value:(id)value {
     

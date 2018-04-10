@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.6.0'
-  s.summary = " 常用工具分类 "
+  s.version = '2.6.1'
+  s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -22,14 +22,12 @@ Pod::Spec.new do |s|
   s.author                = { 'swp-song' => '396587868@qq.com' }
   s.source                = { :git => 'https://github.com/swp-song/SwpCateGory.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.ios.deployment_target = '8.0'
 
+  s.ios.deployment_target = '8.0'
+  s.frameworks            = 'UIKit', 'Foundation'
   s.requires_arc          = true
-  s.frameworks            = 'UIKit'
   s.resource              = "SwpCateGory/Resources/SwpCateGory.bundle"
 
-
-  # s.default_subspec       = 'SwpCateGory'
   s.default_subspec       = 'SwpCateGory',
                             'SwpOrderByCharacter',
                             'SwpGenerateProperty',

@@ -13,6 +13,7 @@
 
 /* ---------------------- Tool       ---------------------- */
 #import <Masonry/Masonry.h>
+#import <SwpCateGory/SwpCateGory.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -64,6 +65,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    NSLog(@"SwpCateGoryInfo     = %@", [SwpCateGory swpCateGoryInfo]);
+    NSLog(@"SwpCateGoryVersion  = %@", [SwpCateGory swpCateGoryVersion]);
     
     [self setUI];
     
