@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.6.2'
+  s.version = '2.6.3'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.frameworks            = 'UIKit', 'Foundation'
   s.requires_arc          = true
-  s.resource              = "SwpCateGory/Resources/SwpCateGory.bundle"
+
 
   s.default_subspec       = 'SwpCateGory',
                             'SwpOrderByCharacter',
@@ -61,6 +61,7 @@ Pod::Spec.new do |s|
   s.subspec 'SwpCateGory' do |swpCateGory|
     swpCateGory.public_header_files = 'SwpCateGory/Class/SwpCateGory/*.h'
     swpCateGory.source_files        = 'SwpCateGory/Class/SwpCateGory/*.{h,m}'
+    swpCateGory.resource            = 'SwpCateGory/Resources/SwpCateGory.bundle'
   end
 
   # NSArray 分类，按 A~Z 数组中数据排序。

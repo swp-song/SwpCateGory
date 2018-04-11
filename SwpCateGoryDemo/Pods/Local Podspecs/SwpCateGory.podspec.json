@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.6.2"
+    "tag": "2.6.3"
   },
   "platforms": {
     "ios": "8.0"
@@ -23,7 +23,6 @@
     "Foundation"
   ],
   "requires_arc": true,
-  "resources": "SwpCateGory/Resources/SwpCateGory.bundle",
   "default_subspecs": [
     "SwpCateGory",
     "SwpOrderByCharacter",
@@ -50,7 +49,8 @@
     {
       "name": "SwpCateGory",
       "public_header_files": "SwpCateGory/Class/SwpCateGory/*.h",
-      "source_files": "SwpCateGory/Class/SwpCateGory/*.{h,m}"
+      "source_files": "SwpCateGory/Class/SwpCateGory/*.{h,m}",
+      "resources": "SwpCateGory/Resources/SwpCateGory.bundle"
     },
     {
       "name": "SwpOrderByCharacter",
