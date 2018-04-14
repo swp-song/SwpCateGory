@@ -37,11 +37,11 @@
 /**
  *  @author swp_song
  *
- *  @brief  titleRect   ( titleRect = titleFrame )
+ *  @brief  swpTitleRect   ( swpTitleRect = swpTitleFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))titleRect {
+- (UIButton * _Nonnull (^)(CGRect))swpTitleRect {
     return ^(CGRect rect) {
-        self.titleFrame = rect;
+        self.swpImageFrame = rect;
         return self;
     };
 }
@@ -49,11 +49,11 @@
 /**
  *  @author swp_song
  *
- *  @brief  imageRect   ( imageRect = imageFrame )
+ *  @brief  swpImageRect   ( swpImageRect = swpImageFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))imageRect {
+- (UIButton * _Nonnull (^)(CGRect))swpImageRect {
     return ^(CGRect rect) {
-        self.imageFrame = rect;
+        self.swpImageFrame = rect;
         return self;
     };
 }
@@ -65,22 +65,22 @@ static const char kSwpBuutonLayoutTitleFrameKey;
 /**
  *  @author swp_song
  *
- *  @brief  titleFrame: ( titleFrame set )
+ *  @brief  setSwpTitleFrame:   ( SwpTitleFrame Set )
  *
- *  @param  titleFrame  titleFrame
+ *  @param  swpTitleFrame   swpTitleFrame
  */
-- (void)setTitleFrame:(CGRect)titleFrame {
-    objc_setAssociatedObject(self, &kSwpBuutonLayoutTitleFrameKey, [NSValue valueWithCGRect:titleFrame], OBJC_ASSOCIATION_COPY);
+- (void)setSwpTitleFrame:(CGRect)swpTitleFrame {
+    objc_setAssociatedObject(self, &kSwpBuutonLayoutTitleFrameKey, [NSValue valueWithCGRect:swpTitleFrame], OBJC_ASSOCIATION_COPY);
 }
 
 /**
  *  @author swp_song
  *
- *  @brief  titleFrame
+ *  @brief  swpTitleFrame   ( SwpTitleFrame Get )
  *
  *  @return CGRect
  */
-- (CGRect)titleFrame {
+- (CGRect)swpTitleFrame {
     return [objc_getAssociatedObject(self, &kSwpBuutonLayoutTitleFrameKey) CGRectValue];
 }
 
@@ -91,22 +91,22 @@ static const char kSwpBuutonLayoutImageFrameKey;
 /**
  *  @author swp_song
  *
- *  @brief  imageFrame: ( imageFrame Set )
+ *  @brief  setSwpImageFrame:   ( SwpImageFrame Set )
  *
- *  @param  imageFrame  imageFrame
+ *  @param  swpImageFrame   swpImageFrame
  */
-- (void)setImageFrame:(CGRect)imageFrame {
-    objc_setAssociatedObject(self, &kSwpBuutonLayoutImageFrameKey, [NSValue valueWithCGRect:imageFrame], OBJC_ASSOCIATION_COPY);
+- (void)setSwpImageFrame:(CGRect)swpImageFrame {
+    objc_setAssociatedObject(self, &kSwpBuutonLayoutImageFrameKey, [NSValue valueWithCGRect:swpImageFrame], OBJC_ASSOCIATION_COPY);
 }
 
 /**
  *  @author swp_song
  *
- *  @brief  imageFrame    ( imageFrame Get )
+ *  @brief  swpImageFrame   ( imageFrame Get )
  *
  *  @return CGRect
  */
-- (CGRect)imageFrame {
+- (CGRect)swpImageFrame {
     return [objc_getAssociatedObject(self, &kSwpBuutonLayoutImageFrameKey) CGRectValue];
 }
 
@@ -151,8 +151,8 @@ FOUNDATION_STATIC_INLINE void swp_MethodSwizzle(Class aClass,SEL originaSEL, SEL
  */
 - (CGRect)swp_titleRectForContentRect:(CGRect)contentRect {
     
-    if (!CGRectIsEmpty(self.titleFrame) && !CGRectEqualToRect(self.titleFrame, CGRectZero)) {
-        return self.titleFrame;
+    if (!CGRectIsEmpty(self.swpTitleFrame) && !CGRectEqualToRect(self.swpTitleFrame, CGRectZero)) {
+        return self.swpTitleFrame;
     }
     //  注意:此处并没有递归操作，调回原方法。
     return [self swp_titleRectForContentRect:contentRect];
@@ -170,8 +170,8 @@ FOUNDATION_STATIC_INLINE void swp_MethodSwizzle(Class aClass,SEL originaSEL, SEL
  */
 - (CGRect)swp_imageRectForContentRect:(CGRect)contentRect {
     
-    if (!CGRectIsEmpty(self.imageFrame) && !CGRectEqualToRect(self.imageFrame, CGRectZero)) {
-        return self.imageFrame;
+    if (!CGRectIsEmpty(self.swpImageFrame) && !CGRectEqualToRect(self.swpImageFrame, CGRectZero)) {
+        return self.swpImageFrame;
     }
     
     //  注意:此处并没有递归操作，调回原方法。

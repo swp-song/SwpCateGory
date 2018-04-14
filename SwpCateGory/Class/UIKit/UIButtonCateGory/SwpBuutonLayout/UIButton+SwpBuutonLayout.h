@@ -13,25 +13,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /** title Rect */
-@property (nonatomic, assign) CGRect titleFrame;
+@property (nonatomic, assign) CGRect swpTitleFrame;
 
 /** image Rect */
-@property (nonatomic, assign) CGRect imageFrame;
+@property (nonatomic, assign) CGRect swpImageFrame;
 
 /**
  *  @author swp_song
  *
- *  @brief  titleRect   ( titleRect = titleFrame )
+ *  @brief  swpTitleRect   ( swpTitleRect = swpTitleFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))titleRect;
+- (UIButton * _Nonnull (^)(CGRect))swpTitleRect;
 
 /**
  *  @author swp_song
  *
- *  @brief  imageRect   ( imageRect = imageFrame )
+ *  @brief  swpImageRect   ( swpImageRect = swpImageFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))imageRect;
-
+- (UIButton * _Nonnull (^)(CGRect))swpImageRect;
 
 @end
 NS_ASSUME_NONNULL_END;
