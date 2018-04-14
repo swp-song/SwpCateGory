@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
-[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.6.3-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
+[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.6.4-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
 
 -------
 
@@ -42,6 +42,7 @@ pod 'SwpCateGory/SwpUserDefaults'
 pod 'SwpCateGory/SwpAttributed'
 pod 'SwpCateGory/SwpSetNavigationBarItem'
 pod 'SwpCateGory/SwpSetButton'
+pod 'SwpCateGory/SwpBuutonLayout'
 pod 'SwpCateGory/SwpColor'
 pod 'SwpCateGory/SwpFont'
 pod 'SwpCateGory/SwpQrCodeImage'
@@ -69,6 +70,14 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 ### 版本记录
 
+> * 版本版本：2.6.4
+> * 更新时间：2018-04-15 00:02:45
+> * 更新内容：
+>
+>> * 新增 UIButton+SwpBuutonLayout 分类
+
+>> -------
+
 > * 版本版本：2.6.3
 > * 更新时间：2018-04-11 09:44:24
 > * 更新内容：
@@ -77,13 +86,7 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 >> -------
 
-> * 版本版本：2.6.2
-> * 更新时间：2018-03-27 10:58:12
-> * 更新内容：
->
->> * 例行更新。
 
->> -------
 
 
 -------

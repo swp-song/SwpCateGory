@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.6.3",
+  "version": "2.6.4",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.6.3"
+    "tag": "2.6.4"
   },
   "platforms": {
     "ios": "8.0"
@@ -34,6 +34,7 @@
     "SwpAttributed",
     "SwpSetNavigationBarItem",
     "SwpSetButton",
+    "SwpBuutonLayout",
     "SwpColor",
     "SwpFont",
     "SwpQrCodeImage",
@@ -131,6 +132,16 @@
       },
       "public_header_files": "SwpCateGory/Class/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.h",
       "source_files": "SwpCateGory/Class/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.{h,m}"
+    },
+    {
+      "name": "SwpBuutonLayout",
+      "dependencies": {
+        "SwpCateGory/SwpCateGory": [
+
+        ]
+      },
+      "public_header_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpBuutonLayout/*.h",
+      "source_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpBuutonLayout/*.{h,m}"
     },
     {
       "name": "SwpSetButton",

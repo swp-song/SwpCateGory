@@ -10,7 +10,7 @@ target 'SwpCateGoryDemo' do
 
   # Pods for SwpCateGoryDemo
 
-  inhibit_all_warnings!
+#  inhibit_all_warnings!
 
   pod 'Masonry'         #   Masonry 自动布局框架
   pod 'SVProgressHUD'   #   提示信息库
@@ -25,6 +25,7 @@ target 'SwpCateGoryDemo' do
 #   pod 'SwpCateGory/SwpAttributed', :path => '../'
 #   pod 'SwpCateGory/SwpSetNavigationBarItem', :path => '../'
 #   pod 'SwpCateGory/SwpSetButton', :path => '../'
+#   pod 'SwpCateGory/SwpBuutonLayout', :path => '../'
 #   pod 'SwpCateGory/SwpColor', :path => '../'
 #   pod 'SwpCateGory/SwpFont', :path => '../'
 #   pod 'SwpCateGory/SwpQrCodeImage', :path => '../'

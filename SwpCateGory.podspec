@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.6.3'
+  s.version = '2.6.4'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
                             'SwpAttributed',
                             'SwpSetNavigationBarItem',
                             'SwpSetButton',
+                            'SwpBuutonLayout',
                             'SwpColor',
                             'SwpFont',
                             'SwpQrCodeImage',
@@ -124,6 +125,13 @@ Pod::Spec.new do |s|
     swpSetNavigationBarItem.source_files        = 'SwpCateGory/Class/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.{h,m}'
   end
 
+  # UIButton 分类，设置 Button 文字图片排版问题
+  s.subspec 'SwpBuutonLayout' do |swpBuutonLayout|
+    swpBuutonLayout.dependency 'SwpCateGory/SwpCateGory'
+    swpBuutonLayout.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpBuutonLayout/*.h'
+    swpBuutonLayout.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpBuutonLayout/*.{h,m}'
+  end
+
   # UIButton 分类，快速设置按钮样式
   s.subspec 'SwpSetButton' do |swpSetButton|
     swpSetButton.dependency 'SwpCateGory/SwpCateGory'
@@ -131,6 +139,9 @@ Pod::Spec.new do |s|
     swpSetButton.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/*.{h,m}'
 
   end
+
+
+
 
   # UIColor 分类，颜色分装可以设置 16 进制色值
   s.subspec 'SwpColor' do |swpColor|
