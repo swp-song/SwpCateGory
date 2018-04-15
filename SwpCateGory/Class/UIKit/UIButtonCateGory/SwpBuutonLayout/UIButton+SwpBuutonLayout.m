@@ -39,7 +39,7 @@
  *
  *  @brief  swpTitleRect   ( swpTitleRect = swpTitleFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))swpTitleRect {
+- (__kindof UIButton * _Nonnull (^)(CGRect))swpTitleRect {
     return ^(CGRect rect) {
         self.swpTitleFrame = rect;
         return self;
@@ -51,7 +51,7 @@
  *
  *  @brief  swpImageRect   ( swpImageRect = swpImageFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))swpImageRect {
+- (__kindof UIButton * _Nonnull (^)(CGRect))swpImageRect {
     return ^(CGRect rect) {
         self.swpImageFrame = rect;
         return self;

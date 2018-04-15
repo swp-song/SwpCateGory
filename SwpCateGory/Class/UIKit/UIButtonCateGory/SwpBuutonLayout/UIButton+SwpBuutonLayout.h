@@ -23,14 +23,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @brief  swpTitleRect   ( swpTitleRect = swpTitleFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))swpTitleRect;
+- (__kindof UIButton * _Nonnull (^)(CGRect))swpTitleRect;
 
 /**
  *  @author swp_song
  *
  *  @brief  swpImageRect   ( swpImageRect = swpImageFrame )
  */
-- (UIButton * _Nonnull (^)(CGRect))swpImageRect;
+- (__kindof UIButton * _Nonnull (^)(CGRect))swpImageRect;
 
 @end
 NS_ASSUME_NONNULL_END;
