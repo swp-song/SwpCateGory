@@ -41,7 +41,7 @@
  */
 - (UIButton * _Nonnull (^)(CGRect))swpTitleRect {
     return ^(CGRect rect) {
-        self.swpImageFrame = rect;
+        self.swpTitleFrame = rect;
         return self;
     };
 }
