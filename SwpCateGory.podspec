@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.6.7'
+  s.version = '2.6.8'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
                             'SwpAttributed',
                             'SwpSetNavigationBarItem',
                             'SwpSetButton',
-                            'SwpBuutonLayout',
+                            'SwpButtonLayout',
                             'SwpColor',
                             'SwpFont',
                             'SwpQrCodeImage',
@@ -125,19 +125,19 @@ Pod::Spec.new do |s|
     swpSetNavigationBarItem.source_files        = 'SwpCateGory/Class/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/*.{h,m}'
   end
 
-  # UIButton 分类，设置 Button 文字图片排版问题
-  s.subspec 'SwpBuutonLayout' do |swpBuutonLayout|
-    swpBuutonLayout.dependency 'SwpCateGory/SwpCateGory'
-    swpBuutonLayout.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpBuutonLayout/*.h'
-    swpBuutonLayout.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpBuutonLayout/*.{h,m}'
-  end
-
   # UIButton 分类，快速设置按钮样式
   s.subspec 'SwpSetButton' do |swpSetButton|
     swpSetButton.dependency 'SwpCateGory/SwpCateGory'
     swpSetButton.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/*.h'
     swpSetButton.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/*.{h,m}'
 
+  end
+
+  # UIButton 分类，设置 Button 文字图片排版问题
+  s.subspec 'SwpButtonLayout' do |swpButtonLayout|
+    swpButtonLayout.dependency 'SwpCateGory/SwpCateGory'
+    swpButtonLayout.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.h'
+    swpButtonLayout.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.{h,m}'
   end
 
 

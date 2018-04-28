@@ -12,10 +12,13 @@
 
 /* ---------------------- Tool       ---------------------- */
 #import <Masonry/Masonry.h>                         //  Masonry
-#import "UIColor+SwpColor.h"                        //  UIColor
 #import "UIButton+SwpSetButton.h"                   //  UIButton
-#import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
+#import <SwpCateGory/UIColor+SwpColor.h>
 #import "UINavigationBar+SwpNavigationBar.h"
+#import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
+#import <SwpCateGory/UIButton+SwpButtonLayout.h>
+
+
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -141,6 +144,47 @@
         make.left.right.height.equalTo(self.submitButton1);
         make.top.equalTo(self.checkBoxButton.mas_bottom).offset(30);
     }];
+    
+    
+    
+    NSMutableArray<UIButton *> *views  = @[].mutableCopy;
+    NSMutableArray<NSString *> *titles = @[@"Top (上)", @"Left (左)", @"Bottom (下)", @"Right (右)"].mutableCopy;
+    for (int i=0; i<4; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.backgroundColor = UIColor.swpColorWithRandom();
+        [button setTitle:titles[i] forState:(UIControlStateNormal)];
+        [button setTitleColor:UIColor.swpColorWithRandom() forState:(UIControlStateNormal)];
+        button.titleLabel.font = [UIFont systemFontOfSize:12];
+        [button setImage:[UIImage imageNamed:@"button_icon"] forState:(UIControlStateNormal)];
+        [views addObject:button];
+        [self.view addSubview:button];
+    }
+  
+    [views mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:10 leadSpacing:10 tailSpacing:10];
+    
+    [views mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.submitButton2.mas_bottom).offset(50);
+        make.height.equalTo(@(40));
+    }];
+    
+    
+    
+    [views enumerateObjectsUsingBlock:^(UIButton * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ((idx % 2) == 0) {
+            [button mas_updateConstraints:^(MASConstraintMaker *make) {
+                make.height.equalTo(@(60));
+            }];
+            
+            //  设置按钮边距
+            [button swpButtonLayout:idx];
+            
+        } else {
+            //  设置按钮边距
+            button.swpButtonLayoutOffset(idx, 2);
+        }
+        
+    }];
+    
 }
 
 
