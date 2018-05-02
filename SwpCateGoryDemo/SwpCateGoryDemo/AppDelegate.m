@@ -10,7 +10,7 @@
 
 #import "AppDelegate+SVProgressHUD.h"
 #import "DemoListViewController.h"
-#import "CustomNavigationController.h"
+#import "SwpCateGoryNavigationController.h"
 
 
 @interface AppDelegate ()
@@ -30,7 +30,7 @@
     
     self.window.backgroundColor    = [UIColor whiteColor];
     
-    self.window.rootViewController = [CustomNavigationController customNavigationControllerWithRootViewController:[DemoListViewController  new]];
+    self.window.rootViewController = [SwpCateGoryNavigationController navigationControllerWithRootViewController:[DemoListViewController  new]];
     
     [self.window makeKeyAndVisible];
     

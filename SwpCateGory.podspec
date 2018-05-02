@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.6.8'
+  s.version = '2.7.0'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
                             'SwpSetNavigationBarItem',
                             'SwpSetButton',
                             'SwpButtonLayout',
+                            'SwpButtonCircleAnimation',
                             'SwpColor',
                             'SwpFont',
                             'SwpQrCodeImage',
@@ -140,6 +141,12 @@ Pod::Spec.new do |s|
     swpButtonLayout.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.{h,m}'
   end
 
+  # UIButton 分类，按钮圆圈旋转动画
+  s.subspec 'SwpButtonCircleAnimation' do |swpButtonCircleAnimation|
+    swpButtonCircleAnimation.dependency 'SwpCateGory/SwpCateGory'
+    swpButtonCircleAnimation.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonCircleAnimation/*.h'
+    swpButtonCircleAnimation.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonCircleAnimation/*.{h,m}'
+  end
 
 
 

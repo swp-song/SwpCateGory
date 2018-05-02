@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D32E21F1EF9682E008ED670 /* ButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E1F41EF9682E008ED670 /* ButtonDemoViewController.m */; };
-		2D32E2201EF9682E008ED670 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E1F71EF9682E008ED670 /* CityListViewController.m */; };
-		2D32E2211EF9682E008ED670 /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E1FA1EF9682E008ED670 /* DemoListViewController.m */; };
-		2D32E2221EF9682E008ED670 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E1FD1EF9682E008ED670 /* OtherViewController.m */; };
-		2D32E2231EF9682E008ED670 /* TextFieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2001EF9682E008ED670 /* TextFieldDemoViewController.m */; };
-		2D32E2241EF9682E008ED670 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2041EF9682E008ED670 /* CityModel.m */; };
-		2D32E2251EF9682E008ED670 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2071EF9682E008ED670 /* DemoModel.m */; };
-		2D32E2261EF9682E008ED670 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E20B1EF9682E008ED670 /* BaseViewController.m */; };
-		2D32E2271EF9682E008ED670 /* AppDelegate+SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E20E1EF9682E008ED670 /* AppDelegate+SVProgressHUD.m */; };
-		2D32E2281EF9682E008ED670 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2111EF9682E008ED670 /* CustomNavigationController.m */; };
-		2D32E2291EF9682E008ED670 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2151EF9682E008ED670 /* CityCell.m */; };
-		2D32E22A1EF9682E008ED670 /* CityTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E2171EF9682E008ED670 /* CityTableView.m */; };
-		2D32E22B1EF9682E008ED670 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E21A1EF9682E008ED670 /* DemoCell.m */; };
-		2D32E22C1EF9682E008ED670 /* DemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E21C1EF9682E008ED670 /* DemoTableView.m */; };
-		2D32E22D1EF9682E008ED670 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D32E21E1EF9682E008ED670 /* city.plist */; };
+		2D86A4CF2098B5CD006A2049 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A49F2098B5CD006A2049 /* DemoModel.m */; };
+		2D86A4D02098B5CD006A2049 /* DemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4A12098B5CD006A2049 /* DemoListViewController.m */; };
+		2D86A4D12098B5CD006A2049 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4A52098B5CD006A2049 /* DemoCell.m */; };
+		2D86A4D22098B5CD006A2049 /* DemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4A72098B5CD006A2049 /* DemoTableView.m */; };
+		2D86A4D32098B5CD006A2049 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4AA2098B5CD006A2049 /* CityModel.m */; };
+		2D86A4D42098B5CD006A2049 /* CityModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D86A4AB2098B5CD006A2049 /* CityModel.plist */; };
+		2D86A4D52098B5CD006A2049 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4AF2098B5CD006A2049 /* CityListViewController.m */; };
+		2D86A4D62098B5CD006A2049 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4B32098B5CD006A2049 /* CityCell.m */; };
+		2D86A4D72098B5CD006A2049 /* CityTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4B42098B5CD006A2049 /* CityTableView.m */; };
+		2D86A4D82098B5CD006A2049 /* SwpButtonCircleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4B72098B5CD006A2049 /* SwpButtonCircleAnimationViewController.m */; };
+		2D86A4D92098B5CD006A2049 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4BC2098B5CD006A2049 /* OtherViewController.m */; };
+		2D86A4DA2098B5CD006A2049 /* TextFieldDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4BF2098B5CD006A2049 /* TextFieldDemoViewController.m */; };
+		2D86A4DB2098B5CD006A2049 /* ButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4C32098B5CD006A2049 /* ButtonDemoViewController.m */; };
+		2D86A4DC2098B5CD006A2049 /* SwpCateGoryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4C72098B5CD006A2049 /* SwpCateGoryNavigationController.m */; };
+		2D86A4DD2098B5CD006A2049 /* AppDelegate+SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4CB2098B5CD006A2049 /* AppDelegate+SVProgressHUD.m */; };
+		2D86A4DE2098B5CD006A2049 /* SwpCateGoryBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4CD2098B5CD006A2049 /* SwpCateGoryBaseViewController.m */; };
+		2D86A4E02098B64D006A2049 /* DemoModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D86A4DF2098B64D006A2049 /* DemoModel.plist */; };
+		2D86A4E32098C62E006A2049 /* SwpButtonCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4E22098C62E006A2049 /* SwpButtonCustomView.m */; };
+		2D86A4E62098CF91006A2049 /* SwpButtonCustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86A4E52098CF91006A2049 /* SwpButtonCustomInputView.m */; };
 		2D99D7A01EF64D22006E043F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99D79F1EF64D22006E043F /* main.m */; };
 		2D99D7A31EF64D22006E043F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99D7A21EF64D22006E043F /* AppDelegate.m */; };
 		2D99D7AB1EF64D22006E043F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D99D7AA1EF64D22006E043F /* Assets.xcassets */; };
@@ -30,35 +34,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D32E1F31EF9682E008ED670 /* ButtonDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonDemoViewController.h; sourceTree = "<group>"; };
-		2D32E1F41EF9682E008ED670 /* ButtonDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonDemoViewController.m; sourceTree = "<group>"; };
-		2D32E1F61EF9682E008ED670 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
-		2D32E1F71EF9682E008ED670 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
-		2D32E1F91EF9682E008ED670 /* DemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoListViewController.h; sourceTree = "<group>"; };
-		2D32E1FA1EF9682E008ED670 /* DemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoListViewController.m; sourceTree = "<group>"; };
-		2D32E1FC1EF9682E008ED670 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
-		2D32E1FD1EF9682E008ED670 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
-		2D32E1FF1EF9682E008ED670 /* TextFieldDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldDemoViewController.h; sourceTree = "<group>"; };
-		2D32E2001EF9682E008ED670 /* TextFieldDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldDemoViewController.m; sourceTree = "<group>"; };
-		2D32E2031EF9682E008ED670 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
-		2D32E2041EF9682E008ED670 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
-		2D32E2061EF9682E008ED670 /* DemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
-		2D32E2071EF9682E008ED670 /* DemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
-		2D32E20A1EF9682E008ED670 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		2D32E20B1EF9682E008ED670 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		2D32E20D1EF9682E008ED670 /* AppDelegate+SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SVProgressHUD.h"; sourceTree = "<group>"; };
-		2D32E20E1EF9682E008ED670 /* AppDelegate+SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SVProgressHUD.m"; sourceTree = "<group>"; };
-		2D32E2101EF9682E008ED670 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
-		2D32E2111EF9682E008ED670 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
-		2D32E2141EF9682E008ED670 /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
-		2D32E2151EF9682E008ED670 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
-		2D32E2161EF9682E008ED670 /* CityTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableView.h; sourceTree = "<group>"; };
-		2D32E2171EF9682E008ED670 /* CityTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableView.m; sourceTree = "<group>"; };
-		2D32E2191EF9682E008ED670 /* DemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
-		2D32E21A1EF9682E008ED670 /* DemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
-		2D32E21B1EF9682E008ED670 /* DemoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableView.h; sourceTree = "<group>"; };
-		2D32E21C1EF9682E008ED670 /* DemoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableView.m; sourceTree = "<group>"; };
-		2D32E21E1EF9682E008ED670 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		2D86A49E2098B5CD006A2049 /* DemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		2D86A49F2098B5CD006A2049 /* DemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+		2D86A4A12098B5CD006A2049 /* DemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoListViewController.m; sourceTree = "<group>"; };
+		2D86A4A22098B5CD006A2049 /* DemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoListViewController.h; sourceTree = "<group>"; };
+		2D86A4A42098B5CD006A2049 /* DemoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableView.h; sourceTree = "<group>"; };
+		2D86A4A52098B5CD006A2049 /* DemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		2D86A4A62098B5CD006A2049 /* DemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
+		2D86A4A72098B5CD006A2049 /* DemoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableView.m; sourceTree = "<group>"; };
+		2D86A4AA2098B5CD006A2049 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		2D86A4AB2098B5CD006A2049 /* CityModel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityModel.plist; sourceTree = "<group>"; };
+		2D86A4AC2098B5CD006A2049 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		2D86A4AE2098B5CD006A2049 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListViewController.h; sourceTree = "<group>"; };
+		2D86A4AF2098B5CD006A2049 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListViewController.m; sourceTree = "<group>"; };
+		2D86A4B12098B5CD006A2049 /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
+		2D86A4B22098B5CD006A2049 /* CityTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableView.h; sourceTree = "<group>"; };
+		2D86A4B32098B5CD006A2049 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		2D86A4B42098B5CD006A2049 /* CityTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableView.m; sourceTree = "<group>"; };
+		2D86A4B72098B5CD006A2049 /* SwpButtonCircleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpButtonCircleAnimationViewController.m; sourceTree = "<group>"; };
+		2D86A4B82098B5CD006A2049 /* SwpButtonCircleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpButtonCircleAnimationViewController.h; sourceTree = "<group>"; };
+		2D86A4BB2098B5CD006A2049 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		2D86A4BC2098B5CD006A2049 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		2D86A4BF2098B5CD006A2049 /* TextFieldDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldDemoViewController.m; sourceTree = "<group>"; };
+		2D86A4C02098B5CD006A2049 /* TextFieldDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldDemoViewController.h; sourceTree = "<group>"; };
+		2D86A4C32098B5CD006A2049 /* ButtonDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonDemoViewController.m; sourceTree = "<group>"; };
+		2D86A4C42098B5CD006A2049 /* ButtonDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonDemoViewController.h; sourceTree = "<group>"; };
+		2D86A4C72098B5CD006A2049 /* SwpCateGoryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCateGoryNavigationController.m; sourceTree = "<group>"; };
+		2D86A4C82098B5CD006A2049 /* SwpCateGoryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCateGoryNavigationController.h; sourceTree = "<group>"; };
+		2D86A4CA2098B5CD006A2049 /* AppDelegate+SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SVProgressHUD.h"; sourceTree = "<group>"; };
+		2D86A4CB2098B5CD006A2049 /* AppDelegate+SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SVProgressHUD.m"; sourceTree = "<group>"; };
+		2D86A4CD2098B5CD006A2049 /* SwpCateGoryBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCateGoryBaseViewController.m; sourceTree = "<group>"; };
+		2D86A4CE2098B5CD006A2049 /* SwpCateGoryBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCateGoryBaseViewController.h; sourceTree = "<group>"; };
+		2D86A4DF2098B64D006A2049 /* DemoModel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DemoModel.plist; sourceTree = "<group>"; };
+		2D86A4E12098C62E006A2049 /* SwpButtonCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpButtonCustomView.h; sourceTree = "<group>"; };
+		2D86A4E22098C62E006A2049 /* SwpButtonCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpButtonCustomView.m; sourceTree = "<group>"; };
+		2D86A4E42098CF91006A2049 /* SwpButtonCustomInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpButtonCustomInputView.h; sourceTree = "<group>"; };
+		2D86A4E52098CF91006A2049 /* SwpButtonCustomInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpButtonCustomInputView.m; sourceTree = "<group>"; };
 		2D99D79B1EF64D22006E043F /* SwpCateGoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpCateGoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D99D79F1EF64D22006E043F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D99D7A11EF64D22006E043F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,175 +94,207 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D32E1F01EF9682E008ED670 /* Class */ = {
+		2D86A49B2098B5CD006A2049 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E1F11EF9682E008ED670 /* Controllers */,
-				2D32E2011EF9682E008ED670 /* Models */,
-				2D32E2081EF9682E008ED670 /* Other */,
-				2D32E2121EF9682E008ED670 /* Views */,
+				2D86A49C2098B5CD006A2049 /* Demo */,
+				2D86A4A82098B5CD006A2049 /* City */,
+				2D86A4B52098B5CD006A2049 /* ButtonCircleAnimation */,
+				2D86A4B92098B5CD006A2049 /* Other */,
+				2D86A4BD2098B5CD006A2049 /* TextField */,
+				2D86A4C12098B5CD006A2049 /* Button */,
+				2D86A4C52098B5CD006A2049 /* Main */,
 			);
-			path = Class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		2D32E1F11EF9682E008ED670 /* Controllers */ = {
+		2D86A49C2098B5CD006A2049 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E1F21EF9682E008ED670 /* ButtonDemoViewController */,
-				2D32E1F51EF9682E008ED670 /* CityListViewController */,
-				2D32E1F81EF9682E008ED670 /* DemoListViewController */,
-				2D32E1FB1EF9682E008ED670 /* OtherViewController */,
-				2D32E1FE1EF9682E008ED670 /* TextFieldDemoViewController */,
+				2D86A49D2098B5CD006A2049 /* Models */,
+				2D86A4A02098B5CD006A2049 /* Controllers */,
+				2D86A4A32098B5CD006A2049 /* Views */,
 			);
-			path = Controllers;
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		2D32E1F21EF9682E008ED670 /* ButtonDemoViewController */ = {
+		2D86A49D2098B5CD006A2049 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E1F31EF9682E008ED670 /* ButtonDemoViewController.h */,
-				2D32E1F41EF9682E008ED670 /* ButtonDemoViewController.m */,
-			);
-			path = ButtonDemoViewController;
-			sourceTree = "<group>";
-		};
-		2D32E1F51EF9682E008ED670 /* CityListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E1F61EF9682E008ED670 /* CityListViewController.h */,
-				2D32E1F71EF9682E008ED670 /* CityListViewController.m */,
-			);
-			path = CityListViewController;
-			sourceTree = "<group>";
-		};
-		2D32E1F81EF9682E008ED670 /* DemoListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E1F91EF9682E008ED670 /* DemoListViewController.h */,
-				2D32E1FA1EF9682E008ED670 /* DemoListViewController.m */,
-			);
-			path = DemoListViewController;
-			sourceTree = "<group>";
-		};
-		2D32E1FB1EF9682E008ED670 /* OtherViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E1FC1EF9682E008ED670 /* OtherViewController.h */,
-				2D32E1FD1EF9682E008ED670 /* OtherViewController.m */,
-			);
-			path = OtherViewController;
-			sourceTree = "<group>";
-		};
-		2D32E1FE1EF9682E008ED670 /* TextFieldDemoViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E1FF1EF9682E008ED670 /* TextFieldDemoViewController.h */,
-				2D32E2001EF9682E008ED670 /* TextFieldDemoViewController.m */,
-			);
-			path = TextFieldDemoViewController;
-			sourceTree = "<group>";
-		};
-		2D32E2011EF9682E008ED670 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E2021EF9682E008ED670 /* CityList */,
-				2D32E2051EF9682E008ED670 /* DemoList */,
+				2D86A49E2098B5CD006A2049 /* DemoModel.h */,
+				2D86A49F2098B5CD006A2049 /* DemoModel.m */,
+				2D86A4DF2098B64D006A2049 /* DemoModel.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2D32E2021EF9682E008ED670 /* CityList */ = {
+		2D86A4A02098B5CD006A2049 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E2031EF9682E008ED670 /* CityModel.h */,
-				2D32E2041EF9682E008ED670 /* CityModel.m */,
+				2D86A4A22098B5CD006A2049 /* DemoListViewController.h */,
+				2D86A4A12098B5CD006A2049 /* DemoListViewController.m */,
 			);
-			path = CityList;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		2D32E2051EF9682E008ED670 /* DemoList */ = {
+		2D86A4A32098B5CD006A2049 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E2061EF9682E008ED670 /* DemoModel.h */,
-				2D32E2071EF9682E008ED670 /* DemoModel.m */,
-			);
-			path = DemoList;
-			sourceTree = "<group>";
-		};
-		2D32E2081EF9682E008ED670 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E2091EF9682E008ED670 /* BaseViewController */,
-				2D32E20C1EF9682E008ED670 /* Category */,
-				2D32E20F1EF9682E008ED670 /* CustomNavigationController */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		2D32E2091EF9682E008ED670 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E20A1EF9682E008ED670 /* BaseViewController.h */,
-				2D32E20B1EF9682E008ED670 /* BaseViewController.m */,
-			);
-			path = BaseViewController;
-			sourceTree = "<group>";
-		};
-		2D32E20C1EF9682E008ED670 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E20D1EF9682E008ED670 /* AppDelegate+SVProgressHUD.h */,
-				2D32E20E1EF9682E008ED670 /* AppDelegate+SVProgressHUD.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		2D32E20F1EF9682E008ED670 /* CustomNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E2101EF9682E008ED670 /* CustomNavigationController.h */,
-				2D32E2111EF9682E008ED670 /* CustomNavigationController.m */,
-			);
-			path = CustomNavigationController;
-			sourceTree = "<group>";
-		};
-		2D32E2121EF9682E008ED670 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2D32E2131EF9682E008ED670 /* CityList */,
-				2D32E2181EF9682E008ED670 /* DemoList */,
+				2D86A4A62098B5CD006A2049 /* DemoCell.h */,
+				2D86A4A52098B5CD006A2049 /* DemoCell.m */,
+				2D86A4A42098B5CD006A2049 /* DemoTableView.h */,
+				2D86A4A72098B5CD006A2049 /* DemoTableView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2D32E2131EF9682E008ED670 /* CityList */ = {
+		2D86A4A82098B5CD006A2049 /* City */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E2141EF9682E008ED670 /* CityCell.h */,
-				2D32E2151EF9682E008ED670 /* CityCell.m */,
-				2D32E2161EF9682E008ED670 /* CityTableView.h */,
-				2D32E2171EF9682E008ED670 /* CityTableView.m */,
+				2D86A4A92098B5CD006A2049 /* Models */,
+				2D86A4AD2098B5CD006A2049 /* Controllers */,
+				2D86A4B02098B5CD006A2049 /* Views */,
 			);
-			path = CityList;
+			path = City;
 			sourceTree = "<group>";
 		};
-		2D32E2181EF9682E008ED670 /* DemoList */ = {
+		2D86A4A92098B5CD006A2049 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E2191EF9682E008ED670 /* DemoCell.h */,
-				2D32E21A1EF9682E008ED670 /* DemoCell.m */,
-				2D32E21B1EF9682E008ED670 /* DemoTableView.h */,
-				2D32E21C1EF9682E008ED670 /* DemoTableView.m */,
+				2D86A4AA2098B5CD006A2049 /* CityModel.m */,
+				2D86A4AB2098B5CD006A2049 /* CityModel.plist */,
+				2D86A4AC2098B5CD006A2049 /* CityModel.h */,
 			);
-			path = DemoList;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		2D32E21D1EF9682E008ED670 /* ResourceFile */ = {
+		2D86A4AD2098B5CD006A2049 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E21E1EF9682E008ED670 /* city.plist */,
+				2D86A4AE2098B5CD006A2049 /* CityListViewController.h */,
+				2D86A4AF2098B5CD006A2049 /* CityListViewController.m */,
 			);
-			path = ResourceFile;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D86A4B02098B5CD006A2049 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4B32098B5CD006A2049 /* CityCell.m */,
+				2D86A4B12098B5CD006A2049 /* CityCell.h */,
+				2D86A4B22098B5CD006A2049 /* CityTableView.h */,
+				2D86A4B42098B5CD006A2049 /* CityTableView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D86A4B52098B5CD006A2049 /* ButtonCircleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4B62098B5CD006A2049 /* Controllers */,
+			);
+			path = ButtonCircleAnimation;
+			sourceTree = "<group>";
+		};
+		2D86A4B62098B5CD006A2049 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4B82098B5CD006A2049 /* SwpButtonCircleAnimationViewController.h */,
+				2D86A4B72098B5CD006A2049 /* SwpButtonCircleAnimationViewController.m */,
+				2D86A4E12098C62E006A2049 /* SwpButtonCustomView.h */,
+				2D86A4E22098C62E006A2049 /* SwpButtonCustomView.m */,
+				2D86A4E42098CF91006A2049 /* SwpButtonCustomInputView.h */,
+				2D86A4E52098CF91006A2049 /* SwpButtonCustomInputView.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D86A4B92098B5CD006A2049 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4BA2098B5CD006A2049 /* Controllers */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2D86A4BA2098B5CD006A2049 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4BB2098B5CD006A2049 /* OtherViewController.h */,
+				2D86A4BC2098B5CD006A2049 /* OtherViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D86A4BD2098B5CD006A2049 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4BE2098B5CD006A2049 /* Controllers */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		2D86A4BE2098B5CD006A2049 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4BF2098B5CD006A2049 /* TextFieldDemoViewController.m */,
+				2D86A4C02098B5CD006A2049 /* TextFieldDemoViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D86A4C12098B5CD006A2049 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4C22098B5CD006A2049 /* Controllers */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		2D86A4C22098B5CD006A2049 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4C32098B5CD006A2049 /* ButtonDemoViewController.m */,
+				2D86A4C42098B5CD006A2049 /* ButtonDemoViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D86A4C52098B5CD006A2049 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4C62098B5CD006A2049 /* SwpCateGoryNavigationController */,
+				2D86A4C92098B5CD006A2049 /* Category */,
+				2D86A4CC2098B5CD006A2049 /* SwpCateGoryBaseViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2D86A4C62098B5CD006A2049 /* SwpCateGoryNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4C72098B5CD006A2049 /* SwpCateGoryNavigationController.m */,
+				2D86A4C82098B5CD006A2049 /* SwpCateGoryNavigationController.h */,
+			);
+			path = SwpCateGoryNavigationController;
+			sourceTree = "<group>";
+		};
+		2D86A4C92098B5CD006A2049 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4CA2098B5CD006A2049 /* AppDelegate+SVProgressHUD.h */,
+				2D86A4CB2098B5CD006A2049 /* AppDelegate+SVProgressHUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2D86A4CC2098B5CD006A2049 /* SwpCateGoryBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D86A4CD2098B5CD006A2049 /* SwpCateGoryBaseViewController.m */,
+				2D86A4CE2098B5CD006A2049 /* SwpCateGoryBaseViewController.h */,
+			);
+			path = SwpCateGoryBaseViewController;
 			sourceTree = "<group>";
 		};
 		2D99D7921EF64D22006E043F = {
@@ -275,8 +318,7 @@
 		2D99D79D1EF64D22006E043F /* SwpCateGoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2D32E1F01EF9682E008ED670 /* Class */,
-				2D32E21D1EF9682E008ED670 /* ResourceFile */,
+				2D86A49B2098B5CD006A2049 /* Classes */,
 				2D99D7A11EF64D22006E043F /* AppDelegate.h */,
 				2D99D7A21EF64D22006E043F /* AppDelegate.m */,
 				2D99D7AA1EF64D22006E043F /* Assets.xcassets */,
@@ -372,9 +414,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D32E22D1EF9682E008ED670 /* city.plist in Resources */,
+				2D86A4D42098B5CD006A2049 /* CityModel.plist in Resources */,
 				2D99D7AE1EF64D22006E043F /* LaunchScreen.storyboard in Resources */,
 				2D99D7AB1EF64D22006E043F /* Assets.xcassets in Resources */,
+				2D86A4E02098B64D006A2049 /* DemoModel.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,22 +469,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D32E2251EF9682E008ED670 /* DemoModel.m in Sources */,
-				2D32E22B1EF9682E008ED670 /* DemoCell.m in Sources */,
-				2D32E22C1EF9682E008ED670 /* DemoTableView.m in Sources */,
-				2D32E2261EF9682E008ED670 /* BaseViewController.m in Sources */,
-				2D32E2241EF9682E008ED670 /* CityModel.m in Sources */,
-				2D32E2211EF9682E008ED670 /* DemoListViewController.m in Sources */,
-				2D32E21F1EF9682E008ED670 /* ButtonDemoViewController.m in Sources */,
-				2D32E2271EF9682E008ED670 /* AppDelegate+SVProgressHUD.m in Sources */,
+				2D86A4E62098CF91006A2049 /* SwpButtonCustomInputView.m in Sources */,
+				2D86A4DA2098B5CD006A2049 /* TextFieldDemoViewController.m in Sources */,
+				2D86A4DE2098B5CD006A2049 /* SwpCateGoryBaseViewController.m in Sources */,
+				2D86A4DB2098B5CD006A2049 /* ButtonDemoViewController.m in Sources */,
+				2D86A4CF2098B5CD006A2049 /* DemoModel.m in Sources */,
+				2D86A4DC2098B5CD006A2049 /* SwpCateGoryNavigationController.m in Sources */,
+				2D86A4D82098B5CD006A2049 /* SwpButtonCircleAnimationViewController.m in Sources */,
+				2D86A4D62098B5CD006A2049 /* CityCell.m in Sources */,
+				2D86A4D12098B5CD006A2049 /* DemoCell.m in Sources */,
 				2D99D7A31EF64D22006E043F /* AppDelegate.m in Sources */,
-				2D32E2221EF9682E008ED670 /* OtherViewController.m in Sources */,
-				2D32E22A1EF9682E008ED670 /* CityTableView.m in Sources */,
-				2D32E2231EF9682E008ED670 /* TextFieldDemoViewController.m in Sources */,
 				2D99D7A01EF64D22006E043F /* main.m in Sources */,
-				2D32E2291EF9682E008ED670 /* CityCell.m in Sources */,
-				2D32E2281EF9682E008ED670 /* CustomNavigationController.m in Sources */,
-				2D32E2201EF9682E008ED670 /* CityListViewController.m in Sources */,
+				2D86A4D32098B5CD006A2049 /* CityModel.m in Sources */,
+				2D86A4D22098B5CD006A2049 /* DemoTableView.m in Sources */,
+				2D86A4E32098C62E006A2049 /* SwpButtonCustomView.m in Sources */,
+				2D86A4D02098B5CD006A2049 /* DemoListViewController.m in Sources */,
+				2D86A4DD2098B5CD006A2049 /* AppDelegate+SVProgressHUD.m in Sources */,
+				2D86A4D92098B5CD006A2049 /* OtherViewController.m in Sources */,
+				2D86A4D72098B5CD006A2049 /* CityTableView.m in Sources */,
+				2D86A4D52098B5CD006A2049 /* CityListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
