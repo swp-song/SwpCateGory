@@ -361,12 +361,15 @@ static NSTimeInterval SwpCircleAnimationButtonStopDuration  = 0.5;
         [self._delegate swpCircleAnimationButtonDidStartAnimation:self];
     }
     
-    [UIView animateWithDuration:SwpCircleAnimationButtonStartDuration animations:^{
-        self.titleLabel.alpha = .0f;
-        self.frame            = desFrame;
-    } completion:^(BOOL finished) {
-        [self.circleView swpButtonCircleViewStartAnimation];
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [UIView animateWithDuration:SwpCircleAnimationButtonStartDuration animations:^{
+            self.titleLabel.alpha = .0f;
+            self.frame            = desFrame;
+        } completion:^(BOOL finished) {
+            [self.circleView swpButtonCircleViewStartAnimation];
+        }];
+    });
     return self;
 }
 
@@ -385,7 +388,6 @@ static NSTimeInterval SwpCircleAnimationButtonStopDuration  = 0.5;
         NSAssert(NO, @"当前对象 frame 不正确");
         return self;
     }
-    
     self.userInteractionEnabled = YES;
     
     //  block
@@ -395,28 +397,29 @@ static NSTimeInterval SwpCircleAnimationButtonStopDuration  = 0.5;
     if ([self._delegate respondsToSelector:@selector(swpCircleAnimationButtonWillFinishAnimation:)]) {
         [self._delegate swpCircleAnimationButtonWillFinishAnimation:self];
     }
-
     
     [self.circleView swpButtonCircleViewStopAnimation];
     self.circleView = nil;
-
-    [UIView animateWithDuration:SwpCircleAnimationButtonStopDuration animations:^{
     
-        self.frame = self->_origionRect;
-        self.titleLabel.alpha = 1.0f;
-
-    } completion:^(BOOL finished) {
+    dispatch_async(dispatch_get_main_queue(), ^{
         
-
-        //  block
-        if (self.didFinishAnimation) self.didFinishAnimation(self);
-
-        //  delegate
-        if ([self._delegate respondsToSelector:@selector(swpCircleAnimationButtonDidFinishAnimation:)]) {
-            [self._delegate swpCircleAnimationButtonDidFinishAnimation:self];
-        }
-    }];
-
+        [UIView animateWithDuration:SwpCircleAnimationButtonStopDuration animations:^{
+            
+            self.frame = self->_origionRect;
+            self.titleLabel.alpha = 1.0f;
+            
+        } completion:^(BOOL finished) {
+            
+            //  block
+            if (self.didFinishAnimation) self.didFinishAnimation(self);
+            //  delegate
+            if ([self._delegate respondsToSelector:@selector(swpCircleAnimationButtonDidFinishAnimation:)]) {
+                [self._delegate swpCircleAnimationButtonDidFinishAnimation:self];
+            }
+        }];
+        
+    });
+    
     return self;
 
 }

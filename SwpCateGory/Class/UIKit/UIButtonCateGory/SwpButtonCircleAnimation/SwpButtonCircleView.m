@@ -84,6 +84,7 @@
  */
 - (void)continueAnimation {
     
+    
     _speed += 0.02;
     // 因为 drawRect 方法只调用 1 次，所以如果需要刷新图形，需要用 setNeedsDisplay 强制调用刷新
     [self setNeedsDisplay];
