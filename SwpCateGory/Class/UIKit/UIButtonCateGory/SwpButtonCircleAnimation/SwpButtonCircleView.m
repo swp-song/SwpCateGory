@@ -57,7 +57,7 @@
     CGPoint center  = CGPointMake(rect.size.width / 2, rect.size.height / 2);
     
     //  半径
-    CGFloat radius  = rect.size.width / 2 - 2;
+    CGFloat radius  = rect.size.width / 2 - 15; // 2
     
     //  起始的弧度
     CGFloat start   = -M_PI_2 + _speed * 2 * M_PI;

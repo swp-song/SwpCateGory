@@ -313,7 +313,7 @@ static NSTimeInterval SwpCircleAnimationButtonStopDuration  = 0.5;
     self.frame               = frame;
     self.layer.cornerRadius  = self.frame.size.height / 2;
     self.layer.masksToBounds = YES;
-    self.clipsToBounds       = NO;
+    self.clipsToBounds       = YES;
     _origionRect             = self.frame;
     return self;
 }

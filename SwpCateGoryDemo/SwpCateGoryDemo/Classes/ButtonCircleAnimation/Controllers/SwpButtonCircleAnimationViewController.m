@@ -11,6 +11,7 @@
 
 /* ---------------------- Tool       ---------------------- */
 #import <SwpCateGory/UIColor+SwpColor.h>
+#import <SwpCateGory/UIButton+SwpButtonUtils.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -180,6 +181,11 @@
  */
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
+    
+    NSArray  *scales = @[@(0.16), @(0.5), @(0.8)];
+    NSArray  *colors = @[(id)UIColor.swpColorWithHexadecimal(0x466BAD), (id)UIColor.swpColorWithHexadecimal(0x4C94B6), (id)UIColor.swpColorWithHexadecimal(0x3F9AC8)];
+    
+    self.commitButton.swpButtonUtilsSetGradientColor(self.commitButton.frame.size, colors, scales, SwpButtonGradientDirectionLeftBottomToRightTop);
     [self.commitButton swpCircleAnimationButtonConfig:self.commitButton.frame];
 }
 

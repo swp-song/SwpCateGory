@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.7.2",
+  "version": "2.8.0",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.7.2"
+    "tag": "2.8.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -35,6 +35,7 @@
     "SwpSetNavigationBarItem",
     "SwpSetButton",
     "SwpButtonLayout",
+    "SwpButtonUtils",
     "SwpButtonCircleAnimation",
     "SwpColor",
     "SwpFont",
@@ -163,6 +164,16 @@
       },
       "public_header_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonCircleAnimation/*.h",
       "source_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonCircleAnimation/*.{h,m}"
+    },
+    {
+      "name": "SwpButtonUtils",
+      "dependencies": {
+        "SwpCateGory/SwpCateGory": [
+
+        ]
+      },
+      "public_header_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonUtils/*.h",
+      "source_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonUtils/*.{h,m}"
     },
     {
       "name": "SwpColor",
