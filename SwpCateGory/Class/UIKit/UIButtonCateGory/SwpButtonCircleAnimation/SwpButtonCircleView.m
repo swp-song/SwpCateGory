@@ -103,7 +103,7 @@
 - (instancetype)initWithButton:(UIButton *)button {
     if (self = [super initWithFrame:CGRectMake(-8, -8, button.frame.size.width + 16, button.frame.size.height + 16)]) {
         self.backgroundColor = [UIColor clearColor];
-        _borderColor = button.titleLabel.textColor;
+        _borderColor = button.titleLabel.textColor ? button.titleLabel.textColor : [UIColor blackColor];
         _speed       = 0;
         _lineWidth   = 1.5;
     }

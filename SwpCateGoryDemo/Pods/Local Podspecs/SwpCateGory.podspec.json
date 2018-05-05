@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.7.1"
+    "tag": "2.7.2"
   },
   "platforms": {
     "ios": "8.0"

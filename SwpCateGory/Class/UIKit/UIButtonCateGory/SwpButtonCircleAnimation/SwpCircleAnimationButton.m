@@ -431,8 +431,6 @@ static NSTimeInterval SwpCircleAnimationButtonStopDuration  = 0.5;
  */
 - (void)dealloc {
     NSLog(@"%s", __FUNCTION__);
-    [self.circleView swpButtonCircleViewStopAnimation];
-    self.circleView = nil;
 }
 
 
