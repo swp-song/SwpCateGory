@@ -27,9 +27,7 @@
  */
 - (UIButton *)swpButtonUtilsSetGradientColor:(CGSize)size colors:(NSArray<UIColor *> *)colors scales:(NSArray<NSNumber *> *)scales direction:(SwpButtonGradientDirection)direction  {
     
-    if (colors.count != scales.count || colors.count > 3 || scales.count > 3) {
-        NSAssert(NO , @"参数异常！");
-    }
+    NSAssert(!(colors.count != scales.count || scales.count > 3 || colors.count > 3 || !colors.count || !scales.count) , @"参数异常！");
     return [self swpButtonUtilsSetGradientColor:size colors:colors scales:scales direction:direction colorNumber:3];
 }
 
@@ -64,7 +62,7 @@
  */
 - (UIButton *)swpButtonUtilsSetGradientColor:(CGSize)size colors:(NSArray<UIColor *> *)colors scales:(NSArray<NSNumber *> *)scales direction:(SwpButtonGradientDirection)direction colorNumber:(NSInteger)colorNumber {
     
-    NSAssert(scales.count >= colorNumber , @"参数异常！");
+    NSAssert(!(scales.count > colorNumber), @"参数异常！");
     UIImage *image = CreateGradientImage(size, colors, scales, direction, colorNumber);
     [self setBackgroundImage:image forState:(UIControlStateNormal)];
     return self;

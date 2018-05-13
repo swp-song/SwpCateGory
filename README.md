@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
-[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.8.0-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
+[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.8.1-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
 
 -------
 
@@ -73,6 +73,14 @@ pod 'SwpCateGory/SwpViewScreenshots'
 ### 版本记录
 
 
+> * 版本版本：2.8.1
+> * 更新时间：2018-05-13 17:34:54
+> * 更新内容：
+>
+>> *  修复内部问题。
+
+>> -------
+
 > * 版本版本：2.8.0
 > * 更新时间：2018-05-06 02:54:42
 > * 更新内容：
@@ -81,13 +89,7 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 >> -------
 
-> * 版本版本：2.7.2
-> * 更新时间：2018-05-05 23:02:55
-> * 更新内容：
->
->> *  修复内部过度释放崩溃问题
 
->> -------
 
 
 -------

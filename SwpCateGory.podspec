@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.8.0'
+  s.version = '2.8.1'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
