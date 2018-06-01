@@ -16,6 +16,7 @@
 #import "UIButton+SwpSetButton.h"                   //  UIButton
 #import "UITextField+SwpSetTextField.h"             //  UITextField
 #import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
+#import <SwpCateGory/UITextField+SwpTextFieldPlaceholder.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -173,7 +174,9 @@
     
     return !_accountView ? _accountView = ({
         UITextField *textField = [UITextField new];
-        [UITextField swpSetTextFieldImage:textField setImageName:@"account" setBorderColor:nil setTextColor:[UIColor swpColorWithHexadecimal:0x2B2B2B] setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:NO];
+        [UITextField swpSetTextFieldImage:textField setImageName:@"account" setBorderColor:nil setTextColor:[UIColor swpColorWithHexadecimal:0x2B2B2B] setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"account" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:NO];
+        
+        textField.swpPlaceholderSystemFontOfSize(15);
         textField;
     }) : _accountView;
 }
@@ -182,7 +185,8 @@
     
     return !_passwordView ? _passwordView = ({
         UITextField *textField = [UITextField new];
-        [UITextField swpSetTextFieldImage:textField setImageName:@"password" setBorderColor:[UIColor swpColorWithHexadecimal:0x4BC2FF] setTextColor:[UIColor swpColorWithHexadecimal:0x4BC2FF]  setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:YES];
+        [UITextField swpSetTextFieldImage:textField setImageName:@"password" setBorderColor:[UIColor swpColorWithHexadecimal:0x4BC2FF] setTextColor:[UIColor swpColorWithHexadecimal:0x4BC2FF]  setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"password" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:YES];
+        textField.swpPlaceholderFont([UIFont boldSystemFontOfSize:15]);
         textField;
     }) : _passwordView;
 }
@@ -192,7 +196,8 @@
     
     return !_codeView ? _codeView = ({
         UITextField *textField = [UITextField new];
-        [UITextField swpSetTextFieldImage:textField setImageName:@"code" setBorderColor:nil setTextColor:[UIColor swpColorWithHexadecimal:0x2B2B2B]  setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:NO];
+        [UITextField swpSetTextFieldImage:textField setImageName:@"code" setBorderColor:nil setTextColor:[UIColor swpColorWithHexadecimal:0x2B2B2B]  setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"code" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:NO];
+        textField.swpPlaceholderColor([UIColor redColor]);
         textField;
     }) : _codeView;
 }

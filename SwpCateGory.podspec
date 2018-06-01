@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.8.1'
+  s.version = '2.9.0'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
@@ -49,6 +49,7 @@ Pod::Spec.new do |s|
                             'SwpCreateImage',
                             'SwpNavigationBar',
                             'SwpSetTextField',
+                            'SwpTextFieldPlaceholder',
                             'SwpExtension',
                             'SwpViewScreenshots'
 
@@ -216,6 +217,14 @@ Pod::Spec.new do |s|
     swpSetTextField.dependency 'SwpCateGory/SwpCateGory'
     swpSetTextField.public_header_files = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/*.h'
     swpSetTextField.source_files        = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/*.{h,m}'
+  end
+
+
+  # UITextField 分类，设置 TextFieldPlaceholder
+  s.subspec 'SwpTextFieldPlaceholder' do |swpTextFieldPlaceholder|
+    swpTextFieldPlaceholder.dependency 'SwpCateGory/SwpCateGory'
+    swpTextFieldPlaceholder.public_header_files = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.h'
+    swpTextFieldPlaceholder.source_files        = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.{h,m}'
   end
 
   # UIView 分类，修改 View Size

@@ -237,8 +237,8 @@
 		2D86A4BE2098B5CD006A2049 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D86A4BF2098B5CD006A2049 /* TextFieldDemoViewController.m */,
 				2D86A4C02098B5CD006A2049 /* TextFieldDemoViewController.h */,
+				2D86A4BF2098B5CD006A2049 /* TextFieldDemoViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

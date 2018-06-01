@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.8.1",
+  "version": "2.9.0",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.8.1"
+    "tag": "2.9.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -45,6 +45,7 @@
     "SwpCreateImage",
     "SwpNavigationBar",
     "SwpSetTextField",
+    "SwpTextFieldPlaceholder",
     "SwpExtension",
     "SwpViewScreenshots"
   ],
@@ -254,6 +255,16 @@
       },
       "public_header_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/*.h",
       "source_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/*.{h,m}"
+    },
+    {
+      "name": "SwpTextFieldPlaceholder",
+      "dependencies": {
+        "SwpCateGory/SwpCateGory": [
+
+        ]
+      },
+      "public_header_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.h",
+      "source_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.{h,m}"
     },
     {
       "name": "SwpExtension",
