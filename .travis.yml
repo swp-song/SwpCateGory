@@ -1,5 +1,6 @@
 osx_image: xcode9
 language: objective-c
+script: true
 # path to your xcodeproj folder
 xcode_project: SwpCateGoryDemo/SwpCateGoryDemo.xcworkspace
 xcode_schemes: SwpCateGoryDemo
