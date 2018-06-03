@@ -16,7 +16,7 @@
 #import "UIButton+SwpSetButton.h"                   //  UIButton
 #import "UITextField+SwpSetTextField.h"             //  UITextField
 #import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
-#import <SwpCateGory/UITextField+SwpTextFieldPlaceholder.h>
+#import <SwpCateGory/UITextField+SwpTextFieldPropertys.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -164,20 +164,39 @@
 - (UITextField *)textField1 {
     
     return !_textField1 ? _textField1 = ({
-        UITextField *textField = [UITextField new];
-        [UITextField swpSetTextFieldStyle:textField setBorderColor:[UIColor orangeColor] setTextColor:[UIColor lightGrayColor] setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"输入信息" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:NO];
-        textField;
+        [UITextField new]
+        .swpPlaceholder(@"输入信息")
+        .swpTextColor([UIColor redColor])
+        .swpFont([UIFont systemFontOfSize:12])
+        .swpSecureTextEntry(NO)
+        .swpClearButtonMode(UITextFieldViewModeAlways)
+        .swpKeyboardType(UIKeyboardTypeDefault)
+        .swpPlaceholderColor([UIColor orangeColor])
+        .swpPlaceholderFont([UIFont systemFontOfSize:12])
+        .swpTextLeftDefaultMargins()
+        .swpBorderWidth(1)
+        .swpCornerRadiusMasks(2)
+        .swpBorderColor([UIColor lightGrayColor]);
     }) : _textField1;
 }
 
 - (UITextField *)accountView {
     
     return !_accountView ? _accountView = ({
-        UITextField *textField = [UITextField new];
-        [UITextField swpSetTextFieldImage:textField setImageName:@"account" setBorderColor:nil setTextColor:[UIColor swpColorWithHexadecimal:0x2B2B2B] setBorderWidth:0.5 setCornerRadius:2 setPlaceholder:@"account" setTextFontSize:12 setKeyboardType:UIKeyboardTypeDefault setTextEncrypt:NO];
         
-        textField.swpPlaceholderSystemFontOfSize(15);
-        textField;
+        [UITextField new]
+        .swpPlaceholder(@"account")
+        .swpTextColor([UIColor redColor])
+        .swpFont([UIFont systemFontOfSize:12])
+        .swpSecureTextEntry(NO)
+        .swpClearButtonMode(UITextFieldViewModeAlways)
+        .swpKeyboardType(UIKeyboardTypeDefault)
+        .swpPlaceholderColor([UIColor orangeColor])
+        .swpPlaceholderFont([UIFont systemFontOfSize:12])
+        .swpLeftImage([UIImage imageNamed:@"account"])
+        .swpBorderWidth(0.5)
+        .swpCornerRadiusMasks(2)
+        .swpBorderColor([UIColor lightGrayColor]);
     }) : _accountView;
 }
 

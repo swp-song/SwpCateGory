@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name    = 'SwpCateGory'
-  s.version = '2.9.2'
+  s.version = '3.0.0'
   s.summary = ' 常用工具分类 '
 
   # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
                             'SwpAttributed',
                             'SwpSetNavigationBarItem',
                             'SwpSetButton',
-                            'SwpButtonLayout',
+                            'SwpButtonPropertys',
                             'SwpButtonUtils',
                             'SwpButtonCircleAnimation',
                             'SwpColor',
@@ -48,11 +48,11 @@ Pod::Spec.new do |s|
                             'SwpImageScreenshots',
                             'SwpCreateImage',
                             'SwpNavigationBar',
+                            'SwpTextFieldPropertys',
                             'SwpSetTextField',
-                            'SwpTextFieldPlaceholder',
+                            'SwpViewPropertys',
                             'SwpExtension',
                             'SwpViewScreenshots'
-
 
 
   # SwpCateGory 全部
@@ -136,12 +136,14 @@ Pod::Spec.new do |s|
 
   end
 
-  # UIButton 分类，设置 Button 文字图片排版问题
-  s.subspec 'SwpButtonLayout' do |swpButtonLayout|
-    swpButtonLayout.dependency 'SwpCateGory/SwpCateGory'
-    swpButtonLayout.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.h'
-    swpButtonLayout.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.{h,m}'
+  # UIButton 分类，快速设置按钮样式
+  s.subspec 'SwpButtonPropertys' do |swpButtonPropertys|
+    swpButtonPropertys.dependency 'SwpCateGory/SwpCateGory'
+    swpButtonPropertys.dependency 'SwpCateGory/SwpViewPropertys'
+    swpButtonPropertys.public_header_files = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonPropertys/*.h'
+    swpButtonPropertys.source_files        = 'SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonPropertys/*.{h,m}'
   end
+
 
   # UIButton 分类，按钮圆圈旋转动画
   s.subspec 'SwpButtonCircleAnimation' do |swpButtonCircleAnimation|
@@ -212,7 +214,15 @@ Pod::Spec.new do |s|
   end
 
 
-  # UITextField 分类，快速设置 TextField
+  # UITextField 分类，快速设置 TextField 中的属性
+  s.subspec 'SwpTextFieldPropertys' do |swpTextFieldPropertys|
+    swpTextFieldPropertys.dependency 'SwpCateGory/SwpCateGory'
+    swpTextFieldPropertys.dependency 'SwpCateGory/SwpViewPropertys'
+    swpTextFieldPropertys.public_header_files = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPropertys/*.h'
+    swpTextFieldPropertys.source_files        = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPropertys/*.{h,m}'
+  end
+
+  # UITextField 分类，快速设置 TextField 的属性
   s.subspec 'SwpSetTextField' do |swpSetTextField|
     swpSetTextField.dependency 'SwpCateGory/SwpCateGory'
     swpSetTextField.public_header_files = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/*.h'
@@ -220,11 +230,11 @@ Pod::Spec.new do |s|
   end
 
 
-  # UITextField 分类，设置 TextFieldPlaceholder
-  s.subspec 'SwpTextFieldPlaceholder' do |swpTextFieldPlaceholder|
-    swpTextFieldPlaceholder.dependency 'SwpCateGory/SwpCateGory'
-    swpTextFieldPlaceholder.public_header_files = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.h'
-    swpTextFieldPlaceholder.source_files        = 'SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.{h,m}'
+  # UIView 分类，快速设置 View 中 CGLayer 的属性
+  s.subspec 'SwpViewPropertys' do |swpViewPropertys|
+    swpViewPropertys.dependency 'SwpCateGory/SwpCateGory'
+    swpViewPropertys.public_header_files = 'SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewPropertys/*.h'
+    swpViewPropertys.source_files        = 'SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewPropertys/*.{h,m}'
   end
 
   # UIView 分类，修改 View Size

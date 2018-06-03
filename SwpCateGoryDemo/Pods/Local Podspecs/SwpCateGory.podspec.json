@@ -1,6 +1,6 @@
 {
   "name": "SwpCateGory",
-  "version": "2.9.2",
+  "version": "3.0.0",
   "summary": "常用工具分类",
   "description": "TODO: 常用工具分类",
   "homepage": "https://github.com/swp-song/SwpCateGory",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/swp-song/SwpCateGory.git",
-    "tag": "2.9.2"
+    "tag": "3.0.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -34,7 +34,7 @@
     "SwpAttributed",
     "SwpSetNavigationBarItem",
     "SwpSetButton",
-    "SwpButtonLayout",
+    "SwpButtonPropertys",
     "SwpButtonUtils",
     "SwpButtonCircleAnimation",
     "SwpColor",
@@ -44,8 +44,9 @@
     "SwpImageScreenshots",
     "SwpCreateImage",
     "SwpNavigationBar",
+    "SwpTextFieldPropertys",
     "SwpSetTextField",
-    "SwpTextFieldPlaceholder",
+    "SwpViewPropertys",
     "SwpExtension",
     "SwpViewScreenshots"
   ],
@@ -147,14 +148,17 @@
       "source_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/*.{h,m}"
     },
     {
-      "name": "SwpButtonLayout",
+      "name": "SwpButtonPropertys",
       "dependencies": {
         "SwpCateGory/SwpCateGory": [
 
+        ],
+        "SwpCateGory/SwpViewPropertys": [
+
         ]
       },
-      "public_header_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.h",
-      "source_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/*.{h,m}"
+      "public_header_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonPropertys/*.h",
+      "source_files": "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonPropertys/*.{h,m}"
     },
     {
       "name": "SwpButtonCircleAnimation",
@@ -247,6 +251,19 @@
       "source_files": "SwpCateGory/Class/UIKit/UINavigationBarCateGory/SwpNavigationBar/*.{h,m}"
     },
     {
+      "name": "SwpTextFieldPropertys",
+      "dependencies": {
+        "SwpCateGory/SwpCateGory": [
+
+        ],
+        "SwpCateGory/SwpViewPropertys": [
+
+        ]
+      },
+      "public_header_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPropertys/*.h",
+      "source_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPropertys/*.{h,m}"
+    },
+    {
       "name": "SwpSetTextField",
       "dependencies": {
         "SwpCateGory/SwpCateGory": [
@@ -257,14 +274,14 @@
       "source_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/*.{h,m}"
     },
     {
-      "name": "SwpTextFieldPlaceholder",
+      "name": "SwpViewPropertys",
       "dependencies": {
         "SwpCateGory/SwpCateGory": [
 
         ]
       },
-      "public_header_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.h",
-      "source_files": "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpTextFieldPlaceholder/*.{h,m}"
+      "public_header_files": "SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewPropertys/*.h",
+      "source_files": "SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewPropertys/*.{h,m}"
     },
     {
       "name": "SwpExtension",

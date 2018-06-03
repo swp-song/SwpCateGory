@@ -254,8 +254,8 @@
 		2D86A4C22098B5CD006A2049 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D86A4C32098B5CD006A2049 /* ButtonDemoViewController.m */,
 				2D86A4C42098B5CD006A2049 /* ButtonDemoViewController.h */,
+				2D86A4C32098B5CD006A2049 /* ButtonDemoViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -622,7 +622,7 @@
 				INFOPLIST_FILE = SwpCateGoryDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "swp-song.SwpCateGoryDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swp-song.SwpCateGoryDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -639,7 +639,7 @@
 				INFOPLIST_FILE = SwpCateGoryDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "swp-song.SwpCateGoryDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swp-song.SwpCateGoryDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

@@ -11,14 +11,12 @@
 
 
 /* ---------------------- Tool       ---------------------- */
-#import <Masonry/Masonry.h>                         //  Masonry
-#import "UIButton+SwpSetButton.h"                   //  UIButton
-#import <SwpCateGory/UIColor+SwpColor.h>
-#import "UINavigationBar+SwpNavigationBar.h"
-#import "UIBarButtonItem+SwpSetNavigationBarItem.h" //  UIBarButtonItem
-#import <SwpCateGory/UIButton+SwpButtonLayout.h>
-
-
+#import <Masonry/Masonry.h>                             //  Masonry
+#import "UIButton+SwpSetButton.h"                       //  UIButton
+#import <SwpCateGory/UIColor+SwpColor.h>                //  UIColor
+#import <SwpCateGory/UIButton+SwpSetButton.h>           //  SwpSetButton
+#import "UIBarButtonItem+SwpSetNavigationBarItem.h"     //  UIBarButtonItem
+#import <SwpCateGory/UIButton+SwpButtonPropertys.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -37,8 +35,12 @@
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
 @property (nonatomic, strong) UIButton *submitButton1;
-@property (nonatomic, strong) UIButton *checkBoxButton;
 @property (nonatomic, strong) UIButton *submitButton2;
+
+@property (nonatomic, strong) UIButton *checkBox1Button;
+@property (nonatomic, strong) UIButton *checkBox2Button;
+@property (nonatomic, strong) UIButton *checkBox3Button;
+@property (nonatomic, strong) UIButton *checkBox4Button;
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
@@ -61,8 +63,8 @@
     
     [self setUI];
     
-    NSLog(@"%@", [UIColor toStrByUIColor:[UIColor redColor]]);
-    NSLog(@"%@", [UIColor toStrByUIColor1:0xFFFFFF]);
+//    NSLog(@"%@", [UIColor toStrByUIColor:[UIColor redColor]]);
+//    NSLog(@"%@", [UIColor toStrByUIColor1:0xFFFFFF]);
 }
 
 
@@ -118,8 +120,12 @@
 - (void)setUpUI {
     
     [self.view addSubview:self.submitButton1];
-    [self.view addSubview:self.checkBoxButton];
     [self.view addSubview:self.submitButton2];
+    
+    [self.view addSubview:self.checkBox1Button];
+    [self.view addSubview:self.checkBox2Button];
+    [self.view addSubview:self.checkBox3Button];
+    [self.view addSubview:self.checkBox4Button];
 }
 
 /**!
@@ -134,28 +140,37 @@
         make.width.equalTo(self.submitButton1.mas_height).multipliedBy(10.0 / 1.0);
     }];
     
-    [self.checkBoxButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.view).mas_offset(UIEdgeInsetsMake(20, 20, 0, 20));
-        make.top.equalTo(self.submitButton1.mas_bottom).offset(30);
-        make.size.mas_offset(CGSizeMake(80, 30));
-    }];
-    
     [self.submitButton2 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.height.equalTo(self.submitButton1);
-        make.top.equalTo(self.checkBoxButton.mas_bottom).offset(30);
+        make.top.equalTo(self.checkBox1Button.mas_bottom).offset(30);
     }];
     
+
+    NSArray<UIButton *> *checkBoxs = @[self.checkBox1Button, self.checkBox2Button, self.checkBox3Button, self.checkBox4Button];
+    [checkBoxs mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:10 leadSpacing:10 tailSpacing:10];
+    
+    [checkBoxs mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.submitButton1.mas_bottom).offset(30);
+        make.height.equalTo(@(40));
+    }];
+    
+    self.checkBox2Button.swpImageEdgeOffset(SwpButtonImageEdgeRight, 0);
+    self.checkBox3Button.swpImageEdgeOffset(SwpButtonImageEdgeLeft, 3);
+    self.checkBox4Button.swpImageEdgeOffset(SwpButtonImageEdgeRight, 3);
     
     
     NSMutableArray<UIButton *> *views  = @[].mutableCopy;
     NSMutableArray<NSString *> *titles = @[@"Top (上)", @"Left (左)", @"Bottom (下)", @"Right (右)"].mutableCopy;
     for (int i=0; i<4; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.backgroundColor = UIColor.swpColorWithRandom();
-        [button setTitle:titles[i] forState:(UIControlStateNormal)];
-        [button setTitleColor:UIColor.swpColorWithRandom() forState:(UIControlStateNormal)];
-        button.titleLabel.font = [UIFont systemFontOfSize:12];
-        [button setImage:[UIImage imageNamed:@"button_icon"] forState:(UIControlStateNormal)];
+        
+        button
+        .swpTitleLabelSystemFontSize(12)
+        .swpTitle(titles[i], UIControlStateNormal)
+        .swpTitleColor(UIColor.swpColorWithRandomChain(), UIControlStateNormal)
+        .swpImage([UIImage imageNamed:@"button_icon"], UIControlStateNormal)
+        .swpBackgroundColor(UIColor.swpColorWithRandomChain());
+        
         [views addObject:button];
         [self.view addSubview:button];
     }
@@ -176,14 +191,16 @@
             }];
             
             //  设置按钮边距
-            [button swpButtonLayout:idx];
+            [button swpImageEdge:idx];
             
         } else {
             //  设置按钮边距
-            button.swpButtonLayoutOffset(idx, 2);
+            button.swpImageEdgeOffset(idx, 2);
         }
         
     }];
+    
+    
     
 }
 
@@ -196,7 +213,7 @@
  *  @param  button  button
  */
 - (void)clickButtonEvent:(UIButton *)button  {
-    if (button.tag == 3) button.backgroundColor = UIColor.swpColorWithRandom();
+    if (button.tag == 3) button.backgroundColor = UIColor.swpColorWithRandomChain();
     if (button.tag == 4) button.selected        = !button.selected;
 }
 
@@ -207,25 +224,86 @@
     
     return !_submitButton1 ? _submitButton1 = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:UIColor.swpColorWithRandom() setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:5 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
+        
+        button
+        .swpTag(3)
+        .swpTitleLabelSystemFontSize(15)
+        .swpTitle(@"点击生成随机色", UIControlStateNormal)
+        .swpTitleColor([UIColor whiteColor], UIControlStateNormal)
+        .swpTargetEvent(self, @selector(clickButtonEvent:), UIControlEventTouchUpInside)
+        
+        //  以下方法, UIView 分类方法，在 UIButtn 分类方法下调用，Button 继承 UIView, 相当于调用父类方法，返回值也是父类 Block
+        .swpBorderWidth(0)
+        .swpCornerRadiusMasks(5)
+        .swpBackgroundColor(UIColor.swpColorWithRandomChain());
+        
+        
+        
         button;
     }) : _submitButton1;
 }
 
-- (UIButton *)checkBoxButton {
+- (UIButton *)checkBox1Button {
     
-    return !_checkBoxButton ? _checkBoxButton = ({
+    return !_checkBox1Button ? _checkBox1Button = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [UIButton swpSetButtonCheckBoxStyle:button setTitle:@"记住密码" setFontSize:12.0f setTitleColor:[UIColor blackColor] setNormalImageName:@"forgot_password_no" setSelectedImage:@"forgot_password_sel" setTag:4 setTarget:self setAction:@selector(clickButtonEvent:)];
         button;
-    }) : _checkBoxButton;
+    }) : _checkBox1Button;
+}
+
+
+
+- (UIButton *)checkBox2Button {
+    
+    return !_checkBox2Button ? _checkBox2Button = ({
+        [UIButton buttonWithType:UIButtonTypeCustom]
+        .swpTag(4)
+        .swpTitleColor([UIColor blackColor], UIControlStateNormal)
+        .swpImage([UIImage imageNamed:@"forgot_password_no"], UIControlStateNormal)
+        .swpImage([UIImage imageNamed:@"forgot_password_sel"], UIControlStateSelected)
+        .swpTitle(@"记住密码", UIControlStateNormal)
+        .swpTargetEvent(self, @selector(clickButtonEvent:), UIControlEventTouchUpInside)
+        .swpTitleLabelSystemFontSize(12);
+    }) : _checkBox2Button;
+}
+
+
+- (UIButton *)checkBox3Button {
+    
+    return !_checkBox3Button ? _checkBox3Button = ({
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button
+        .swpTag(4)
+        .swpImage([UIImage imageNamed:@"forgot_password_no"], UIControlStateNormal)
+        .swpImage([UIImage imageNamed:@"forgot_password_sel"], UIControlStateSelected)
+        .swpTitle(@"记住密码", UIControlStateNormal)
+        .swpTitleColor([UIColor blackColor], UIControlStateNormal)
+        .swpTargetEvent(self, @selector(clickButtonEvent:), UIControlEventTouchUpInside)
+        .swpTitleLabelSystemFontSize(12);
+        button;
+    }) : _checkBox3Button;
+}
+
+- (UIButton *)checkBox4Button {
+    
+    return !_checkBox4Button ? _checkBox4Button = ({
+        [UIButton buttonWithType:UIButtonTypeCustom]
+        .swpTag(4)
+        .swpTitleColor([UIColor blackColor], UIControlStateNormal)
+        .swpImage([UIImage imageNamed:@"forgot_password_no"], UIControlStateNormal)
+        .swpImage([UIImage imageNamed:@"forgot_password_sel"], UIControlStateSelected)
+        .swpTitle(@"记住密码", UIControlStateNormal)
+        .swpTargetEvent(self, @selector(clickButtonEvent:), UIControlEventTouchUpInside)
+        .swpTitleLabelSystemFontSize(12);
+    }) : _checkBox4Button;
 }
 
 - (UIButton *)submitButton2 {
     
     return !_submitButton2 ? _submitButton2 = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:UIColor.swpColorWithRandom() setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:0 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
+        [UIButton swpSetButtonSubmitStyle:button setBackgroundColor:UIColor.swpColorWithRandomChain() setFontColor:[UIColor whiteColor] setTitle:@"点击生成随机色" setFontSize:15.0f setCornerRadius:0 setTag:3 setTarget:self setAction:@selector(clickButtonEvent:)];
         button;
     }) : _submitButton2;
 }

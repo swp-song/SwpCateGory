@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
-[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.9.1-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
+[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v3.0.0-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
 
 -------
 
@@ -42,7 +42,7 @@ pod 'SwpCateGory/SwpUserDefaults'
 pod 'SwpCateGory/SwpAttributed'
 pod 'SwpCateGory/SwpSetNavigationBarItem'
 pod 'SwpCateGory/SwpSetButton'
-pod 'SwpCateGory/SwpButtonLayout'
+pod 'SwpCateGory/SwpButtonPropertys'
 pod 'SwpCateGory/SwpButtonCircleAnimation'
 pod 'SwpCateGory/SwpButtonUtils'
 pod 'SwpCateGory/SwpColor'
@@ -53,8 +53,9 @@ pod 'SwpCateGory/SwpImageScreenshots'
 pod 'SwpCateGory/SwpCreateImage'
 pod 'SwpCateGory/SwpNavigationBar'
 pod 'SwpCateGory/SwpSetTextField'
-pod 'SwpCateGory/SwpTextFieldPlaceholder'
+pod 'SwpCateGory/SwpTextFieldPropertys'
 pod 'SwpCateGory/SwpExtension'
+pod 'SwpCateGory/SwpViewPropertys'
 pod 'SwpCateGory/SwpViewScreenshots'
 #import <SwpCateGory/UIColor+SwpColor.h>
 ```
@@ -73,6 +74,17 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 ### 版本记录
 
+> * 版本版本：3.0.0
+> * 更新时间：2018-06-04 00:24:02
+> * 更新内容：
+>
+>> *  移除，SwpButtonLayout和 SwpTextFieldPlaceholder 分类。
+>> *  新增 SwpButtonPropertys，SwpTextFieldPropertys，SwpViewPropertys 分类。
+>> *  SwpButtonLayout 分类中内容转移到 SwpButtonPropertys 中。
+>> * SwpTextFieldPlaceholder 分类中内容转移到，SwpTextFieldPropertys 中。
+>> * SwpColor 分类中新增，系统颜色方法。
+
+>> -------
 
 > * 版本版本：2.9.1
 > * 更新时间：2018-06-02 15:36:02
@@ -82,13 +94,7 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 >> -------
 
-> * 版本版本：2.9.0
-> * 更新时间：2018-06-01 16:03:15
-> * 更新内容：
->
->> * 新增，SwpTextFieldPlaceholder ，分类，设置 UITextField Placeholde，字体，字体颜色。
 
->> -------
 
 
 

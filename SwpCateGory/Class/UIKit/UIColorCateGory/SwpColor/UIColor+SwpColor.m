@@ -10,12 +10,183 @@
 
 @implementation UIColor (SwpColor)
 
+#pragma mark - System
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpBlackColor   ( blackColor, 0.0 white )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpBlackColor {
+    return ^(void) {
+        return [UIColor blackColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpDarkGrayColor    ( darkGrayColor, 0.333 white )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpDarkGrayColor {
+    return ^(void) {
+        return [UIColor darkGrayColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpLightGrayColor   ( lightGrayColor, 0.667 white )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpLightGrayColor {
+    return ^(void) {
+        return [UIColor lightGrayColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpWhiteColor   ( whiteColor, 1.0 white )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpWhiteColor {
+    return ^(void) {
+        return [UIColor whiteColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpGrayColor   ( grayColor, 0.5 white )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpGrayColor {
+    return ^(void) {
+        return [UIColor grayColor];
+    };
+}
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpRedColor   ( redColor, 1.0, 0.0, 0.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpRedColor {
+    return ^(void) {
+        return [UIColor redColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpGreenColor   ( greenColor, 0.0, 1.0, 0.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpGreenColor {
+    return ^(void) {
+        return [UIColor greenColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpBlueColor    ( blueColor, 0.0, 0.0, 1.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpBlueColor {
+    return ^(void) {
+        return [UIColor blueColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpCyanColor    ( cyanColor, 0.0, 1.0, 1.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpCyanColor {
+    return ^(void) {
+        return [UIColor cyanColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpYellowColor  ( yellowColor, 1.0, 1.0, 0.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpYellowColor {
+    return ^(void) {
+        return [UIColor yellowColor];
+    };
+}
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpMagentaColor ( magentaColor, 1.0, 0.0, 1.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpMagentaColor {
+    return ^(void) {
+        return [UIColor magentaColor];
+    };
+}
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpOrangeColor  ( orangeColor, 1.0, 0.5, 0.0 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpOrangeColor {
+    return ^(void) {
+        return [UIColor orangeColor];
+    };
+}
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpPurpleColor  ( purpleColor, 0.5, 0.0, 0.5 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpPurpleColor {
+    return ^(void) {
+        return [UIColor purpleColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpBrownColor   ( brownColor, 0.6, 0.4, 0.2 RGB )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpBrownColor {
+    return ^(void) {
+        return [UIColor brownColor];
+    };
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  swpClearColor   ( brownColor, 0.0 white, 0.0 alpha )
+ */
++ (__kindof UIColor * _Nonnull (^)(void))swpClearColor {
+    return ^(void) {
+        return [UIColor clearColor];
+    };
+}
+
+#pragma mark - Custom
 /**
  *  @author swp_song
  *
  *  @brief  swpColorWithHexadecimal ( 使用十六进制值设置颜色 )
  */
-+ (UIColor * _Nonnull (^)(NSInteger))swpColorWithHexadecimal {
++ (__kindof UIColor * _Nonnull (^)(NSInteger))swpColorWithHexadecimal {
     return ^(NSInteger hexadecimalValue){
         return [self.class swpColorWithHexadecimal:hexadecimalValue];
     };
@@ -30,7 +201,7 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithHexadecimal:(NSInteger)hexadecimalValue {
++ (__kindof UIColor *)swpColorWithHexadecimal:(NSInteger)hexadecimalValue {
     return [UIColor swpColorWithHexadecimal:hexadecimalValue alpha:1.0];
 }
 
@@ -40,7 +211,7 @@
  *
  *  @brief  swpColorWithHexadecimal ( 使用十六进制值设置颜色 )
  */
-+ (UIColor * _Nonnull (^)(NSInteger, CGFloat))swpColorWithHexadecimalAlpha {
++ (__kindof UIColor * _Nonnull (^)(NSInteger, CGFloat))swpColorWithHexadecimalAlpha {
     return ^(NSInteger hexadecimalValue, CGFloat alpha){
         return [self.class swpColorWithHexadecimal:hexadecimalValue alpha:alpha];
     };
@@ -58,7 +229,7 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithHexadecimal:(NSInteger)hexadecimalValue alpha:(CGFloat)alpha {
++ (__kindof UIColor *)swpColorWithHexadecimal:(NSInteger)hexadecimalValue alpha:(CGFloat)alpha {
     return [UIColor colorWithRed:((float)((hexadecimalValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexadecimalValue & 0xFF00) >> 8)) / 255.0 blue:((float)(hexadecimalValue & 0xFF)) / 255.0 alpha:alpha];
 }
 
@@ -68,7 +239,7 @@
  *
  *  @brief  swpColorWithHexadecimalString   ( 使用字符串设置十六进制颜色 0x Or # < Null 颜色 Clear Color > )
  */
-+ (UIColor * _Nonnull (^)(NSString * _Nullable))swpColorWithHexadecimalString {
++ (__kindof UIColor * _Nonnull (^)(NSString * _Nullable))swpColorWithHexadecimalString {
     return ^(NSString *hexadecimalStringValue) {
         return [self.class swpColorWithHexadecimalString:hexadecimalStringValue];
     };
@@ -84,7 +255,7 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithHexadecimalString:(NSString * _Nullable)hexadecimalStringValue {
++ (__kindof UIColor *)swpColorWithHexadecimalString:(NSString * _Nullable)hexadecimalStringValue {
     return [UIColor swpColorWithHexadecimalString:hexadecimalStringValue alpha:1.0];
 }
 
@@ -94,7 +265,7 @@
  *
  *  @brief  swpColorWithHexadecimalStringAlpha  ( 使用字符串设置十六进制颜色 0x Or # < Null 颜色 Clear Color > )
  */
-+ (UIColor * _Nonnull (^)(NSString * _Nullable, CGFloat))swpColorWithHexadecimalStringAlpha {
++ (__kindof UIColor * _Nonnull (^)(NSString * _Nullable, CGFloat))swpColorWithHexadecimalStringAlpha {
     return ^(NSString *hexadecimalStringValue, CGFloat alpha) {
         return [self.class swpColorWithHexadecimalString:hexadecimalStringValue alpha:alpha];
     };
@@ -111,7 +282,7 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithHexadecimalString:(NSString * _Nullable)hexadecimalStringValue alpha:(CGFloat)alpha {
++ (__kindof UIColor *)swpColorWithHexadecimalString:(NSString * _Nullable)hexadecimalStringValue alpha:(CGFloat)alpha {
     
     NSString *cString = [[hexadecimalStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
@@ -150,7 +321,7 @@
  *
  *  @brief  swpColorWithRGB ( 使用 R G B 色值设置颜色 )
  */
-+ (UIColor * _Nonnull (^)(CGFloat, CGFloat, CGFloat))swpColorWithRGB {
++ (__kindof UIColor * _Nonnull (^)(CGFloat, CGFloat, CGFloat))swpColorWithRGB {
     return ^(CGFloat red, CGFloat green, CGFloat blue) {
         return [self.class swpColorWithRGB:red green:green blue:blue];
     };
@@ -169,7 +340,7 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
++ (__kindof UIColor *)swpColorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
     return [UIColor swpColorWithRGB:red green:green blue:blue alpha:1.0];
 }
 
@@ -178,7 +349,7 @@
  *
  *  @brief  swpColorWithRGB ( 使用 R G B 色值设置颜色 )
  */
-+ (UIColor * _Nonnull (^)(CGFloat, CGFloat, CGFloat, CGFloat))swpColorWithRGBA {
++ (__kindof UIColor * _Nonnull (^)(CGFloat, CGFloat, CGFloat, CGFloat))swpColorWithRGBA {
     return ^(CGFloat red, CGFloat green, CGFloat blue, CGFloat alpha) {
         return [self.class swpColorWithRGB:red green:green blue:blue alpha:alpha];
     };
@@ -199,7 +370,7 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha {
++ (__kindof UIColor *)swpColorWithRGB:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha {
     return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:alpha];
 }
 
@@ -208,9 +379,9 @@
  *
  *  @brief  swpColorWithRandom  ( 生成一个随机色 )
  */
-+ (UIColor * _Nonnull (^)(void))swpColorWithRandom {
-    return ^() {
-        return [self.class swpColorWithRandom_];
++ (__kindof UIColor * _Nonnull (^)(void))swpColorWithRandomChain {
+    return ^(void) {
+        return [self.class swpColorWithRandom];
     };
 }
 
@@ -221,11 +392,13 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)swpColorWithRandom_ {
++ (__kindof UIColor *)swpColorWithRandom {
     return [UIColor swpColorWithRGB:arc4random_uniform(256) green:arc4random_uniform(256) blue:arc4random_uniform(256)];
 }
 
 
+
+#pragma mark - Test
 
 // 注意转换出来的字符串不带＃号, 测试方法
 + (NSString*)toStrByUIColor:(UIColor *)color {
@@ -245,8 +418,6 @@
     NSLog(@"%ld", (long)(hexadecimalValue & 0xFF));
     return nil;
 }
-
-
 
 
 @end
