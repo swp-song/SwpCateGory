@@ -189,6 +189,7 @@
  *  @param  color   color
  */
 - (void)swpPlaceholderColor:(UIColor *)color {
+    NSAssert(self.placeholder.length, @"请在设置完，placeholder 参数后，使用该方法");
     self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName: color}];
 }
 
@@ -213,6 +214,8 @@
  *  @param  font    font
  */
 - (void)swpPlaceholderFont:(UIFont *)font {
+    
+    NSAssert(self.placeholder.length, @"请在设置完，placeholder 参数后，使用该方法");
     self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSFontAttributeName: font}];
 }
 

@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
 [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
-[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v3.0.0-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
+[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v3.0.1-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
 
 -------
 
@@ -74,6 +74,15 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 ### 版本记录
 
+
+> * 版本版本：3.0.1
+> * 更新时间：2018-06-04 10:25:08
+> * 更新内容：
+>
+>> *  SwpTextFieldPropertys，增加一些断言验证。
+
+>> -------
+
 > * 版本版本：3.0.0
 > * 更新时间：2018-06-04 00:24:02
 > * 更新内容：
@@ -86,13 +95,7 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 >> -------
 
-> * 版本版本：2.9.1
-> * 更新时间：2018-06-02 15:36:02
-> * 更新内容：
->
->> *  修复内部问题。
 
->> -------
 
 
 
